@@ -232,6 +232,9 @@ li{
     top: 100px;
 }
 
+.highlighted-text a, .highlighted-text a:hover, .highlighted-text a:visited{
+	color: inherit;
+}
 
 blockquote{
 	background-color: #eee;
