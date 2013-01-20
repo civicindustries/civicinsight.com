@@ -1,0 +1,311 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For NetTuts+
+ *  
+ * Author: Mohiuddin Parekh
+ *	http://www.mohi.me
+ * 	@mohiuddinparekh   
+ */
+
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Lato', sans-serif;
+}
+
+header{
+	height: 70px;
+	background: white;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	z-index: 100;
+	border-bottom: 1px solid #aaa;
+}
+
+section{
+	/* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+}
+section h3{
+	font-size: 300%;
+	line-height: 300%;
+}
+
+p, li{
+	font-size: 150%;
+}
+
+
+footer{
+	width: 100%;
+	position: relative;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+ul#nav {
+	padding: 20px;
+}
+ul#nav li{
+	display: inline;
+	padding: 10px;
+	font-size: 24px;
+	list-style: none;
+}
+
+ul#nav li a{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+ul{
+	padding: 0;
+	margin: 0;	
+}
+li{
+	list-style: none;
+}
+
+
+#cities-citizens li{
+	padding: 0 10px 30px 0;	
+}
+
+
+
+#home { 
+	background: url(../images/blight2t.jpg) 50% 0 no-repeat fixed;
+	height: 600px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    
+}
+
+
+#knowledge-is-power { 
+/*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
+	height: 400px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    background: white;
+}
+
+
+#cities-citizens { 
+	height: 500px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    background: #00b9bd;
+}
+
+
+#get-blightstatus { 
+	height: 500px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    background: white;
+}
+
+
+
+#demo { 
+	height: 430px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+	background: url("../images/map.png") no-repeat scroll 0 -150px transparent;
+}
+
+#background-map{
+	width: 100%;	
+	height: 100%;
+	position: absolute;
+}
+
+
+
+#press { 
+/*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
+	height: 430px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    color: white;
+	background: white;
+}
+
+#about { 
+	height: 100px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+	background: white;
+}
+
+#footer{
+	height: 100px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+	background: #666666;
+	color: white;
+	text-align: center;	
+
+}
+
+.highlight-medium{
+	font-family: "Lato";
+	font-weight: normal;
+	font-size: 350%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	width: 700px;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	position: relative;
+
+}
+.highlight-large{
+	font-family: "Lato";
+	font-weight: normal;
+	font-size: 450%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	width: 700px;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	position: relative;
+
+}
+
+.highlight-medium .highlighted-background, 
+.highlight-large .highlighted-background{
+	opacity: .6;
+	top: 0;
+	left: 0;
+	display: inline;
+
+}
+
+.teal-highlighter{
+	background-color: #00b9bd;	
+}
+
+.grey-highlighter{
+	background-color: #555;
+}
+
+
+.highlight-medium .highlighted-text, 
+.highlight-large .highlighted-text{
+    color: white;
+    left: 0;
+    padding: 0 30px;
+    position: absolute;
+    top: 100px;
+}
+
+
+blockquote{
+	background-color: #eee;
+	color: orange;
+	font-size: 175%;
+	padding: 20px 30px;
+	margin: 40px;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+
+.columns{
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 800px;
+}
+
+.columns .left-column{
+	float: left;
+	width: 49%;
+}
+
+.columns .right-column{
+	float: right;
+	width: 49%;
+}
+
+.transparent-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.35;
+	background-color: black;
+
+}
+
+.button{
+	background-color: orange;
+	padding: 15px;
+	margin: 20px;
+	width: 325px;
+	text-align: center;
+}
+.button-text{
+	color: white;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+
+.white-font{
+	color: white;
+}
+.black-font{
+	color: black;
+}
+
+.fixed{
+	position: fixed;
+	width: 100%;
+	top: 120px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px; 
+ }
+
+/* Introduction */
+
+/*
+#home article { background: url("../images/intro.png") no-repeat scroll center top transparent; 
+height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
+
+#about article { background: url("../images/parallax.png") no-repeat scroll center top transparent; 
+height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
+*/
+
+
+
+
