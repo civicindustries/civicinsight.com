@@ -43,6 +43,9 @@ footer{
 	position: relative;
 }
 
+a{
+	text-decoration: none;
+}
 a:hover{
 	cursor: pointer;
 }
@@ -71,6 +74,9 @@ li{
 	list-style: none;
 }
 
+#press ul li{
+	padding: 0 0 50px 0;
+}
 
 #cities-citizens li{
 	padding: 0 10px 30px 0;	
@@ -127,7 +133,7 @@ li{
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
-	background: url("../images/map.png") no-repeat scroll 0 -150px transparent;
+	background: url("../images/map-large.png") 0 0 no-repeat fixed;
 }
 
 #background-map{
@@ -140,7 +146,7 @@ li{
 
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 430px;
+	height: 800px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -150,12 +156,12 @@ li{
 }
 
 #about { 
-	height: 100px;
+	height: 150px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
-	background: white;
+	background: #E6E6E6;
 }
 
 #footer{
@@ -173,7 +179,7 @@ li{
 .highlight-medium{
 	font-family: "Lato";
 	font-weight: normal;
-	font-size: 350%;
+	font-size: 370%;
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px;
@@ -229,7 +235,7 @@ li{
 
 blockquote{
 	background-color: #eee;
-	color: orange;
+	color: #F1601D;
 	font-size: 175%;
 	padding: 20px 30px;
 	margin: 40px;
@@ -254,6 +260,20 @@ blockquote{
 	width: 49%;
 }
 
+.columns .one-thirds-column{
+	float: left;
+	width: 33%;
+}
+.columns .two-thirds-column{
+	float: left;
+	width: 66%;
+}
+.columns .three-thirds-column{
+	float: left;
+	width: 99%;
+}
+
+
 .transparent-overlay{
 	position: absolute;
 	width: 100%;
@@ -264,17 +284,24 @@ blockquote{
 }
 
 .button{
-	background-color: orange;
+	background-color: #F1601D;
 	padding: 15px;
 	margin: 20px;
 	width: 325px;
 	text-align: center;
+}
+.button:hover{
+	background-color: orange;
+	color: #333;
+	cursor: pointer;
 }
 .button-text{
 	color: white;
 	font-size: 250%;
 	font-weight: bold;
 }
+
+
 
 
 .white-font{
@@ -296,6 +323,14 @@ blockquote{
   height: 200px; 
  }
 
+
+.center{
+	text-align: center;
+}
+
+#about li{
+	display: inline;
+}
 /* Introduction */
 
 /*
