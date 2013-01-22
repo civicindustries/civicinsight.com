@@ -15,7 +15,7 @@ body{
 }
 
 header{
-	height: 70px;
+	height: 60px;
 	background: white;
 	position: fixed;
 	top: 0;
@@ -23,6 +23,10 @@ header{
 	width: 100%;
 	z-index: 100;
 	border-bottom: 1px solid #aaa;
+}
+
+#logo {
+	margin-top: 2px;
 }
 
 section{
@@ -34,7 +38,9 @@ section h3{
 }
 
 p, li{
-	font-size: 150%;
+	font-size: 140%;
+	line-height: 135%;
+	font-weight: 400;
 }
 
 
@@ -45,23 +51,24 @@ footer{
 
 a{
 	text-decoration: none;
+	color: #F1601D;
 }
 a:hover{
 	cursor: pointer;
 }
 
-ul#nav {
-	padding: 20px;
+ul#nav {	
+	padding: 15px;
 }
 ul#nav li{
 	display: inline;
-	padding: 10px;
-	font-size: 24px;
+	padding: 10px 30px;
+	font-size: 20px;
 	list-style: none;
 }
 
 ul#nav li a{
-	font-weight: bold;
+	font-weight: 400;
 	text-decoration: none;
 }
 
@@ -93,7 +100,7 @@ li{
 
 #knowledge-is-power { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 450px;
+	height: 370px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -113,7 +120,7 @@ li{
 
 
 #get-blightstatus { 
-	height: 500px;
+	height: 390px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -142,7 +149,7 @@ li{
 
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 900px;
+	height: 800px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -236,16 +243,16 @@ blockquote{
 	background-color: #eee;
 	color: #F1601D;
 	font-size: 175%;
-	padding: 20px 30px;
-	margin: 105px 40px;
+	padding: 40px 34px;
+	margin: 40px 40px;
 	font-style: italic;
-	font-weight: lighter;
+	font-weight: 300;
 }
 
 
 .columns{
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 20px 0;
     width: 900px;
 }
 
@@ -293,7 +300,7 @@ blockquote{
 .button{
 	background-color: #F1601D;
 	padding: 15px;
-	margin: 20px;
+	margin: 20px 40px;
 	width: 325px;
 	text-align: center;
 }
