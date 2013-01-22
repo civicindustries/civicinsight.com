@@ -29,6 +29,12 @@ header{
 	margin-top: 2px;
 }
 
+
+h4{
+	font-size: 200%;
+	line-height: 250%;
+	text-align: left;
+}
 section{
 	/* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
 }
@@ -62,7 +68,7 @@ ul#nav {
 }
 ul#nav li{
 	display: inline;
-	padding: 10px 30px;
+	padding: 10px 22px;
 	font-size: 20px;
 	list-style: none;
 }
@@ -82,7 +88,7 @@ li{
 }
 
 #press ul li{
-	padding: 0 0 50px 0;
+	padding: 0 0 30px;
 }
 
 
@@ -162,7 +168,7 @@ li{
 
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 800px;
+	height: 900px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -313,7 +319,7 @@ blockquote{
 .button{
 	background-color: #F1601D;
 	padding: 15px;
-	margin: 20px 40px;
+	margin: 0 40px 20px;
 	width: 325px;
 	text-align: center;
 }
@@ -418,6 +424,7 @@ blockquote{
 #cities-citizens li{
 	padding: 0 45px 35px 105px;
 	position: relative;
+	min-height: 100px;
 
 }
 
