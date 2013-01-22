@@ -98,6 +98,19 @@ li{
 }
 
 
+.shadow{
+	box-shadow: 0 5px 10px rgba(0,0,0,.20);
+}
+
+.inner-shadow{
+	box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3) inset;
+}
+
+.fatty-inner-shadow{
+	box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4) inset;
+}
+
+
 #knowledge-is-power { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
 	height: 370px;
@@ -292,8 +305,8 @@ blockquote{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	opacity: 0.35;
-	background-color: black;
+	opacity: 0.8;
+	background-color: white;
 
 }
 
