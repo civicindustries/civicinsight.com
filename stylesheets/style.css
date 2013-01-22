@@ -272,6 +272,14 @@ blockquote{
 	width: 99%;
 }
 
+.fullwidth{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.fullwidth img{
+	padding: 0 20px 0 20px;
+}
 
 .transparent-overlay{
 	position: absolute;
@@ -289,6 +297,11 @@ blockquote{
 	width: 325px;
 	text-align: center;
 }
+
+.button a{
+	color: white;
+}
+
 .button:hover{
 	background-color: orange;
 	color: #333;
