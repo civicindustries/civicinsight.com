@@ -78,10 +78,6 @@ li{
 	padding: 0 0 50px 0;
 }
 
-#cities-citizens li{
-	padding: 0 10px 30px 0;	
-}
-
 
 
 #home { 
@@ -107,7 +103,7 @@ li{
 
 
 #cities-citizens { 
-	height: 550px;
+	height: 450px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -380,6 +376,38 @@ blockquote{
 	position: absolute; 
 	height: 300px; 
 
+}
+
+
+#cities-citizens ul{
+	position: relative;
+}
+#cities-citizens li{
+	padding: 0 45px 35px 105px;
+	position: relative;
+
+}
+
+
+.cities-citizens-icons{
+    height: 115px;
+    left: 0;
+    position: absolute;
+    top: -15px;
+    width: 95px;
+}
+
+.time-icon{
+    background: url("../images/icons.png") no-repeat scroll -8px 0 transparent;
+}
+.chart-icon{
+    background: url("../images/icons.png") no-repeat scroll -4px -115px transparent;
+}
+.click-icon{
+    background: url("../images/icons.png") no-repeat scroll -118px 0 transparent;
+}
+.contact-icon{
+    background: url("../images/icons.png") no-repeat scroll -108px -122px transparent;
 }
 
 /* Introduction */
