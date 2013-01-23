@@ -41,6 +41,7 @@ section{
 section h3{
 	font-size: 300%;
 	line-height: 300%;
+	margin-top: -5px;
 }
 
 p, li{
@@ -113,7 +114,7 @@ li{
 }
 
 .fatty-inner-shadow{
-	box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 0 0px 45px rgba(0, 0, 0, 0.5) inset;
 }
 
 
@@ -129,7 +130,7 @@ li{
 
 
 #cities-citizens { 
-	height: 450px;
+	height: 500px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -424,7 +425,7 @@ blockquote{
 #cities-citizens li{
 	padding: 0 45px 35px 105px;
 	position: relative;
-	min-height: 100px;
+	min-height: 80px;
 
 }
 
@@ -438,16 +439,22 @@ blockquote{
 }
 
 .time-icon{
-    background: url("../images/icons.png") no-repeat scroll -8px 0 transparent;
+    background: url("../images/icons.png") no-repeat scroll -4px 0 transparent;
 }
 .chart-icon{
-    background: url("../images/icons.png") no-repeat scroll -4px -115px transparent;
+    background: url("../images/icons.png") no-repeat scroll -4px -126px transparent;
+}
+.database-icon{
+    background: url("../images/icons.png") no-repeat scroll -4px -252px transparent;
 }
 .click-icon{
-    background: url("../images/icons.png") no-repeat scroll -118px 0 transparent;
+    background: url("../images/icons.png") no-repeat scroll -102px 0 transparent;
 }
 .contact-icon{
-    background: url("../images/icons.png") no-repeat scroll -108px -122px transparent;
+    background: url("../images/icons.png") no-repeat scroll -102px -124px transparent;
+}
+.info-icon{
+    background: url("../images/icons.png") no-repeat scroll -4px -126px transparent;
 }
 
 /* Introduction */
