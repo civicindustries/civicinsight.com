@@ -62,6 +62,7 @@ a{
 }
 a:hover{
 	cursor: pointer;
+	color: #444;
 }
 
 ul#nav {	
@@ -93,22 +94,19 @@ li{
 }
 
 
-
 #home { 
 	background: url(../images/hero.jpg) 50% 0 no-repeat fixed;
 	height: 600px;  
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
-    position: relative; 
-    
+    position: relative;   
 }
 
 .hero{
 	position: relative; 
 	top: 100px
 }
-
 
 .shadow{
 	box-shadow: 0 5px 10px rgba(0,0,0,.20);
@@ -125,7 +123,7 @@ li{
 
 #knowledge-is-power { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 370px;
+	height: 360px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -135,7 +133,7 @@ li{
 
 
 #cities-citizens { 
-	height: 550px;
+	height: 520px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -156,7 +154,7 @@ li{
 
 
 #demo { 
-	height: 430px;
+	height: 390px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -174,7 +172,7 @@ li{
 
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 900px;
+	height: 800px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -189,7 +187,34 @@ li{
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
-	background: #F2F2F2;
+	background: #E6E6E6;
+}
+
+.brought-to-you {
+	font-size: 150%;
+	line-height: 135%;
+	font-weight: 700;
+	color: #444;
+
+}
+
+#about a{
+	font-style: italic;
+	font-size: 100%;
+	font-weight: 400;
+}
+
+.divider {
+	color: #F1601D;
+	margin: 12px;
+	font-size: 100%;
+}
+
+.address {
+	font-size: 130%;
+	line-height: 125%;
+	font-weight: 400;
+	color: #808080;
 }
 
 #footer{
@@ -201,8 +226,18 @@ li{
 	background: #666666;
 	color: white;
 	text-align: center;	
-
 }
+
+#footer p{
+	font-size: 110%;
+	font-weight: 300;
+	color: #CCCCCC;
+}
+
+#footer a{
+	color: white;
+}
+
 
 .highlight-medium{
 	font-family: "Lato";
@@ -296,13 +331,15 @@ blockquote{
 }
 
 .columns .one-thirds-column{
-	float: left;
-	width: 33%;
+	float: right;
+	width: 23%; 
 }
+
 .columns .two-thirds-column{
 	float: left;
 	width: 66%;
 }
+
 .columns .three-thirds-column{
 	float: left;
 	width: 99%;
@@ -313,6 +350,7 @@ blockquote{
 	width: 100%;
 	text-align: center;
 }
+
 .fullwidth img{
 	padding: 0 20px 0 20px;
 }
