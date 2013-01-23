@@ -31,8 +31,8 @@ header{
 
 
 h4{
-	font-size: 200%;
-	line-height: 250%;
+	font-size: 300%;
+	line-height: 200%;
 	text-align: left;
 }
 section{
@@ -143,15 +143,13 @@ li{
 
 
 #get-blightstatus { 
-	height: 390px;
+	height: 360px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
     background: white;
 }
-
-
 
 #demo { 
 	height: 390px;
@@ -167,7 +165,6 @@ li{
 	height: 100%;
 	position: absolute;
 }
-
 
 
 #press { 
@@ -241,12 +238,12 @@ li{
 
 .highlight-medium{
 	font-family: "Lato";
-	font-weight: normal;
-	font-size: 370%;
+	font-weight: 300;
+	font-size: 400%;
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px;
-	width: 700px;
+	width: 900px;
 	color: white;
 	text-align: center;
 	padding-top: 100px;
@@ -255,8 +252,8 @@ li{
 }
 .highlight-large{
 	font-family: "Lato";
-	font-weight: normal;
-	font-size: 450%;
+	font-weight: 300;
+	font-size: 500%;
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px;
@@ -270,7 +267,7 @@ li{
 
 .highlight-medium .highlighted-background, 
 .highlight-large .highlighted-background{
-	opacity: .6;
+	opacity: .8;
 	top: 0;
 	left: 0;
 	display: inline;
@@ -282,7 +279,7 @@ li{
 }
 
 .grey-highlighter{
-	background-color: #555;
+	background-color: #333;
 }
 
 
@@ -352,8 +349,10 @@ blockquote{
 }
 
 .fullwidth img{
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
+	vertical-align: middle;
 }
+
 
 .transparent-overlay{
 	position: absolute;
@@ -366,10 +365,20 @@ blockquote{
 
 .button{
     background-color: #F1601D;
-    margin: 0 40px 20px;
-    padding: 10px 15px;
+    margin: 40px 40px 20px;
+    padding: 15px 10px;
     text-align: center;
-    width: 250px;
+    width: 150px;
+}
+
+.left-column .button{
+	width: 70%;
+	margin-left: 87px;
+}
+
+.right-column .button{
+	width: 70%;
+	margin-left: -3px;
 }
 
 .button a{
@@ -383,7 +392,7 @@ blockquote{
 }
 .button-text{
     color: white;
-    font-size: 200%;
+    font-size: 250%;
     font-weight: bold;
 }
 
@@ -423,7 +432,7 @@ blockquote{
 }
 
 .speech-bubble{
-	background: #F2F2F2;
+	background: #E6E6E6;
 	padding: 10px 20px;
 	text-align: center;
 	width: 80%;
@@ -432,7 +441,7 @@ blockquote{
 }
 
 .speech-bubble:after {
-   border-color: #F2F2F2 transparent;
+   border-color: #E6E6E6 transparent;
     border-style: solid;
     border-width: 40px 0 0 35px;
     bottom: -30px;
