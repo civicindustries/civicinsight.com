@@ -104,6 +104,11 @@ li{
     
 }
 
+.hero{
+	position: relative; 
+	top: 100px
+}
+
 
 .shadow{
 	box-shadow: 0 5px 10px rgba(0,0,0,.20);
