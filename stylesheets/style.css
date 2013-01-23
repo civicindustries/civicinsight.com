@@ -259,6 +259,10 @@ li{
 	color: inherit;
 }
 
+.highlighted-text a:hover{
+	color: #F1601D;
+}
+
 blockquote{
 	background-color: #eee;
 	color: #F1601D;
