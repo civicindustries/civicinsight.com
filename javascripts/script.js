@@ -34,7 +34,7 @@ $(document).ready(function() {
 
  		
  		if( $(target).length){
-	 		$.scrollTo( $(target).offset().top - 60, 500 , {easing:'swing'});		
+	 		$.scrollTo( $(target).offset().top - 60, 200 , {easing:'swing'});		
  		}
     e.preventDefault();
 
