@@ -31,8 +31,8 @@ header{
 
 
 h4{
-	font-size: 200%;
-	line-height: 250%;
+	font-size: 300%;
+	line-height: 200%;
 	text-align: left;
 }
 section{
@@ -62,6 +62,7 @@ a{
 }
 a:hover{
 	cursor: pointer;
+	color: #444;
 }
 
 ul#nav {	
@@ -89,9 +90,8 @@ li{
 }
 
 #press ul li{
-	padding: 0 0 30px;
+	padding: 0 0 25px;
 }
-
 
 
 #home { 
@@ -100,15 +100,13 @@ li{
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
-    position: relative; 
-    
+    position: relative;   
 }
 
 .hero{
 	position: relative; 
 	top: 100px
 }
-
 
 .shadow{
 	box-shadow: 0 5px 10px rgba(0,0,0,.20);
@@ -125,7 +123,7 @@ li{
 
 #knowledge-is-power { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 370px;
+	height: 360px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -135,7 +133,7 @@ li{
 
 
 #cities-citizens { 
-	height: 550px;
+	height: 520px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -145,7 +143,7 @@ li{
 
 
 #get-blightstatus { 
-	height: 390px;
+	height: 360px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -153,10 +151,8 @@ li{
     background: white;
 }
 
-
-
 #demo { 
-	height: 430px;
+	height: 390px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -171,10 +167,9 @@ li{
 }
 
 
-
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 900px;
+	height: 830px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -189,7 +184,34 @@ li{
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
-	background: #F2F2F2;
+	background: #E6E6E6;
+}
+
+.brought-to-you {
+	font-size: 150%;
+	line-height: 135%;
+	font-weight: 700;
+	color: #444;
+
+}
+
+#about a{
+	font-style: italic;
+	font-size: 100%;
+	font-weight: 400;
+}
+
+.divider {
+	color: #F1601D;
+	margin: 12px;
+	font-size: 100%;
+}
+
+.address {
+	font-size: 130%;
+	line-height: 125%;
+	font-weight: 400;
+	color: #808080;
 }
 
 #footer{
@@ -201,17 +223,27 @@ li{
 	background: #666666;
 	color: white;
 	text-align: center;	
-
 }
+
+#footer p{
+	font-size: 110%;
+	font-weight: 300;
+	color: #CCCCCC;
+}
+
+#footer a{
+	color: white;
+}
+
 
 .highlight-medium{
 	font-family: "Lato";
-	font-weight: normal;
-	font-size: 370%;
+	font-weight: 300;
+	font-size: 400%;
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px;
-	width: 700px;
+	width: 900px;
 	color: white;
 	text-align: center;
 	padding-top: 100px;
@@ -220,8 +252,8 @@ li{
 }
 .highlight-large{
 	font-family: "Lato";
-	font-weight: normal;
-	font-size: 450%;
+	font-weight: 300;
+	font-size: 500%;
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px;
@@ -235,7 +267,7 @@ li{
 
 .highlight-medium .highlighted-background, 
 .highlight-large .highlighted-background{
-	opacity: .6;
+	opacity: .8;
 	top: 0;
 	left: 0;
 	display: inline;
@@ -247,7 +279,7 @@ li{
 }
 
 .grey-highlighter{
-	background-color: #555;
+	background-color: #333;
 }
 
 
@@ -296,13 +328,15 @@ blockquote{
 }
 
 .columns .one-thirds-column{
-	float: left;
-	width: 33%;
+	float: right;
+	width: 23%; 
 }
+
 .columns .two-thirds-column{
 	float: left;
 	width: 66%;
 }
+
 .columns .three-thirds-column{
 	float: left;
 	width: 99%;
@@ -313,9 +347,12 @@ blockquote{
 	width: 100%;
 	text-align: center;
 }
+
 .fullwidth img{
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
+	vertical-align: middle;
 }
+
 
 .transparent-overlay{
 	position: absolute;
@@ -328,10 +365,20 @@ blockquote{
 
 .button{
     background-color: #F1601D;
-    margin: 0 40px 20px;
-    padding: 10px 15px;
+    margin: 40px 40px 20px;
+    padding: 15px 10px;
     text-align: center;
-    width: 250px;
+    width: 150px;
+}
+
+.left-column .button{
+	width: 70%;
+	margin-left: 87px;
+}
+
+.right-column .button{
+	width: 70%;
+	margin-left: -3px;
 }
 
 .button a{
@@ -345,7 +392,7 @@ blockquote{
 }
 .button-text{
     color: white;
-    font-size: 200%;
+    font-size: 250%;
     font-weight: bold;
 }
 
@@ -385,8 +432,8 @@ blockquote{
 }
 
 .speech-bubble{
-	background: #F2F2F2;
-	padding: 10px 20px;
+	background: #E6E6E6;
+	padding: 17px 20px;
 	text-align: center;
 	width: 80%;
 	margin: 10px;
@@ -394,7 +441,7 @@ blockquote{
 }
 
 .speech-bubble:after {
-   border-color: #F2F2F2 transparent;
+   border-color: #E6E6E6 transparent;
     border-style: solid;
     border-width: 40px 0 0 35px;
     bottom: -30px;
