@@ -530,6 +530,10 @@ label{
 
 }
 
+.input-group ul li{
+	padding: 0px;
+}
+
 /*
 label{
 	float:left;
