@@ -517,6 +517,39 @@ blockquote{
     background: url("../images/icons.png") no-repeat scroll -4px -126px transparent;
 }
 
+#interest{
+	width: 500px;
+	margin: 0 auto;
+}
+label{
+	font-size: 75% !important;
+	font-family: "Lato" !important;
+}
+#form-depth label{
+	padding-left: 10px !important;
+
+}
+
+/*
+label{
+	float:left;
+	width: 100px !important;
+}
+
+input[type=text]{
+	float: left;
+	width: 400px!important;
+}
+
+input[type=select]{
+	width: 100px;
+
+}
+input[type=option]{
+	width: 20px;
+}
+/*
+
 /* Introduction */
 
 /*
