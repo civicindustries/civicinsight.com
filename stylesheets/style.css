@@ -522,16 +522,30 @@ blockquote{
 	margin: 0 auto;
 }
 label{
-	font-size: 75% !important;
+	font-size: 90% !important;
 	font-family: "Lato" !important;
 }
+
+
+
 #form-depth label{
 	padding-left: 10px !important;
 
 }
 
-.input-group ul li{
-	padding: 0px;
+
+.mc-field-group {
+	margin-bottom: 10px;
+}
+
+#mc_embed_signup input[type=checkbox]{
+	margin: 7px 0;
+}
+
+.mc-field-group-first label{
+	font-size: 100% !important;
+	font-family: "Lato" !important;
+	/*line-height: 20px;*/
 }
 
 /*
