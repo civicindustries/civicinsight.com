@@ -1,0 +1,154 @@
+
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="javascripts/interest.js"></script>
+	</head
+	<body>
+		<div class="email-signup" id="interest">
+			<div class="form">
+				<div class="ss-form-container">
+					<div class="ss-form-heading">
+						<div class="ss-required-asterisk">* Required</div>
+					</div>
+					
+					<form action="https://docs.google.com/a/civicindustries.com/spreadsheet/formResponse?formkey=dDhZdUltRjhWWUVuRUo0dlVnelNEbWc6MA&amp;ifq" method="POST" id="ss-form">
+						<br>
+						<div class="errorbox-good">
+							<div class="ss-item ss-item-required ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_0">
+										Your Name
+										<span class="ss-required-asterisk">*</span>
+									</label>
+									<label class="ss-q-help" for="entry_0"></label>
+									<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0">
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="errorbox-good">
+							<div class="ss-item ss-item-required ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_1">
+										Your Email
+										<span class="ss-required-asterisk">*</span>
+									</label>
+									<label class="ss-q-help" for="entry_1"></label>
+									<input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1">
+								</div>
+							</div>
+						</div>
+						<br> 
+						<div class="errorbox-good">
+							<div class="ss-item  ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_2">
+										Your Organization
+									</label>
+									<label class="ss-q-help" for="entry_2"></label>
+									<input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2">
+								</div>
+							</div>
+						</div>
+						
+						<br style="clear: both;display: none;" id="form-depth-sep"/>
+
+						<div id="form-depth" style="display: none;">
+							<br> 
+						<div class="errorbox-good">
+							<div class="ss-item  ss-text">
+								<div class="ss-form-entry">
+									<label class="ss-q-title" for="entry_3">
+										Favorite Rapper
+									</label>
+									<label class="ss-q-help" for="entry_3"></label>
+									<input type="text" name="entry.3.single" value="" class="ss-q-short">
+								</div>
+							</div>
+						</div>
+							<input type="hidden" name="pageNumber" value="0">
+							<input type="hidden" name="backupCache" value="">
+						</div>
+						
+						<div class="ss-item ss-navigate">
+							<div class="ss-form-entry">
+								<input type="submit" name="submit" value="Submit" id="form-submit">
+							</div>
+						</div>
+					</form>
+					<script type="text/javascript">
+						      
+				    	(function() {
+							var divs = document.getElementById('ss-form').getElementsByTagName('div');
+							var numDivs = divs.length;
+							for (var j = 0; j < numDivs; j++) {
+								if (divs[j].className == 'errorbox-bad') {
+									divs[j].lastChild.firstChild.lastChild.focus();
+									return;
+								}
+							}
+							for (var i = 0; i < numDivs; i++) {
+								var div = divs[i];
+								if (div.className == 'ss-form-entry' &&
+								div.firstChild &&
+								div.firstChild.className == 'ss-q-title') {
+									div.lastChild.focus();
+									return;
+								}
+							}
+						})();
+	      			</script>
+				</div>
+				<!-- Begin MailChimp Signup Form -->
+				<!-- link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+					#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+				</style -->
+				<div id="mc_embed_signup" style="display:none;">
+					<form action="http://civicindustries.us4.list-manage.com/subscribe/post?u=bc89bc1a568c7ecb05735ef0d&amp;id=1df64879e9"method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<h2>Subscribe to our mailing list</h2>
+						<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+						
+						<div class="mc-field-group">
+							<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+						</label>
+							<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+						</div>
+						
+						<div class="mc-field-group">
+							<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+						</label>
+							<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+						</div>
+						
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+						</label>
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						</div>
+						
+						<div class="mc-field-group input-group">
+						    <strong>Email Format </strong>
+						    <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
+							<li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">text</label></li>
+							<li><input type="radio" value="mobile" name="EMAILTYPE" id="mce-EMAILTYPE-2"><label for="mce-EMAILTYPE-2">mobile</label></li>
+							</ul>
+						</div>
+
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>	
+						<!-- <div class="clear">
+							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+						</div> -->
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--End mc_embed_signup-->
+	</body>
+</html>

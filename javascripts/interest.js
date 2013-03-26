@@ -26,7 +26,7 @@ $(document).ready(function () {
   $('#mc-embedded-subscribe').click(function (e) {
     e.preventDefault();
     
-    $('#get-blightstatus').css({ 'height': '150px'});
+    $('#get-blightstatus').css({ 'height': '300px'});
     $('#get-blightstatus-phrase').hide();
     $('#mc-embedded-subscribe-form').submit();
 
