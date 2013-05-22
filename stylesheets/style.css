@@ -99,7 +99,7 @@ li{
     background-color: #00B9BD;
     color: white;
     font-size: 160%;
-    height: 30px;
+    height: 40px;
     margin: 63px 0;
     max-width: 1920px;
     position: relative;
@@ -109,9 +109,26 @@ li{
     z-index: 50;
 }
 
+#notice p{
+	font-size: 97%;
+	line-height: 135%;
+	font-weight: 400;
+	padding-top: 6px;
+}
+
+.notice{
+	font-style: italic;
+	font-weight: 200; 
+}
+
+#notice a{
+	font-weight: 400;
+	color: white;
+	
+}
 
 #home { 
-	background: url(../images/hero.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/hero.jpg) 50% 34px no-repeat fixed;
 	height: 600px;  
 	margin: 0 auto; 
     width: 100%; 
