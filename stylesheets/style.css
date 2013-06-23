@@ -408,6 +408,26 @@ blockquote{
     width: 150px;
 }
 
+
+.menu-button{
+    background-color: #F1601D;
+    padding: 5px 8px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 90%;
+}
+
+.here{
+  text-decoration: underline;
+}
+
+.menu-button:hover{
+  background-color: #E0500C;
+  color: white;
+}
+
+
 .left-column .button{
 	width: 70%;
 	margin-left: 87px;
