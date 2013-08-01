@@ -206,7 +206,7 @@ li{
 
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 830px;
+	height: 900px;
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -216,23 +216,23 @@ li{
 }
 
 #about { 
-	height: 120px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-	background: #E6E6E6;
+  background: none repeat scroll 0 0 #E6E6E6;
+   height: 250px;
+   margin: 0 auto;
+   max-width: 1920px;
+   padding: 20px 0;
+   position: relative;
+   width: 100%;
 }
 
 .brought-to-you {
-	font-size: 150%;
 	line-height: 135%;
 	font-weight: 700;
 	color: #444;
 
 }
 
-#about a{
+#about a, #about li, #about li a{
 	font-style: italic;
 	font-size: 100%;
 	font-weight: 400;
@@ -485,8 +485,30 @@ blockquote{
 	margin-top: -17px;
 }
 
+.bio-text{
+  font-size: 80%;
+}
+
+.bio .face{
+  border: 1px solid #DDDDDD;
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+  width: 75%;
+}
+.bio h2{
+  margin:  0 20px;
+  
+}
+.bio .bio-text{
+  margin: 20px;
+}
+.page-top-offset, #about-page{
+  margin-top: 150px;
+}
+
 #about li{
-	display: inline;
+/*  display: inline;*/
 }
 
 #about .columns{
@@ -640,6 +662,45 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
 */
 
+/*	SimpleFlex Grid  */
+
+.row:before, .row:after {display: table; content: "";}
+.row:after {clear: both;}
+
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11 {
+    margin-right: 3.5%;
+    float: left;
+    min-height: 1px;
+}
+
+.row > [class*="span"]:last-child {
+    margin-right: 0;
+}
+
+.span1  {width: 5.125%;}
+.span2  {width: 13.75%;}
+.span3  {width: 22.375%;}
+.span4  {width: 31%;}
+.span5  {width: 39.625%;}
+.span6  {width: 48.25%;}
+.span7  {width: 56.75%;}
+.span8  {width: 65.5%;}
+.span9  {width: 74.125%;}
+.span10 {width: 82.75%;}
+.span11 {width: 91.375%;}
+.span12 {width: 100%; float: left;}
+
+.offset1  {margin-left: 8.625%;}
+.offset2  {margin-left: 17.25%;}
+.offset3  {margin-left: 25.875%;}
+.offset4  {margin-left: 34.5%;}
+.offset5  {margin-left: 43.125%;}
+.offset6  {margin-left: 51.75%;}
+.offset7  {margin-left: 60.25%;}
+.offset8  {margin-left: 69%;}
+.offset9  {margin-left: 77.625%;}
+.offset10 {margin-left: 86%;}
+.offset11 {margin-left: 94.875%;}
 
 
 
