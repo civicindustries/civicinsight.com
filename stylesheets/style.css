@@ -215,9 +215,13 @@ li{
 	background: white;
 }
 
+#mission{
+  margin-top: 150px;
+}
+
 #about { 
   background: none repeat scroll 0 0 #E6E6E6;
-   height: 250px;
+   height: 200px;
    margin: 0 auto;
    max-width: 1920px;
    padding: 20px 0;
@@ -491,17 +495,18 @@ blockquote{
 
 .bio .face{
   border: 1px solid #DDDDDD;
-  margin: 20px;
+  margin: 5px 20px 60px 0;
   padding: 0;
   text-align: center;
-  width: 75%;
+  width: 175px;
+  float: left;
 }
 .bio h2{
   margin:  0 20px;
   
 }
 .bio .bio-text{
-  margin: 20px;
+  margin: 0px;
 }
 .page-top-offset, #about-page{
   margin-top: 150px;

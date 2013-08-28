@@ -29,7 +29,7 @@ $(document).ready(function() {
 		}); // window scroll Ends
  	});
 
- 	$('header a').click(function(e){
+ 	$('.main-page a').click(function(e){
  		var target = $(this).attr('href');
 
  		
