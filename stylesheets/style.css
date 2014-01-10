@@ -51,6 +51,10 @@ p, li{
 	font-weight: 400;
 }
 
+#narrow p, #narrow li{
+	font-size: 100%;
+}
+
 
 footer{
 	width: 100%;
