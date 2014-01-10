@@ -622,6 +622,15 @@ label{
 
 }
 
+.form{
+  text-align: center;  
+}
+.form input, .form select{
+  font-size: 150%;
+  margin: 10px 0;
+  padding: 5px;
+}
+
 
 .mc-field-group {
 	margin-bottom: 10px;
@@ -708,4 +717,55 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 .offset11 {margin-left: 94.875%;}
 
 
+.pricing-table{
+/*  border: 1px solid #aaa;*/
+  text-align: left;
+/*  padding: 10px;*/
+/*  top: 100px;*/
+  padding: 10px;
+  margin: 50px 0 50px;  
+  min-height: 500px;
+  width: 100%;  
+  position: relative;
+}
 
+
+.pricing-table p{
+  font-size:100%;
+  font-weight: bold;
+
+  
+}
+.pricing-table h2{
+  font-size: 200%;
+  text-align: center;
+  margin: 0px 0 10px;
+}
+
+
+
+.pricing-table td{
+  font-size: 100%;
+  text-align: left;
+  padding: 5px 10px 5px;
+}
+
+.pricing-price td{
+  font-size: 150%;
+  text-align: center;
+  margin: 10px 0;  
+}
+
+.pricing-table td i{
+  margin: 0 10px;
+}
+
+.pricing-price .menu-button{
+  font-size: 50%;
+}
+
+
+
+.price-amount{
+
+}
