@@ -1,3 +1,8 @@
+---
+layout: narrow
+title: Privacy Policy
+---
+
 ## CIVIC INDUSTRIES, LLC PRIVACY POLICY
 
 Civic Industries, LLC ("Civic Industries, "Civic Insight," "we," "us") is concerned about privacy issues and wants you to be familiar with how we collect, use and disclose information.  This Privacy Policy describes our practices in connection with information that we collect through websites  operated by us from which you are accessing this Privacy Policy (the "Websites"), through the software applications made available by us for use on or through computers (the "Apps"), through our social media pages, including www.twitter.com/civicinsight,  that we control from which you are accessing this Privacy Policy (collectively, our "Social Media Pages") as well as through HTML-formatted email messages that we send to you that link to this Privacy Policy (collectively, including the Websites, the Apps and our Social Media Pages, the "Services"). By providing Personal Information to us, you agree to the terms and conditions of this Privacy Policy. 

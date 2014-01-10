@@ -458,7 +458,11 @@ blockquote{
 }
 
 
-
+#narrow{
+  padding-top: 150px; 
+  width: 70%; 
+  margin: 0 auto;
+}
 
 .white-font{
 	color: white;
