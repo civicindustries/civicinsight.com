@@ -29,16 +29,55 @@ $(document).ready(function() {
 		}); // window scroll Ends
  	});
 
- 	$('.main-page a').click(function(e){
- 		var target = $(this).attr('href');
-
- 		
- 		if( $(target).length){
-	 		$.scrollTo( $(target).offset().top - 60, 200 , {easing:'swing'});		
- 		}
+ 	$('#nav a').click(function(e){
     e.preventDefault();
+    
+ 		var target = $(this).attr('href').split("#");
+
+    
+    console.log( target[1] );
+ 		if( $('#'+target[1]).length){
+	 		$.scrollTo( $('#'+target[1]).offset().top - 100, 200 , {easing:'swing'});		
+ 		}
+    else{
+      // window.location = target[0];
+    }
+    
+    
 
  	});
+  
+  
+  $('form').submit(function(e){
+    e.preventDefault();
+    var current_form = this;
+    var emailVal = $('#EMAIL').attr('value');
+    var formAction = $(this).attr('action');
+    var formData = $(this).serialize();
+    
+    console.log(formAction);
+    console.log(formData);
+    
+    
+
+    $.ajax({
+            dataType: "json",
+            url: formAction,
+            data: formData,
+            success: function(){
+              console.log(data);
+              if(data.success == true){
+                $('.error').hide();
+                $(current_form).html('<h3>Thank you for giving us your email! We\'ll let you know when we\'ve launched.</h3></br>');
+              } 
+              else {
+                $('.error').text('Something went wrong. Please try again.');
+              }              
+            }
+          });
+  });
+              
+
 
 });
 

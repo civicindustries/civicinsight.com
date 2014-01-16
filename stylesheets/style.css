@@ -36,14 +36,53 @@ h4{
 	line-height: 200%;
 	text-align: left;
 }
+
+.content{
+  margin-top: 20px;
+}
 section{
 	/* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
 }
-section h3{
-	font-size: 300%;
-	line-height: 300%;
-	margin-top: -5px;
+
+
+h1{
+  font-size: 300%;
+  line-height: 170%;
+/*  margin-top: 50px;*/
+  margin-bottom: auto;  
 }
+
+h2{
+  font-size: 250%;
+/*  line-height: 170%;*/
+/*  margin-top: 50px;*/
+/*  margin-bottom: auto;  */
+}
+
+h3{
+  font-size: 200%;
+  line-height: 170%;
+/*  margin-top: 50px;*/
+  margin-bottom: auto;  
+}
+
+h4{
+  font-size: 150%;
+  line-height: 170%;
+/*  margin-top: 50px;*/
+  margin-bottom: auto;  
+}
+
+
+h5{
+  font-size: 125%;
+  line-height: 170%;
+/*  margin-top: 15px;*/
+  margin-bottom: auto;  
+  text-transform: uppercase;
+}
+
+
 
 p, li{
 	font-size: 140%;
@@ -51,8 +90,66 @@ p, li{
 	font-weight: 400;
 }
 
+#narrow{
+  padding-top: 100px; 
+  width: 65%; 
+  margin: 50px auto;
+}
+
 #narrow p, #narrow li{
-	font-size: 100%;
+  font-size: 100%;
+}
+
+
+#narrow ul{
+  padding: 5px;
+}
+#narrow li{
+  list-style: inherit;
+  margin-left: 5%;
+}
+
+
+#product{
+/*  text-align: white !important;
+  background-color: #00b9bd !important ;
+*/  
+  margin-bottom: 20px;
+}
+#product h1{
+  text-align: center;
+  
+}
+
+#product li{
+  list-style: inherit;  
+  padding: 10px;
+  margin: 0 20px;  
+}
+
+#case-studies{
+  text-align: white !important;
+  background-color: #00b9bd !important ;  
+  height: 450px;
+}
+
+
+#pricing{
+  height: 600px;
+}
+#pricing .left-column, #pricing .center-column, #pricing .right-column{
+  width: 30% !important;
+  float: left;
+  font-size: 120%;
+  border: 1px solid #aaa;
+  margin-right: 3%;
+  
+}
+.horizontal{
+  clear:both; 
+  border-bottom: 2px solid #aaa; 
+  margin: 20px; 
+  padding: 0 20px;
 }
 
 
@@ -135,10 +232,10 @@ li{
 	
 }
 
-#home { 
+#vision { 
 	background: url(../images/hero.jpg) 50% 34px no-repeat fixed;
 	height: 600px;  
-	margin: 0 auto; 
+	margin: 40px auto auto; 
     width: 100%; 
     max-width: 1920px; 
     position: relative;   
@@ -210,7 +307,7 @@ li{
 
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 900px;
+/*  height: 900px;*/
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
@@ -225,12 +322,14 @@ li{
 
 #about { 
   background: none repeat scroll 0 0 #E6E6E6;
-   height: 200px;
-   margin: 0 auto;
-   max-width: 1920px;
-   padding: 20px 0;
-   position: relative;
-   width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  border: solid #999;
+  border-width: 1px 0 0 0;
 }
 
 .brought-to-you {
@@ -246,6 +345,10 @@ li{
 	font-weight: 400;
 }
 
+.error{
+  color: red!important;
+  font-weight: bold;
+}
 .divider {
 	color: #F1601D;
 	margin: 12px;
@@ -260,14 +363,14 @@ li{
 }
 
 #footer{
-	height: 100px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-	background: #666666;
-	color: white;
-	text-align: center;	
+  height: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  background: #666666;
+  color: white;
+  text-align: center;
 }
 
 #footer p{
@@ -358,8 +461,8 @@ blockquote{
 
 .columns{
     margin: 0 auto;
-    padding: 20px 0;
-    width: 900px;
+    padding: 60px 0;
+    width: 1000px;
 }
 
 .columns .left-column{
@@ -462,11 +565,21 @@ blockquote{
 }
 
 
-#narrow{
-  padding-top: 150px; 
-  width: 70%; 
-  margin: 0 auto;
+.white-background{
+  background-color: white;
+	color: rgb(68, 68, 68); /* Blackish */
+  
 }
+
+.teal-background{
+  background-color: #00b9bd; /* Teal */
+	color: white !important;
+}
+
+.teal-background p, .teal-background h3{
+	color: white !important;
+}
+
 
 .white-font{
 	color: white;
@@ -498,7 +611,7 @@ blockquote{
 }
 
 .bio-text{
-  font-size: 80%;
+/*  font-size: 80%;*/
 }
 
 .bio .face{
@@ -583,7 +696,12 @@ blockquote{
 	padding: 0 45px 35px 105px;
 	position: relative;
 	min-height: 80px;
+}
 
+#case-studies li{
+  list-style: inherit;
+  margin-left: 20px;
+  padding: 5px;
 }
 
 
@@ -732,7 +850,7 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 /*  top: 100px;*/
   padding: 10px;
   margin: 50px 0 50px;  
-  min-height: 500px;
+/*  min-height: 500px;*/
   width: 100%;  
   position: relative;
 }

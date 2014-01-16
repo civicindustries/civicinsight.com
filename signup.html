@@ -4,32 +4,27 @@ title: Sign Up
 ---
 
 <!-- Section #1 -->
-<section id="press" data-speed="4">
-  <article class="columns black-font">
-      <div class="center"><h3 style="margin-top:50px">Sign Up</h3></div>
+<section id="signup" data-speed="4">
+  <article class="columns black-font" style="padding-top:0">
+      <div class="center"><h1>Sign Up</h1></div>
 
+      <div class="center error"></div>
 
       <div class="form">
         <!-- <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post"> -->
-          <form action="http://civicindustries.us4.list-manage1.com/subscribe/post?u=bc89bc1a568c7ecb05735ef0d&amp;id=0e787552a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <form action="https://civicinsight-signup.herokuapp.com/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           
-          <div>
-            <p style="text-align: center">Keep track of the properties you care about.</p>
-            <br>
-            <br>              
-          </div>
-
           <div>
           	<input name="FNAME" class="" type="text" autofocus="autofocus"  value=""  id="mce-FNAME" placeholder="First Name" size="30">
             
           </div>
 
           <div>
-          	<input name="LNAME" class="" id="mce-LNAME" autofocus="autofocus" type="text" value=""  placeholder="Last Name" size="30">
+          	<input name="LNAME" class="" id="mce-LNAME" type="text" value=""  placeholder="Last Name" size="30">
           </div>
 
           <div>            
-          	<input name="EMAIL" class="required email"  type="email" value=""  id="mce-EMAIL"  placeholder="E-mail address" size="30">
+          	<input name="EMAIL" class="required email"  type="email" value=""  id="EMAIL"  placeholder="E-mail address" size="30">
             
           </div>
 
@@ -38,13 +33,13 @@ title: Sign Up
           </div>
 
           <div>            
-            <input id="user_zipcode" name="ZIPCODE" placeholder="Zipcode" size="30" type="text">
+            <input name="POSTALCODE" placeholder="Zipcode" size="30" type="text">
           </div>
 
 
           <div>            
             <span style="font-size: 200%;">Select Plan: </span>
-            <select name="PLAN" placeholder="Zipcode" >
+            <select name="PLAN" placeholder="Zipcode" style="padding: 0; margin: 0">
               <option name="standard">Standard</option>
               <option name="professional">Professional</option>
               <option name="custom">Custom</option>
@@ -55,7 +50,7 @@ title: Sign Up
 
 
           <div>
-            <input class="menu-button btn-glow primary btn-submit signup" style="border: 0" value="Register" type="submit">
+            <input class="menu-button btn-glow primary btn-submit signup" style="border: 0; padding: 10px" value="Register" type="submit">
           </div>
 
         </form>

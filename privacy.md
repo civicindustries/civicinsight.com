@@ -3,29 +3,25 @@ layout: narrow
 title: Privacy Policy
 ---
 
-## CIVIC INDUSTRIES, LLC PRIVACY POLICY
-
+### PRIVACY POLICY
+<br>
 Civic Industries, LLC ("Civic Industries, "Civic Insight," "we," "us") is concerned about privacy issues and wants you to be familiar with how we collect, use and disclose information.  This Privacy Policy describes our practices in connection with information that we collect through websites  operated by us from which you are accessing this Privacy Policy (the "Websites"), through the software applications made available by us for use on or through computers (the "Apps"), through our social media pages, including www.twitter.com/civicinsight,  that we control from which you are accessing this Privacy Policy (collectively, our "Social Media Pages") as well as through HTML-formatted email messages that we send to you that link to this Privacy Policy (collectively, including the Websites, the Apps and our Social Media Pages, the "Services"). By providing Personal Information to us, you agree to the terms and conditions of this Privacy Policy. 
 
-### PERSONAL INFORMATION
 
-    **Personal Information We May Collect**
+#### PERSONAL INFORMATION
+##### Personal Information We May Collect
 
-"Personal Information" is information that identifies you as an individual, including:
-
-*   Name
-*   Email address
-*   Telephone number
-*   Address
-
-    **How We May Collect Personal Information** 
+Personal Information" is information that identifies you as an individual, including: Name, Email address, Telephone number, Address
+  
+##### How We May Collect Personal Information
 
 We and our service providers may collect Personal Information in a variety of ways, including:
+  
+  * Through the Services:  We may collect Personal Information through the Services, e.g., when you register with the site or request additional information.
+  
+  * From Other Sources:  We may receive your Personal Information from other sources, such as public databases; social media platforms; from people with whom you are friends or otherwise connected on social media platforms, as well as from other third parties.
 
-*   Through the Services:  We may collect Personal Information through the Services, e.g., when you register with the site or request additional information.
-*   From Other Sources:  We may receive your Personal Information from other sources, such as public databases; social media platforms; from people with whom you are friends or otherwise connected on social media platforms, as well as from other third parties.
-
-    **How We May Use Personal Information** 
+##### How We May Use Personal Information
 
 We may use Personal Information: 
 
@@ -34,7 +30,7 @@ We may use Personal Information:
 *   For our business purposes, such as data analysis, audits, fraud monitoring and prevention, developing new services, enhancing, improving or modifying our Services, identifying usage trends, determining the effectiveness of our operations and expanding our activities.
 *   As we believe to be necessary or appropriate: (a) under applicable law; (b) to comply with legal process; (c) to respond to requests from public and government authorities; (d) to enforce our terms and conditions; (e) to protect our operations; (f) to protect our rights, privacy, safety or property, you or others; and (g) to allow us to pursue available remedies or limit the damages that we may sustain.
 
-    **How Personal Information May Be Disclosed** 
+###### How Personal Information May Be Disclosed
 
 Your Personal Information may be disclosed:
 
@@ -42,13 +38,13 @@ Your Personal Information may be disclosed:
 *   To a third party in the event of any reorganization, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business, assets or stock (including in connection with any bankruptcy or similar proceedings).
 *   As we believe to be necessary or appropriate: (a) under applicable law; (b) to comply with legal process; (c) to respond to requests from public and government authorities; (d) to enforce our terms and conditions; (e) to protect our operations; (f) to protect our rights, privacy, safety or property, you or others; and (g) to allow us to pursue available remedies or limit the damages that we may sustain.
 
-### OTHER INFORMATION
+#### OTHER INFORMATION
 
-    **Other Information We May Collect**
+#### Other Information We May Collect
 
 "Other Information" is any information that does not reveal your specific identity or does not directly relate to an individual, such as: 
 
-    **How We May Collect Other Information **
+#### How We May Collect Other Information
 
 We and our third party service providers may collect Other Information in a variety of ways, including:  
 
@@ -60,19 +56,19 @@ We and our third party service providers may collect Other Information in a vari
 Please note that we may use and disclose Other Information for any purpose, except where we are required to do otherwise under applicable law.  If we are required to treat Other Information as Personal Information under applicable law, then we may use it as described in "How We May Collect Other Information" section above, as well as for all the purposes for which we use and disclose Personal Information.
     In some instances, we may combine Other Information with Personal Information (such as combining your name with your zip code).  If we combine any Other Information with Personal Information, the combined information will be treated by us as Personal Information as long as it is combined.
 
-### THIRD PARTY SERVICES
+#### THIRD PARTY SERVICES
 
 This Privacy Policy does not address, and we are not responsible for, the privacy, information or other practices of any third parties, including any third party operating any site or service to which the Services link.  The inclusion of a link on the Services does not imply endorsement of the linked site or service by us or by our affiliates. 
 
 Please note that we are not responsible for the collection, usage and disclosure policies and practices (including the data security practices) of other organizations, such as Facebook, Apple, Google, Microsoft, RIM, Heroku, Amazon, New Relix or any other app developer, app provider, social media platform provider, operating system provider, wireless service provider or device manufacturer, including any Personal Information you disclose to other organizations through or in connection with our Social Media Pages.  
 
-### SECURITY
+#### SECURITY
 
 We seek to use reasonable organizational, technical and administrative measures to protect Personal Information within our organization.  Unfortunately, no data transmission or storage system can be guaranteed to be 100% secure.  If you have reason to believe that your interaction with us is no longer secure (for example, if you feel that the security of any account you might have with us has been compromised), please immediately notify us of the problem by contacting us in accordance with the "Contacting Us" section below.
 
-### CHOICES AND ACCESS
+#### CHOICES AND ACCESS
 
-    **Your choices regarding our use and disclosure of your Personal Information**
+##### Your choices regarding our use and disclosure of your Personal Information
 
 We give you many choices regarding our use and disclosure of your Personal Information.  You may opt-out from:  
 
@@ -93,23 +89,23 @@ We will try to comply with your request(s) as soon as reasonably practicable.  P
 
 In your request, please make clear what Personal Information you would like to have changed.  For your protection, we may only implement requests with respect to the Personal Information associated with the particular email address that you use to send us your request, and we may need to verify your identity before implementing your request.  We will try to comply with your request as soon as reasonably practicable.
 
-### USE OF SERVICES BY MINORS
+#### USE OF SERVICES BY MINORS
 
 The Services are not directed to individuals under the age of thirteen (13), and we request that these individuals do not provide Personal Information through the Services.
 
-### CROSS-BORDER TRANSFER
+#### CROSS-BORDER TRANSFER
 
 The Services are controlled and operated by us from the United States, and are not intended to subject us to the laws or jurisdiction of any state, country or territory other than that of the United States.
 
-### SENSITIVE INFORMATION
+#### SENSITIVE INFORMATION
 
 We ask that you not send us, and you not disclose, any sensitive Personal Information (e.g., social security numbers, information related to racial or ethnic origin, political opinions, religion or other beliefs, health, criminal background on or through the Services or otherwise to us.
 
-### UPDATES TO THIS PRIVACY POLICY
+#### UPDATES TO THIS PRIVACY POLICY
 
 We may change this Privacy Policy.  Please take a look at the "LAST UPDATED" legend at the top of this page to see when this Privacy Policy was last revised.  Any changes to this Privacy Policy will become effective when we post the revised Privacy Policy on the Services.  Your use of the Services following these changes means that you accept the revised Privacy Policy.
 
-### CONTACTING US
+#### CONTACTING US
 
 If you have any questions about this Privacy Policy, please contact us by email at info@civicindustries.com, or please write to the following address:
 
@@ -118,5 +114,11 @@ If you have any questions about this Privacy Policy, please contact us by email 
     San Francisco, CA 94102
     Attn:  Privacy
     
+
 CREATED ON:  Jul 14, 2013
+
 LAST UPDATE:  Jan 20, 2014 - Change Attn: from "Communication" to "Privacy"
+
+<br>
+<br>
+<br>
