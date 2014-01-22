@@ -42,11 +42,16 @@ $(document).ready(function() {
     else{
       // window.location = target[0];
     }
-    
-    
-
  	});
   
+  
+  var query = BlightStatus.URL.getQueryParams();
+  if(query.select && ($('input[name=PLAN]').length > 1) ){    
+    // console.log("selected_plan",selected_plan);
+    $('input[name=PLAN][value='+query.select+']').prop('checked',true);
+  }
+  
+      
   
   $('#newsletter form').submit(function(e){
     

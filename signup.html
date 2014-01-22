@@ -12,9 +12,11 @@ title: Sign Up
 
       <div class="form">
           
+
+
         
-        <!-- <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post"> -->
-          <form action="http://0.0.0.0:5000/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
++          <form action="https://civicinsight-signup.herokuapp.com/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <!-- <form action="http://0.0.0.0:5000/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> -->
             <div class="center"><h1>Sign Up</h1></div>          
           <div>
           	<input name="FNAME" class="" type="text" autofocus="autofocus"  value=""  id="mce-FNAME" placeholder="First Name" size="30">
@@ -48,13 +50,10 @@ title: Sign Up
           </div> -->
 
 
-          <div style="margin: 10px 80px">            
-            <!-- <span style="font-size: 200%; float: left">Select Plan: </span> -->
-            <select name="PLAN" placeholder="Zipcode" style="padding: 0; margin: 0 auto; ">
-              <option name="standard">Basic</option>
-              <option name="professional">Professional</option>
-              <option name="custom">Custom</option>
-            </select>
+          <div style="margin: 10px 80px; text-align: left; font-size: 150%;">            
+            <input type="radio" checked name="PLAN" value="basic"> Basic
+            <input type="radio" name="PLAN" value="professional"> Professional
+            <input type="radio" name="PLAN" value="custom"> Custom
           </div>
 
 

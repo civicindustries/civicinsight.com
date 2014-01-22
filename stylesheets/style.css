@@ -267,6 +267,18 @@ li{
   height: 500px;
 }
 
+#signup form input[type=text], #signup form input[type=email]{
+
+  margin: 20px 0 5px;
+/*  padding: 0;*/
+  
+}
+
+
+#signup input[type=radio]{
+  margin: 4px;
+  padding: 0;
+}
 
 #newsletter .columns{
   padding: 60px 0 80px;
@@ -368,7 +380,10 @@ li{
 
 .error{
   color: red!important;
-  font-weight: bold;
+  font-weight: normal;
+  margin: 0 65px;
+  text-align: left;
+  padding: 0;
 }
 .divider {
 	color: #F1601D;
