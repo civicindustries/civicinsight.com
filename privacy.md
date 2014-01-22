@@ -40,11 +40,11 @@ Your Personal Information may be disclosed:
 
 #### OTHER INFORMATION
 
-#### Other Information We May Collect
+##### Other Information We May Collect
 
 "Other Information" is any information that does not reveal your specific identity or does not directly relate to an individual, such as: 
 
-#### How We May Collect Other Information
+##### How We May Collect Other Information
 
 We and our third party service providers may collect Other Information in a variety of ways, including:  
 
@@ -73,19 +73,17 @@ We seek to use reasonable organizational, technical and administrative measures 
 We give you many choices regarding our use and disclosure of your Personal Information.  You may opt-out from:  
 
 *   Receiving electronic communications from us:  If you no longer want to receive email alerts from us on a going-forward basis, you may opt-out of receiving these emails at any time.  All email communications from Civic Industries provide information on how to unsubscribe; however, to opt out of receiving communications from Civic Industries:
-
 1.  E-mail us at info@civicindustries.com; or
 2.  Follow directions on an e-mail communication from us; or
 3.  Send a request to:
 
+
     Civic Industries, LLC
     155 9th Street
     San Francisco, CA 94102
-    Attn:  Privacy 
+    Attn:  Legal Team
 
-We will try to comply with your request(s) as soon as reasonably practicable.  Please also note that if you do opt-out of receiving emails from us, we may still send you important administrative messages, and you cannot opt-out from receiving administrative messages.
-    How you can access, change or suppress your Personal Information  
-    If you would like to review or correct Personal Information that has been previously provided to us by you, you may contact us by emailing us at info@civicindustries.com.
+We will try to comply with your request(s) as soon as reasonably practicable.  Please also note that if you do opt-out of receiving emails from us, we may still send you important administrative messages, and you cannot opt-out from receiving administrative messages. How you can access, change or suppress your Personal Information. If you would like to review or correct Personal Information that has been previously provided to us by you, you may contact us by emailing us at info@civicindustries.com.
 
 In your request, please make clear what Personal Information you would like to have changed.  For your protection, we may only implement requests with respect to the Personal Information associated with the particular email address that you use to send us your request, and we may need to verify your identity before implementing your request.  We will try to comply with your request as soon as reasonably practicable.
 
@@ -112,12 +110,12 @@ If you have any questions about this Privacy Policy, please contact us by email 
     Civic Industries, LLC
     155 9th Street
     San Francisco, CA 94102
-    Attn:  Privacy
+    Attn:  Legal Team
     
 
 CREATED ON:  Jul 14, 2013
 
-LAST UPDATE:  Jan 20, 2014 - Change Attn: from "Communication" to "Privacy"
+LAST UPDATE:  Jan 20, 2014 - Change Attn: from "Communication" to "Legal Team"
 
 <br>
 <br>

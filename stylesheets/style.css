@@ -70,24 +70,26 @@ h4{
   font-size: 150%;
   line-height: 170%;
 /*  margin-top: 50px;*/
-  margin-bottom: auto;  
+  margin-bottom: auto; 
+  margin: 10px 0 0; 
 }
 
 
 h5{
-  font-size: 125%;
+  font-size: 105%;
   line-height: 170%;
 /*  margin-top: 15px;*/
   margin-bottom: auto;  
   text-transform: uppercase;
+  text-transform: none;
 }
 
 
 
-p, li{
-	font-size: 140%;
-	line-height: 135%;
-	font-weight: 400;
+#default p, #default li{
+  font-size: 140%;
+  line-height: 135%;
+  font-weight: 400;
 }
 
 #narrow{
@@ -109,41 +111,44 @@ p, li{
   margin-left: 5%;
 }
 
+.box{
+  box-shadow: 0px 1px 2px #aaa;
+}
 
 #product{
 /*  text-align: white !important;
   background-color: #00b9bd !important ;
 */  
+  height: 1300px;
   margin-bottom: 20px;
 }
 #product h1{
-  text-align: center;
+  text-align: left;
   
 }
 
 #product li{
-  list-style: inherit;  
-  padding: 10px;
-  margin: 0 20px;  
-}
-
-#case-studies{
-  text-align: white !important;
-  background-color: #00b9bd !important ;  
-  height: 450px;
+/*  list-style: inherit;  */
+  padding: 0px;
+  margin: 0 0px;  
 }
 
 
 #pricing{
-  height: 600px;
+  height: 800px;
+  font-size: 110%;
 }
 #pricing .left-column, #pricing .center-column, #pricing .right-column{
-  width: 30% !important;
+  width: 25% !important;
   float: left;
   font-size: 120%;
-  border: 1px solid #aaa;
-  margin-right: 3%;
+  border: none;
+  margin-left: 7%;
   
+}
+
+#pricing h1{
+  height: 120px  ;
 }
 .horizontal{
   clear:both; 
@@ -258,7 +263,20 @@ li{
 	box-shadow: 0 0px 45px rgba(0, 0, 0, 0.5) inset;
 }
 
+#signup{
+  height: 500px;
+}
 
+
+#newsletter{
+  .columns{
+    padding: 60px 0 80px;
+    p{
+      text-align: center;
+      margin: 0 auto;
+    }
+  }  
+}
 #knowledge-is-power { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
 	height: 385px;
@@ -308,12 +326,14 @@ li{
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
 /*  height: 900px;*/
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    color: white;
-	background: white;
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  color: white;
+  background: white;
+  height: 800px;
+/*  border: 1px solid black;*/
 }
 
 #mission{
@@ -321,7 +341,7 @@ li{
 }
 
 #about { 
-  background: none repeat scroll 0 0 #E6E6E6;
+/*  background: none repeat scroll 0 0 #E6E6E6;*/
   height: 200px;
   margin: 0 auto;
   max-width: 1920px;
@@ -330,6 +350,7 @@ li{
   width: 100%;
   border: solid #999;
   border-width: 1px 0 0 0;
+  font-weight: normal;
 }
 
 .brought-to-you {
@@ -536,6 +557,7 @@ blockquote{
 .menu-button:hover{
   background-color: #E0500C;
   color: white;
+  
 }
 
 
@@ -564,6 +586,12 @@ blockquote{
     font-weight: bold;
 }
 
+
+.offwhite-background{
+  background-color: #f8f8f8;
+	color: rgb(68, 68, 68); /* Blackish */
+  
+}
 
 .white-background{
   background-color: white;
@@ -598,7 +626,11 @@ blockquote{
   border-radius: 50%;
   width: 200px;
   height: 200px; 
- }
+}
+
+.social li{
+  list-style: none;
+}
 
 
 .center{
@@ -698,11 +730,94 @@ blockquote{
 	min-height: 80px;
 }
 
-#case-studies li{
-  list-style: inherit;
-  margin-left: 20px;
-  padding: 5px;
+
+#case-studies{
+  text-align: white !important;
+  background-color: #00b9bd !important ;  
+  height: 800px;
 }
+
+#case-studies li{
+  list-style: none;
+  margin-left: 0px;
+  padding: 5px 0;
+}
+
+#case-studies h1{
+  font-size: 250%;
+}
+
+#case-studies .benefit-types img{
+/*  position: absolute; */
+  padding-top: 20px;
+  width: 150px;
+}
+
+
+.circular-image {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #666;
+}
+
+.circular-image img{
+  width: 150px;
+  position: absolute;
+  left: -20px;
+}
+
+#neighborhood-revitalization .benefits{
+  margin:45px 0 70px;
+  text-align: center;
+}
+
+
+#neighborhood-revitalization .summary{
+/*  margin:45px 0 70px;*/
+  text-align: left;
+  margin-left: 120px;
+}
+
+#neighborhood-revitalization .summary p, #neighborhood-revitalization .summary strong{
+  font-size: 140%;
+  line-height: 135%;
+  font-weight: 400;
+}
+
+#neighborhood-revitalization .summary strong{
+  font-weight: bold;  
+}
+
+
+
+#neighborhood-revitalization .image{
+  text-align: center !important;
+}
+
+.row-column-left{
+  padding: 50px 20px 0 15px
+}
+
+.row-column-right{
+  padding: 50px 0px 0 35px
+}
+
+
+.benefits{
+  margin: 50px auto 100px;
+  text-align: center;
+  min-height: 150px;
+}
+
+
+
 
 
 .cities-citizens-icons{
@@ -868,7 +983,13 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
   margin: 0px 0 10px;
 }
 
-
+.price-details{
+  font-size: 70%;
+  padding: 20px 40px;
+  margin-top: 90px;
+  clear:both;
+  
+}
 
 .pricing-table td{
   font-size: 100%;
@@ -887,7 +1008,8 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 }
 
 .pricing-price .menu-button{
-  font-size: 50%;
+  font-size: 65%;
+  padding: 10px 10px;
 }
 
 

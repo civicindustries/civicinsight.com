@@ -5,59 +5,71 @@ title: Sign Up
 
 <!-- Section #1 -->
 <section id="signup" data-speed="4">
-  <article class="columns black-font" style="padding-top:0">
-      <div class="center"><h1>Sign Up</h1></div>
+  <article class="columns black-font" style="padding-top:0; width:500px">
+    
+    <div class="box">
 
-      <div class="center error"></div>
 
       <div class="form">
-        <!-- <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post"> -->
-          <form action="https://civicinsight-signup.herokuapp.com/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           
+        
+        <!-- <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post"> -->
+          <form action="http://0.0.0.0:5000/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="center"><h1>Sign Up</h1></div>          
           <div>
           	<input name="FNAME" class="" type="text" autofocus="autofocus"  value=""  id="mce-FNAME" placeholder="First Name" size="30">
+            <div class="error"></div>
             
           </div>
 
           <div>
           	<input name="LNAME" class="" id="mce-LNAME" type="text" value=""  placeholder="Last Name" size="30">
+            <div class="error"></div>
           </div>
 
           <div>            
           	<input name="EMAIL" class="required email"  type="email" value=""  id="EMAIL"  placeholder="E-mail address" size="30">
-            
+            <div class="error"></div>            
           </div>
 
           <div>
-          	<input name="ORG" class="required email"  type="text" value=""  id="mce-ORG"  placeholder="Name of Organization" size="30">
+          	<input name="ORG" class="required email"  type="text" value=""  id="mce-ORG"  placeholder="Agency Name" size="30">
+            <div class="error"></div>
           </div>
 
           <div>            
             <input name="POSTALCODE" placeholder="Zipcode" size="30" type="text">
+            <div class="error"></div>
           </div>
 
 
-          <div>            
-            <span style="font-size: 200%;">Select Plan: </span>
-            <select name="PLAN" placeholder="Zipcode" style="padding: 0; margin: 0">
-              <option name="standard">Standard</option>
+          <!-- <div>            
+            <input name="CFANETWORK"  size="30" type="checkbox"> Code for America Network?
+          </div> -->
+
+
+          <div style="margin: 10px 80px">            
+            <!-- <span style="font-size: 200%; float: left">Select Plan: </span> -->
+            <select name="PLAN" placeholder="Zipcode" style="padding: 0; margin: 0 auto; ">
+              <option name="standard">Basic</option>
               <option name="professional">Professional</option>
               <option name="custom">Custom</option>
             </select>
           </div>
 
 
-
+          <br/>
 
           <div>
             <input class="menu-button btn-glow primary btn-submit signup" style="border: 0; padding: 10px" value="Register" type="submit">
           </div>
+          <br/>
 
         </form>
       </div>
     
       </div>
-
+    </div>
   </article>
 </section>
 

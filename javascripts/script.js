@@ -58,27 +58,24 @@ $(document).ready(function() {
     console.log(formAction);
     console.log(formData);
     
+
+    $.post( formAction, formData, function( data ) {
+      window.response = data;
+      if(data.success == true){
+        $('.error').hide();
+        $(current_form).html('<h1>Thank you!</h1><br><h4 style="padding: 20px">You will recieve an email shortly.<br><br> Please confirm you email and we will contact you the next business-day.<br><br>If you encounter any difficulties, please contact us at support@civicinsight.com</h4><br><br>');
+      } 
+      else {
+        console.log(data);
+        if(data.errors){
+          for(var i = 0; i < data.errors.length; i++){                  
+            $('input[name='+data.errors[i][0]+']').next('.error').html("<span>"+data.errors[i][1]+"</span>");
+          }           
+        }
+      }              
+    }, "json");
     
-
-    $.ajax({
-            dataType: "json",
-            url: formAction,
-            data: formData,
-            success: function(){
-              console.log(data);
-              if(data.success == true){
-                $('.error').hide();
-                $(current_form).html('<h3>Thank you for giving us your email! We\'ll let you know when we\'ve launched.</h3></br>');
-              } 
-              else {
-                $('.error').text('Something went wrong. Please try again.');
-              }              
-            }
-          });
-  });
-              
-
-
+  });    
 });
 
 
