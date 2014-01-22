@@ -48,15 +48,30 @@ $(document).ready(function() {
  	});
   
   
-  $('form').submit(function(e){
+  $('#newsletter form').submit(function(e){
+    
+    e.preventDefault();
+    var current_form = this;
+    var formAction = $(this).attr('action');
+    var formData = $(this).serialize();
+      
+    $.post( formAction, formData, function( data ) {
+    }, "json").always(function(){
+      $('#newsletter h1').empty();
+      $('#newsletter form').html("<h3>Thank you. You will receive an email short to confirm your signup.</h3>");
+      
+      
+    });
+        
+  });
+    
+  $('#signup form').submit(function(e){
     e.preventDefault();
     var current_form = this;
     var emailVal = $('#EMAIL').attr('value');
     var formAction = $(this).attr('action');
     var formData = $(this).serialize();
     
-    console.log(formAction);
-    console.log(formData);
     
 
     $.post( formAction, formData, function( data ) {

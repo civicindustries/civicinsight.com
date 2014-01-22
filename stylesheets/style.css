@@ -147,7 +147,7 @@ h5{
   
 }
 
-#pricing h1{
+#pricing h1, #press h1{
   height: 120px  ;
 }
 .horizontal{
@@ -268,15 +268,15 @@ li{
 }
 
 
-#newsletter{
-  .columns{
-    padding: 60px 0 80px;
-    p{
-      text-align: center;
-      margin: 0 auto;
-    }
-  }  
+#newsletter .columns{
+  padding: 60px 0 80px;
+}  
+
+#newsletter p{
+  text-align: center;
+  margin: 0 auto;
 }
+
 #knowledge-is-power { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
 	height: 385px;
@@ -332,7 +332,7 @@ li{
   position: relative; 
   color: white;
   background: white;
-  height: 800px;
+  height: 850px;
 /*  border: 1px solid black;*/
 }
 
@@ -734,7 +734,7 @@ blockquote{
 #case-studies{
   text-align: white !important;
   background-color: #00b9bd !important ;  
-  height: 800px;
+  height: 820px;
 }
 
 #case-studies li{
@@ -764,7 +764,7 @@ blockquote{
   border-radius: 150px;
   position: absolute;
   overflow: hidden;
-  border: 1px solid #666;
+  border: 2px solid #eee;
 }
 
 .circular-image img{
