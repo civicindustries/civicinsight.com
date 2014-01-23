@@ -30,13 +30,14 @@ $(document).ready(function() {
  	});
 
  	$('#nav a').click(function(e){
-    e.preventDefault();
     
  		var target = $(this).attr('href').split("#");
 
     
     console.log( target[1] );
  		if( $('#'+target[1]).length){
+      e.preventDefault();
+
 	 		$.scrollTo( $('#'+target[1]).offset().top - 100, 200 , {easing:'swing'});		
  		}
     else{
