@@ -86,10 +86,9 @@ h5{
 
 
 
-#default p, #default li{
+#default p, #default li, #default strong{
   font-size: 140%;
   line-height: 135%;
-  font-weight: 400;
 }
 
 #narrow{
@@ -750,7 +749,7 @@ blockquote{
 #case-studies{
   text-align: white !important;
   background-color: #00b9bd !important ;  
-  height: 950px;
+  height: 700px;
 }
 
 #case-studies li{
@@ -799,11 +798,12 @@ blockquote{
 /*  margin:45px 0 70px;*/
   text-align: left;
   margin-left: 120px;
+  padding-top: 15px;  
 }
 
 #neighborhood-revitalization .summary p, #neighborhood-revitalization .summary strong{
-  font-size: 140%;
-  line-height: 135%;
+  font-size: 115%;
+  line-height: 120%;
   font-weight: 400;
 }
 
@@ -833,9 +833,6 @@ blockquote{
 }
 
 
-b, strong, em{
-  font-weight: 800;
-}
 
 
 
@@ -1033,4 +1030,8 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 
 #funders{
   margin-top: 40px;
+}
+
+b, strong, em{
+  font-weight: 800;
 }
