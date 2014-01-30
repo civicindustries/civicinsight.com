@@ -855,6 +855,49 @@ blockquote{
   position: relative;
 }
 
+#clients{
+  height: 350px;
+}
+#clients .summary{
+  width: 300px;
+  margin-left: 120px;
+  text-align: left;
+  font-size: 100%;
+  padding: 20px 10px;  
+}
+
+
+#clients .quote{
+  text-align: left;
+/*  min-height: 125px;*/
+/*  float: left;*/
+/*  width: 250px;*/
+  padding-left: 60px;
+  position: relative;  
+  font-size: 100%;
+  width: 40%; 
+  font-size: 110%;
+  float: left;
+}
+#clients .circular-image{
+  margin: 35px 0px  ;
+}
+
+#clients strong{
+  font-size: 125%;
+  text-align: center;
+  line-height: 230%;
+}
+
+#clients .quote-name{
+  text-align: right;
+  margin: 5px 0;
+}
+
+#clients .watch-video{
+  text-align: right;
+  margin: 5px 0;
+}
 
 
 .row-column-left{
@@ -1069,14 +1112,4 @@ b, strong, em{
   font-weight: 800;
 }
 
-#clients{
-  height: 270px;
-}
-#clients .summary{
-  width: 300px;
-  margin-left: 120px;
-  text-align: left;
-  font-size: 100%;
-  padding: 20px 10px;  
-}
 
