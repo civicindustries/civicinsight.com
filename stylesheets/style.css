@@ -119,7 +119,7 @@ h5{
 /*  text-align: white !important;
   background-color: #00b9bd !important ;
 */  
-  height: 1100px;
+  height: 892px;
   margin-bottom: 20px;
 }
 #product h1{
@@ -775,7 +775,7 @@ blockquote{
 #case-studies{
   text-align: white !important;
   background-color: #00b9bd !important ;  
-  height: 600px;
+  height: 650px;
 }
 
 #case-studies li{
@@ -834,6 +834,7 @@ blockquote{
   font-size: 130%;
   line-height: 120%;
   font-weight: 300;
+  padding: 5px 10px;
 }
 
 #neighborhood-revitalization .summary strong{
