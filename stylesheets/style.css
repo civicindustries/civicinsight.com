@@ -821,20 +821,20 @@ blockquote{
 
 
 #neighborhood-revitalization .summary{
-/*  margin:45px 0 70px;*/
   text-align: left;
   margin-left: 120px;
-  padding-top: 15px;  
+  padding: 20px 0 0 !important;
+  padding-top: 0px;
 }
 
 #neighborhood-revitalization .summary p, #neighborhood-revitalization .summary strong{
-  font-size: 115%;
+  font-size: 130%;
   line-height: 120%;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #neighborhood-revitalization .summary strong{
-  font-weight: bold;  
+  font-weight: 400;  
 }
 
 
