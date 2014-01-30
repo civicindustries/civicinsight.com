@@ -119,13 +119,27 @@ h5{
 /*  text-align: white !important;
   background-color: #00b9bd !important ;
 */  
-  height: 1300px;
+  height: 1100px;
   margin-bottom: 20px;
 }
 #product h1{
   text-align: left;
   
 }
+
+#product .columns{
+  padding: 50px 0;
+}
+
+#product .feature{
+  background-color: white; 
+  width: 100%;
+}
+
+#product .offwhite{
+  background-color: #f8f8f8
+}
+
 
 #product li{
 /*  list-style: inherit;  */
@@ -135,7 +149,7 @@ h5{
 
 
 #pricing{
-  height: 800px;
+  height: 750px;
   font-size: 110%;
 }
 #pricing .left-column, #pricing .center-column, #pricing .right-column{
@@ -280,9 +294,21 @@ li{
   padding: 0;
 }
 
+
+#newsletter{
+  font-size: 100%;
+}
 #newsletter .columns{
-  padding: 60px 0 80px;
+  padding: 55px 0 80px;
 }  
+
+#newsletter .unsubscribe{
+  text-align: center;
+  width: 100%; 
+  margin: 0 auto; 
+  font-size: 100%;
+  font-weight: 300;
+}
 
 #newsletter p{
   text-align: center;
@@ -497,7 +523,7 @@ blockquote{
 
 .columns{
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 20px 0;
     width: 1000px;
 }
 
@@ -789,7 +815,7 @@ blockquote{
 }
 
 #neighborhood-revitalization .benefits{
-  margin: 40px 0;
+/*  margin: 40px 0;*/
   text-align: center;
 }
 
@@ -827,9 +853,9 @@ blockquote{
 
 
 .benefits{
-  margin: 50px auto 100px;
+/*  margin: 50px auto 100px;*/
   text-align: center;
-  min-height: 150px;
+  min-height: 125px;
 }
 
 
@@ -1000,7 +1026,7 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 }
 
 .price-details{
-  font-size: 70%;
+  font-size: 100%;
   padding: 20px 40px;
   margin-top: 90px;
   clear:both;
@@ -1035,3 +1061,15 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 b, strong, em{
   font-weight: 800;
 }
+
+#clients{
+  height: 270px;
+}
+#clients .summary{
+  width: 300px;
+  margin-left: 120px;
+  text-align: left;
+  font-size: 100%;
+  padding: 20px 10px;  
+}
+
