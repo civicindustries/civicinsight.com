@@ -36,19 +36,140 @@ h4{
 	line-height: 200%;
 	text-align: left;
 }
+
+.content{
+  margin-top: 20px;
+}
 section{
 	/* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
 }
-section h3{
-	font-size: 300%;
-	line-height: 300%;
-	margin-top: -5px;
+
+
+h1{
+  font-size: 300%;
+  line-height: 170%;
+/*  margin-top: 50px;*/
+  margin-bottom: auto;  
 }
 
-p, li{
-	font-size: 140%;
-	line-height: 135%;
-	font-weight: 400;
+h2{
+  font-size: 250%;
+/*  line-height: 170%;*/
+/*  margin-top: 50px;*/
+/*  margin-bottom: auto;  */
+}
+
+h3{
+  font-size: 200%;
+  line-height: 170%;
+/*  margin-top: 50px;*/
+  margin-bottom: auto;  
+}
+
+h4{
+  font-size: 150%;
+  line-height: 170%;
+/*  margin-top: 50px;*/
+  margin-bottom: auto; 
+  margin: 10px 0 0; 
+}
+
+
+h5{
+  font-size: 105%;
+  line-height: 170%;
+/*  margin-top: 15px;*/
+  margin-bottom: auto;  
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+
+
+#default p, #default li, #default strong{
+  font-size: 140%;
+  line-height: 135%;
+}
+
+#narrow{
+  padding-top: 100px; 
+  width: 65%; 
+  margin: 50px auto;
+}
+
+#narrow p, #narrow li{
+  font-size: 100%;
+  padding: 4px 0 ;
+}
+
+
+#narrow ul{
+  padding: 5px;
+}
+#narrow li{
+  list-style: inherit;
+  margin-left: 5%;
+}
+
+.box{
+  box-shadow: 0px 1px 2px #aaa;
+}
+
+#product{
+/*  text-align: white !important;
+  background-color: #00b9bd !important ;
+*/  
+  height: 1236px;
+  margin-bottom: 0;
+}
+#product h1{
+  text-align: left;
+  
+}
+
+#product .columns{
+  padding: 100px 0;
+}
+
+#product .feature{
+  background-color: white; 
+  width: 100%;
+}
+
+#product .offwhite{
+  background-color: #f8f8f8
+}
+
+
+#product li{
+/*  list-style: inherit;  */
+  padding: 0px;
+  margin: 0 0px;  
+}
+
+
+#pricing{
+  height: 1000px;
+  line-height: 170%;
+  font-size: 120%;
+}
+#pricing .left-column, #pricing .center-column, #pricing .right-column{
+  width: 25% !important;
+  float: left;
+  font-size: 120%;
+  border: none;
+  margin-left: 7%;
+  
+}
+
+#pricing h1, #press h1{
+  height: 120px  ;
+}
+.horizontal{
+  clear:both; 
+  border-bottom: 2px solid #aaa; 
+  margin: 20px; 
+  padding: 0 20px;
 }
 
 
@@ -131,10 +252,10 @@ li{
 	
 }
 
-#home { 
+#vision { 
 	background: url(../images/hero.jpg) 50% 34px no-repeat fixed;
 	height: 600px;  
-	margin: 0 auto; 
+	margin: 40px auto auto; 
     width: 100%; 
     max-width: 1920px; 
     position: relative;   
@@ -157,6 +278,43 @@ li{
 	box-shadow: 0 0px 45px rgba(0, 0, 0, 0.5) inset;
 }
 
+#signup{
+  height: 700px;
+}
+
+#signup form input[type=text], #signup form input[type=email]{
+
+  margin: 20px 0 5px;
+/*  padding: 0;*/
+  
+}
+
+
+#signup input[type=radio]{
+  margin: 4px;
+  padding: 0;
+}
+
+
+#newsletter{
+  font-size: 100%;
+}
+#newsletter .columns{
+  padding: 55px 0 80px;
+}  
+
+#newsletter .unsubscribe{
+  text-align: center;
+  width: 100%; 
+  margin: 0 auto; 
+  font-size: 100%;
+  font-weight: 300;
+}
+
+#newsletter p{
+  text-align: center;
+  margin: 0 auto;
+}
 
 #knowledge-is-power { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
@@ -206,13 +364,15 @@ li{
 
 #press { 
 /*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 900px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    color: white;
-	background: white;
+/*  height: 900px;*/
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  color: white;
+/*  background: white;*/
+  height: 850px;
+/*  border: 1px solid black;*/
 }
 
 #mission{
@@ -220,13 +380,16 @@ li{
 }
 
 #about { 
-  background: none repeat scroll 0 0 #E6E6E6;
-   height: 200px;
-   margin: 0 auto;
-   max-width: 1920px;
-   padding: 20px 0;
-   position: relative;
-   width: 100%;
+/*  background: none repeat scroll 0 0 #E6E6E6;*/
+  height: 200px;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  border: solid #999;
+  border-width: 1px 0 0 0;
+  font-weight: normal;
 }
 
 .brought-to-you {
@@ -237,11 +400,18 @@ li{
 }
 
 #about a, #about li, #about li a{
-	font-style: italic;
+/*  font-style: italic;*/
 	font-size: 100%;
 	font-weight: 400;
 }
 
+.error{
+  color: red!important;
+  font-weight: normal;
+  margin: 0 65px;
+  text-align: left;
+  padding: 0;
+}
 .divider {
 	color: #F1601D;
 	margin: 12px;
@@ -256,14 +426,14 @@ li{
 }
 
 #footer{
-	height: 100px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-	background: #666666;
-	color: white;
-	text-align: center;	
+  height: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  background: #666666;
+  color: white;
+  text-align: center;
 }
 
 #footer p{
@@ -355,7 +525,7 @@ blockquote{
 .columns{
     margin: 0 auto;
     padding: 20px 0;
-    width: 900px;
+    width: 1000px;
 }
 
 .columns .left-column{
@@ -429,6 +599,7 @@ blockquote{
 .menu-button:hover{
   background-color: #E0500C;
   color: white;
+  
 }
 
 
@@ -458,6 +629,26 @@ blockquote{
 }
 
 
+.offwhite-background{
+  background-color: #f8f8f8;
+	color: rgb(68, 68, 68); /* Blackish */
+  
+}
+
+.white-background{
+  background-color: white;
+	color: rgb(68, 68, 68); /* Blackish */
+  
+}
+
+.teal-background{
+  background-color: #00b9bd; /* Teal */
+	color: white !important;
+}
+
+.teal-background p, .teal-background h3{
+	color: white !important;
+}
 
 
 .white-font{
@@ -477,7 +668,11 @@ blockquote{
   border-radius: 50%;
   width: 200px;
   height: 200px; 
- }
+}
+
+.social li{
+  list-style: none;
+}
 
 
 .center{
@@ -490,7 +685,7 @@ blockquote{
 }
 
 .bio-text{
-  font-size: 80%;
+/*  font-size: 80%;*/
 }
 
 .bio .face{
@@ -527,6 +722,7 @@ blockquote{
 	width: 80%;
 	margin: 10px;
 	position: relative;
+  font-size: 120%;
 }
 
 .speech-bubble:after {
@@ -575,9 +771,181 @@ blockquote{
 	padding: 0 45px 35px 105px;
 	position: relative;
 	min-height: 80px;
-
 }
 
+
+#case-studies{
+  text-align: white !important;
+  background-color: #00b9bd !important ;  
+  height: 700px !important;
+}
+
+#case-studies li{
+  list-style: none;
+  margin-left: 0px;
+  padding: 5px 0;
+}
+
+#case-studies h1{
+  font-size: 300%;
+}
+
+#case-studies .benefit-types img{
+/*  position: absolute; */
+  padding-top: 20px;
+  width: 150px;
+}
+
+
+.circular-image {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  position: absolute;
+  overflow: hidden;
+  border: 2px solid #eee;
+  left: 35px;
+}
+
+.circular-image img{
+  width: 150px;
+  position: absolute;
+  left: -20px;
+}
+
+#neighborhood-revitalization .benefits{
+/*  margin: 40px 0;*/
+  text-align: left;
+}
+
+
+#neighborhood-revitalization .summary{
+  text-align: left;
+/*  margin-left: 120px;
+  padding: 20px 0 0 !important;
+*/  padding-top: 0px;
+  padding-top: 115px;
+  text-align: left;
+}
+
+#neighborhood-revitalization .summary .title{
+/*  padding-left: 12%;*/
+}
+
+
+#neighborhood-revitalization .summary p, #neighborhood-revitalization .summary strong{
+  font-size: 130%;
+  line-height: 120%;
+  font-weight: 300;
+/*  padding: 5px 10px;*/
+}
+
+#neighborhood-revitalization .summary strong{
+  font-weight: 400;  
+}
+
+
+
+#neighborhood-revitalization .image{
+  text-align: center !important;
+}
+
+
+#neighborhood-revitalization .benefits{
+  text-align: center;
+  min-height: 125px;
+  float: left;
+  width: 230px;
+  margin-right: 20px;
+  position: relative;
+}
+
+#clients{
+  height: 425px;
+}
+#clients .summary{
+  width: 300px;
+/*  margin-left: 120px;*/
+  margin-left: 90px; 
+  text-align: left;
+  font-size: 120%;
+  padding: 20px 10px;  
+
+
+/*  width: 300px; 
+  margin-left: 90px; 
+  text-align: left; 
+  font-size: 100%
+*/}
+
+
+#clients .quote{
+  text-align: left;
+/*  min-height: 125px;*/
+/*  float: left;*/
+/*  width: 250px;*/
+  padding-left: 60px;
+  position: relative;  
+  font-size: 100%;
+  width: 40%; 
+  font-size: 110%;
+  float: left;
+}
+#clients .circular-image{
+  margin: 65px 0px;
+}
+
+#clients strong{
+  font-size: 125%;
+  text-align: center;
+  line-height: 230%;
+  font-size: 100%;
+}
+
+#clients .quote-text{
+/*  padding: 10px 0;*/
+  min-height: 130px;
+  font-size: 100%;
+}
+
+#clients .quote-name{
+  font-size: 100%;
+  text-align: right;
+  margin: 5px 0;
+}
+
+#clients .watch-video{
+  font-size: 100%;
+  text-align: right;
+  margin: 5px 0;
+}
+
+
+.row-column-left{
+  padding: 10px 20px 0 15px
+}
+
+.row-column-right{
+  padding: 10px 0px 0 35px
+}
+
+
+#partners .logos{
+  margin: 0 auto;
+}
+
+#partners .image{
+    display: inline;
+}
+#partners .image img{
+  width: 150px;
+/*  height: 100px;*/
+  padding: 60px 0px 60px 80px;
+}
 
 .cities-citizens-icons{
     height: 115px;
@@ -620,6 +988,15 @@ label{
 #form-depth label{
 	padding-left: 10px !important;
 
+}
+
+.form{
+  text-align: center;  
+}
+.form input, .form select{
+  font-size: 150%;
+  margin: 10px 0;
+  padding: 5px;
 }
 
 
@@ -707,5 +1084,81 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 .offset10 {margin-left: 86%;}
 .offset11 {margin-left: 94.875%;}
 
+
+.pricing-table{
+/*  border: 1px solid #aaa;*/
+  text-align: left;
+/*  padding: 10px;*/
+/*  top: 100px;*/
+  padding: 10px;
+  margin: 70px 0;
+/*  min-height: 500px;*/
+  width: 100%;  
+  position: relative;
+}
+
+.clear{
+  clear:both;
+}
+
+.price-period sup{
+  font-size: 40%;
+  top: -1.4em;
+}
+.pricing-table p{
+  font-size:100%;
+  font-weight: bold;
+
+  
+}
+.pricing-table h2{
+  font-size: 200%;
+  text-align: center;
+  margin: 0px 0 10px;
+}
+
+.price-details{
+/*  font-size: 120%;*/
+  padding: 20px 40px;
+  margin-top: 90px;
+  clear:both;
+/*  font-size: 90%;*/
+/*  line-height: 200%;*/
+  
+}
+
+.price-details p, .price-details li, .questions p{
+  font-size: 100% !important;
+}
+
+
+.pricing-table td{
+  font-size: 100%;
+  text-align: left;
+  padding: 5px 10px 5px;
+}
+
+.pricing-price td{
+  font-size: 150%;
+  text-align: center;
+  margin: 10px 0;  
+}
+
+.pricing-table td i{
+  margin: 0 10px;
+}
+
+.pricing-price .menu-button{
+  font-size: 65%;
+  padding: 10px 10px;
+}
+
+#funders{
+  margin-top: 40px;
+}
+
+b, strong, em{
+  font-weight: 800;
+}
 
 

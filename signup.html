@@ -1,0 +1,74 @@
+---
+layout: narrow
+title: Sign Up
+---
+
+<!-- Section #1 -->
+<section id="signup" data-speed="4">
+  <article class="columns black-font" style="padding-top:0; width:500px">
+    
+    <div class="box">
+
+
+      <div class="form">
+          
+
+
+        
+          <form action="https://civicinsight-signup.herokuapp.com/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <!-- <form action="http://0.0.0.0:5000/signup" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> -->
+            <div class="center"><h1>Sign Up</h1></div>          
+          <div>
+          	<input name="FNAME" class="" type="text" autofocus="autofocus"  value=""  id="mce-FNAME" placeholder="First Name" size="30">
+            <div class="error"></div>
+            
+          </div>
+
+          <div>
+          	<input name="LNAME" class="" id="mce-LNAME" type="text" value=""  placeholder="Last Name" size="30">
+            <div class="error"></div>
+          </div>
+
+          <div>            
+          	<input name="EMAIL" class="required email"  type="email" value=""  id="EMAIL"  placeholder="E-mail address" size="30">
+            <div class="error"></div>            
+          </div>
+
+          <div>
+          	<input name="ORG" class="required email"  type="text" value=""  id="mce-ORG"  placeholder="Agency Name" size="30">
+            <div class="error"></div>
+          </div>
+
+          <div>            
+            <input name="POSTALCODE" placeholder="Zipcode" size="30" type="text">
+            <div class="error"></div>
+          </div>
+
+
+          <!-- <div>            
+            <input name="CFANETWORK"  size="30" type="checkbox"> Code for America Network?
+          </div> -->
+
+
+          <div style="margin: 10px 80px; text-align: left; font-size: 150%;">            
+            <input type="radio" checked name="PLAN" value="basic"> Basic
+            <input type="radio" name="PLAN" value="professional"> Professional
+            <input type="radio" name="PLAN" value="custom"> Custom
+          </div>
+
+
+          <br/>
+
+          <div>
+            <input class="menu-button btn-glow primary btn-submit signup" style="border: 0; padding: 10px" value="Register" type="submit">
+          </div>
+          <br/>
+
+        </form>
+      </div>
+    
+      </div>
+    </div>
+  </article>
+</section>
+
