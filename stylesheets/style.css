@@ -890,6 +890,11 @@ blockquote{
   line-height: 230%;
 }
 
+#clients .quote-text{
+/*  padding: 10px 0;*/
+  min-height: 100px;
+}
+
 #clients .quote-name{
   text-align: right;
   margin: 5px 0;
