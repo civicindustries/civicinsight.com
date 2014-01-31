@@ -1101,7 +1101,10 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
   clear:both;
 }
 
-
+.price-period sup{
+  font-size: 40%;
+  top: -1.4em;
+}
 .pricing-table p{
   font-size:100%;
   font-weight: bold;
