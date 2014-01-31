@@ -777,7 +777,7 @@ blockquote{
 #case-studies{
   text-align: white !important;
   background-color: #00b9bd !important ;  
-  height: 700px;
+  height: 700px !important;
 }
 
 #case-studies li{
