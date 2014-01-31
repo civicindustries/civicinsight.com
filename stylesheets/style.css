@@ -903,19 +903,23 @@ blockquote{
   font-size: 125%;
   text-align: center;
   line-height: 230%;
+  font-size: 100%;
 }
 
 #clients .quote-text{
 /*  padding: 10px 0;*/
   min-height: 130px;
+  font-size: 100%;
 }
 
 #clients .quote-name{
+  font-size: 100%;
   text-align: right;
   margin: 5px 0;
 }
 
 #clients .watch-video{
+  font-size: 100%;
   text-align: right;
   margin: 5px 0;
 }
@@ -1115,9 +1119,15 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
   padding: 20px 40px;
   margin-top: 90px;
   clear:both;
+/*  font-size: 90%;*/
 /*  line-height: 200%;*/
   
 }
+
+.price-details p, .price-details li, .questions p{
+  font-size: 100% !important;
+}
+
 
 .pricing-table td{
   font-size: 100%;
