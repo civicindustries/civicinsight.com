@@ -119,8 +119,8 @@ h5{
 /*  text-align: white !important;
   background-color: #00b9bd !important ;
 */  
-  height: 892px;
-  margin-bottom: 20px;
+  height: 1236px;
+  margin-bottom: 0;
 }
 #product h1{
   text-align: left;
@@ -128,7 +128,7 @@ h5{
 }
 
 #product .columns{
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 #product .feature{
@@ -149,8 +149,9 @@ h5{
 
 
 #pricing{
-  height: 750px;
-  font-size: 110%;
+  height: 1000px;
+  line-height: 170%;
+  font-size: 120%;
 }
 #pricing .left-column, #pricing .center-column, #pricing .right-column{
   width: 25% !important;
@@ -399,7 +400,7 @@ li{
 }
 
 #about a, #about li, #about li a{
-	font-style: italic;
+/*  font-style: italic;*/
 	font-size: 100%;
 	font-weight: 400;
 }
@@ -721,6 +722,7 @@ blockquote{
 	width: 80%;
 	margin: 10px;
 	position: relative;
+  font-size: 120%;
 }
 
 .speech-bubble:after {
@@ -775,7 +777,7 @@ blockquote{
 #case-studies{
   text-align: white !important;
   background-color: #00b9bd !important ;  
-  height: 650px;
+  height: 700px;
 }
 
 #case-studies li{
@@ -806,7 +808,7 @@ blockquote{
   position: absolute;
   overflow: hidden;
   border: 2px solid #eee;
-  left: 75px;
+  left: 35px;
 }
 
 .circular-image img{
@@ -817,7 +819,7 @@ blockquote{
 
 #neighborhood-revitalization .benefits{
 /*  margin: 40px 0;*/
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -827,8 +829,13 @@ blockquote{
   padding: 20px 0 0 !important;
 */  padding-top: 0px;
   padding-top: 115px;
-  text-align: center;
+  text-align: left;
 }
+
+#neighborhood-revitalization .summary .title{
+  padding-left: 12%;
+}
+
 
 #neighborhood-revitalization .summary p, #neighborhood-revitalization .summary strong{
   font-size: 130%;
@@ -858,15 +865,22 @@ blockquote{
 }
 
 #clients{
-  height: 350px;
+  height: 425px;
 }
 #clients .summary{
   width: 300px;
-  margin-left: 120px;
+/*  margin-left: 120px;*/
+  margin-left: 90px; 
   text-align: left;
-  font-size: 100%;
+  font-size: 120%;
   padding: 20px 10px;  
-}
+
+
+/*  width: 300px; 
+  margin-left: 90px; 
+  text-align: left; 
+  font-size: 100%
+*/}
 
 
 #clients .quote{
@@ -882,7 +896,7 @@ blockquote{
   float: left;
 }
 #clients .circular-image{
-  margin: 35px 0px  ;
+  margin: 65px 0px;
 }
 
 #clients strong{
@@ -893,7 +907,7 @@ blockquote{
 
 #clients .quote-text{
 /*  padding: 10px 0;*/
-  min-height: 100px;
+  min-height: 130px;
 }
 
 #clients .quote-name{
@@ -916,8 +930,18 @@ blockquote{
 }
 
 
+#partners .logos{
+  margin: 0 auto;
+}
 
-
+#partners .image{
+    display: inline;
+}
+#partners .image img{
+  width: 150px;
+/*  height: 100px;*/
+  padding: 60px 0px 60px 80px;
+}
 
 .cities-citizens-icons{
     height: 115px;
@@ -1063,10 +1087,14 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 /*  padding: 10px;*/
 /*  top: 100px;*/
   padding: 10px;
-  margin: 50px 0 50px;  
+  margin: 70px 0;
 /*  min-height: 500px;*/
   width: 100%;  
   position: relative;
+}
+
+.clear{
+  clear:both;
 }
 
 
@@ -1083,10 +1111,11 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 }
 
 .price-details{
-  font-size: 100%;
+/*  font-size: 120%;*/
   padding: 20px 40px;
   margin-top: 90px;
   clear:both;
+/*  line-height: 200%;*/
   
 }
 
