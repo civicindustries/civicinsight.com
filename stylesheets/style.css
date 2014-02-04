@@ -48,7 +48,7 @@ section{
 h1{
   font-size: 300%;
   line-height: 170%;
-/*  margin-top: 50px;*/
+  margin-top: 20px;
   margin-bottom: auto;  
 }
 
@@ -117,7 +117,7 @@ h5{
 /*  text-align: white !important;
   background-color: #00b9bd !important ;
 */  
-  height: 1236px;
+  height: 1001px;
   margin-bottom: 0;
 }
 
@@ -141,7 +141,7 @@ h5{
 
 
 #product .columns{
-  padding: 100px 0;
+  padding: 40px 0 80px;
 }
 
 #product .feature{
@@ -179,8 +179,9 @@ h5{
   
 }
 
-#pricing h1, #press h1{
-  height: 120px  ;
+#pricing h1, #press h1 {
+  height: 120px;
+  padding-top: 15px;
 }
 .horizontal{
   clear:both; 
@@ -815,8 +816,8 @@ blockquote{
 
 
 .circular-image {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   -ms-border-radius: 150px;
@@ -824,12 +825,11 @@ blockquote{
   border-radius: 150px;
   position: absolute;
   overflow: hidden;
-  border: 2px solid #eee;
   left: 35px;
 }
 
 .circular-image img{
-  width: 150px;
+  width: 170px;
   position: absolute;
   left: -20px;
 }
@@ -841,11 +841,7 @@ blockquote{
 
 
 #neighborhood-revitalization .summary{
-  text-align: left;
-/*  margin-left: 120px;
-  padding: 20px 0 0 !important;
-*/  padding-top: 0px;
-  padding-top: 115px;
+  padding-top: 140px;
   text-align: left;
 }
 
@@ -914,6 +910,12 @@ blockquote{
 }
 #clients .circular-image{
   margin: 65px 0px;
+}
+
+#clients .circular-image img{
+  left: 0px; 
+  top: 0px; 
+  width: 108px !important;
 }
 
 #clients strong{
@@ -1144,10 +1146,17 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
   
 }
 
-.price-details p, .price-details li, .questions p{
-  font-size: 100% !important;
+.price-details p, .price-details li {
+  font-size: 110% !important;
 }
 
+.questions p:not(:first-child) {
+  font-size: 90% !important;
+}
+
+.price-details p:first-of-type {
+  padding-bottom: 20px;
+}
 
 .pricing-table td{
   font-size: 100%;
@@ -1167,7 +1176,13 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 
 .pricing-price .menu-button{
   font-size: 65%;
-  padding: 10px 10px;
+  padding: 8px 20px 12px;
+}
+
+.pricing-plan-intro {
+  float:left; 
+  width: 200px; 
+  text-align: center;
 }
 
 #funders{
