@@ -30,13 +30,6 @@ header{
 	max-width: 239px;
 }
 
-
-h4{
-	font-size: 300%;
-	line-height: 200%;
-	text-align: left;
-}
-
 .content{
   margin-top: 20px;
 }
@@ -67,11 +60,10 @@ h3{
 }
 
 h4{
-  font-size: 150%;
+  font-size: 200%;
   line-height: 170%;
-/*  margin-top: 50px;*/
-  margin-bottom: auto; 
-  margin: 10px 0 0; 
+  text-align: left;
+  margin: 15px 0; 
 }
 
 
@@ -181,8 +173,8 @@ h5{
 
 #pricing h1, #press h1 {
   height: 120px;
-  padding-top: 15px;
 }
+
 .horizontal{
   clear:both; 
   border-bottom: 2px solid #aaa; 
@@ -762,22 +754,21 @@ blockquote{
 .speech-bubble-credit{
 	text-align: right;
 }
-.video-frame p{
-	padding: 0  0 10px 0;
-}
+
 .video-frame{
 	background-color: #00B9BD; 
 	position: absolute; 
-	height: 400px; 
+	height: 420px; 
 	width: 400px;
 	padding: 30px;
-	margin: 0 30px;
+	margin: 10px 30px;
 }
 .video-frame p{
 	text-align: center;
-	font-size: 180%;
-	margin: 0 0 10px;
+	font-size: 180% !important;
+	margin: 10px 0 25px;
 	color: white;
+  padding: 0  0 10px 0;
 }
 .video-frame .video{
 	width: 88%;
