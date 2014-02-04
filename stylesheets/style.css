@@ -1129,7 +1129,7 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 .pricing-table h2{
   font-size: 200%;
   text-align: center;
-  margin: 0px 0 10px;
+  margin: -10px 0 15px;
 }
 
 .price-details{
@@ -1157,7 +1157,7 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 .pricing-table td{
   font-size: 100%;
   text-align: left;
-  padding: 5px 10px 5px;
+  padding: 5px 10px 0;
 }
 
 .pricing-price td{
@@ -1179,6 +1179,7 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
   float:left; 
   width: 200px; 
   text-align: center;
+  line-height: 130%;
 }
 
 #funders{
