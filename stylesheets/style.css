@@ -111,9 +111,7 @@ h5{
   margin-left: 5%;
 }
 
-.box{
-  box-shadow: 0px 1px 2px #aaa;
-}
+
 
 #product{
 /*  text-align: white !important;
@@ -122,10 +120,25 @@ h5{
   height: 1236px;
   margin-bottom: 0;
 }
+
+
 #product h1{
   text-align: left;
   
 }
+#product .center{
+  width: 1000px;  
+  margin: 20px auto 0;  
+  text-align: center;  
+
+}
+
+#product .center h1{
+  text-align: center;  
+  
+}
+
+
 
 #product .columns{
   padding: 100px 0;
@@ -147,6 +160,10 @@ h5{
   margin: 0 0px;  
 }
 
+
+.box{
+  box-shadow: 0px 1px 2px #aaa;
+}
 
 #pricing{
   height: 1000px;
