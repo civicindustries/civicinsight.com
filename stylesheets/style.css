@@ -1127,10 +1127,17 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
   
 }
 
-.price-details p, .price-details li, .questions p{
-  font-size: 100% !important;
+.price-details p, .price-details li {
+  font-size: 110% !important;
 }
 
+.questions p:not(:first-child) {
+  font-size: 90% !important;
+}
+
+.price-details p:first-of-type {
+  padding-bottom: 20px;
+}
 
 .pricing-table td{
   font-size: 100%;
@@ -1151,6 +1158,12 @@ height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%
 .pricing-price .menu-button{
   font-size: 65%;
   padding: 8px 20px 12px;
+}
+
+.pricing-plan-intro {
+  float:left; 
+  width: 200px; 
+  text-align: center;
 }
 
 #funders{
