@@ -150,7 +150,7 @@ h5{
 }
 
 #product .offwhite{
-  background-color: #f8f8f8
+  background-color: #eee;
 }
 
 
@@ -318,7 +318,7 @@ li{
   font-size: 100%;
 }
 #newsletter .columns{
-  padding: 55px 0 80px;
+  padding: 30px 0 80px;
 }  
 
 #newsletter .unsubscribe{
@@ -963,7 +963,7 @@ blockquote{
 #partners .image img{
   width: 150px;
 /*  height: 100px;*/
-  padding: 60px 0px 60px 80px;
+  padding: 30px 0px 50px 80px;
 }
 
 .cities-citizens-icons{
@@ -1014,8 +1014,8 @@ label{
 }
 .form input, .form select{
   font-size: 150%;
-  margin: 10px 0;
-  padding: 5px;
+  margin: 20px 5px 30px;
+  padding: 7px;
 }
 
 
