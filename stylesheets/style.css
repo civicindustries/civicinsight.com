@@ -798,8 +798,8 @@ blockquote{
 
 
 .circular-image {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   -ms-border-radius: 150px;
@@ -807,12 +807,11 @@ blockquote{
   border-radius: 150px;
   position: absolute;
   overflow: hidden;
-  border: 2px solid #eee;
   left: 35px;
 }
 
 .circular-image img{
-  width: 150px;
+  width: 170px;
   position: absolute;
   left: -20px;
 }
@@ -824,11 +823,7 @@ blockquote{
 
 
 #neighborhood-revitalization .summary{
-  text-align: left;
-/*  margin-left: 120px;
-  padding: 20px 0 0 !important;
-*/  padding-top: 0px;
-  padding-top: 115px;
+  padding-top: 140px;
   text-align: left;
 }
 
@@ -897,6 +892,12 @@ blockquote{
 }
 #clients .circular-image{
   margin: 65px 0px;
+}
+
+#clients .circular-image img{
+  left: 0px; 
+  top: 0px; 
+  width: 108px !important;
 }
 
 #clients strong{
