@@ -408,6 +408,7 @@ li{
   border: solid #999;
   border-width: 1px 0 0 0;
   font-weight: normal;
+  font-size: 110%;
 }
 
 .brought-to-you {
@@ -419,8 +420,12 @@ li{
 
 #about a, #about li, #about li a{
 /*  font-style: italic;*/
-	font-size: 100%;
 	font-weight: 400;
+  font-size: 110%;
+}
+
+#about strong, #about .offset2 {
+  font-size: 110%;
 }
 
 .error{
