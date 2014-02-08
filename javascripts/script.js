@@ -79,7 +79,7 @@ $(document).ready(function() {
     var formData = $(this).serialize();
 
 
-    $(this).find('input[type=submit]').val('Loading...').prop('disabled', true).css('background-color', "#aaa");
+    $(current_form).find('input[type=submit]').val('Loading...').prop('disabled', true).css('background-color', "#aaa");
     
     
 
@@ -91,7 +91,7 @@ $(document).ready(function() {
       } 
       else {
         // console.log(data);
-        $(this).find('input[type=submit]').val('Submit').prop('disabled', false).css('background-color', "#E0500C");
+        $(current_form).find('input[type=submit]').val('Submit').prop('disabled', false).css('background-color', "#E0500C");
         
         if(data.errors){
           for(var i = 0; i < data.errors.length; i++){                  
