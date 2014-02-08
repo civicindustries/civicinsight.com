@@ -77,6 +77,9 @@ $(document).ready(function() {
     var emailVal = $('#EMAIL').attr('value');
     var formAction = $(this).attr('action');
     var formData = $(this).serialize();
+
+
+    $(this).find('input[type=submit]').val('Loading...').prop('disabled', true).css('background-color', "#aaa");
     
     
 
@@ -87,7 +90,7 @@ $(document).ready(function() {
         $(current_form).html('<h1>Thank you!</h1><br><h4 style="padding: 20px">You will recieve an email shortly.<br><br> Please confirm you email and we will contact you the next business-day.<br><br>If you encounter any difficulties, please contact us at support@civicinsight.com</h4><br><br>');
       } 
       else {
-        console.log(data);
+        // console.log(data);
         if(data.errors){
           for(var i = 0; i < data.errors.length; i++){                  
             $('input[name='+data.errors[i][0]+']').next('.error').html("<span>"+data.errors[i][1]+"</span>");
