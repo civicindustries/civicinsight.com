@@ -105,6 +105,33 @@ h5{
 
 
 
+#page{
+  padding-top: 100px; 
+  width: 50%; 
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+
+#page p, #narrow li{
+  font-size: 125%;
+  padding: 4px 0 ;
+}
+
+
+#page ul{
+  padding: 5px;
+}
+#page li{
+  list-style: inherit;
+  margin-left: 5%;
+}
+#page time{
+  font-size: 85%;
+  padding: 0;
+  margin: 0;
+}
+
+
 #product{
 /*  text-align: white !important;
   background-color: #00b9bd !important ;
@@ -263,7 +290,7 @@ li{
 }
 
 #vision { 
-	background: url(../images/hero.jpg) 50% 34px no-repeat fixed;
+	background: url('/images/hero.jpg') 50% 34px no-repeat fixed;
 	height: 600px;  
 	margin: 40px auto auto; 
     width: 100%; 
@@ -327,42 +354,42 @@ li{
 }
 
 #knowledge-is-power { 
-/*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
-	height: 385px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    background: white;
+/*	background: url(/images/about.jpg) 50% 0 no-repeat fixed; */
+  height: 385px;
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  background: white;
 }
 
 
 #cities-citizens { 
-	height: 520px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    background: #00b9bd;
+  height: 520px;
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  background: #00b9bd;
 }
 
 
 #get-blightstatus { 
-	height: 360px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    background: white;
+  height: 360px;
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  background: white;
 }
 
 #demo { 
-	height: 390px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-	background: url("../images/map-large.png") 0 0 no-repeat fixed;
+  height: 390px;
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  background: url("/images/map-large.png") 0 0 no-repeat fixed;
 }
 
 #background-map{
@@ -373,7 +400,7 @@ li{
 
 
 #press { 
-/*	background: url(../images/about.jpg) 50% 0 no-repeat fixed; */
+/*	background: url(/images/about.jpg) 50% 0 no-repeat fixed; */
 /*  height: 900px;*/
   margin: 0 auto; 
   width: 100%; 
@@ -971,22 +998,22 @@ blockquote{
 }
 
 .time-icon{
-    background: url("../images/icons.png") no-repeat scroll -4px 0 transparent;
+    background: url("/images/icons.png") no-repeat scroll -4px 0 transparent;
 }
 .chart-icon{
-    background: url("../images/icons.png") no-repeat scroll -4px -126px transparent;
+    background: url("/images/icons.png") no-repeat scroll -4px -126px transparent;
 }
 .database-icon{
-    background: url("../images/icons.png") no-repeat scroll -4px -252px transparent;
+    background: url("/images/icons.png") no-repeat scroll -4px -252px transparent;
 }
 .click-icon{
-    background: url("../images/icons.png") no-repeat scroll -102px 0 transparent;
+    background: url("/images/icons.png") no-repeat scroll -102px 0 transparent;
 }
 .contact-icon{
-    background: url("../images/icons.png") no-repeat scroll -102px -124px transparent;
+    background: url("/images/icons.png") no-repeat scroll -102px -124px transparent;
 }
 .info-icon{
-    background: url("../images/icons.png") no-repeat scroll -104px -253px transparent;
+    background: url("/images/icons.png") no-repeat scroll -104px -253px transparent;
 }
 
 #interest{
@@ -1052,10 +1079,10 @@ input[type=option]{
 /* Introduction */
 
 /*
-#home article { background: url("../images/intro.png") no-repeat scroll center top transparent; 
+#home article { background: url("/images/intro.png") no-repeat scroll center top transparent; 
 height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
 
-#about article { background: url("../images/parallax.png") no-repeat scroll center top transparent; 
+#about article { background: url("/images/parallax.png") no-repeat scroll center top transparent; 
 height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
 */
 
