@@ -91,6 +91,8 @@ $(document).ready(function() {
       } 
       else {
         // console.log(data);
+        $(this).find('input[type=submit]').val('Submit').prop('disabled', false).css('background-color', "#E0500C");
+        
         if(data.errors){
           for(var i = 0; i < data.errors.length; i++){                  
             $('input[name='+data.errors[i][0]+']').next('.error').html("<span>"+data.errors[i][1]+"</span>");
