@@ -109,3 +109,5 @@ $(document).ready(function() {
 
 document.createElement("article");
 document.createElement("section");
+document.createElement("header");
+document.createElement("footer");
