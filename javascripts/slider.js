@@ -133,17 +133,17 @@ $(document).ready(function() {
     var currentPrice = 0;
     var currentPrice5Years = 0;
     var population = 0;
-    var rangeDifference = range.population_end - range.population_start;
-    var rangeIncrement = rangeDifference / 10;
 
-    population = Math.ceil((value - range.range_subtract) * rangeIncrement);
-
+    var population  = Math.ceil((range.population_end * value ) / range.range_end);
+    console.log(population)
+;
 
     currentPlanFee = getImplementationFee();
 
     if (range.population_start >= 800000) {
       currentPrice = range.price_base + (range.multiplier * 800000); 
-      currentPrice5Years =  range.price_base + (currentPlanFee / 5) + (range.multiplier * 800000);  
+      currentPrice5Years = range.price_base + (range.multiplier * 800000); 
+      //range.price_base + (currentPlanFee / 5) + (range.multiplier * 800000);  
     }
     else {
       currentPrice = range.price_base + (range.multiplier * population);  
@@ -165,25 +165,18 @@ $(document).ready(function() {
 
     price.population = population;
     price.total_price = Math.floor(currentPrice);
-    price.total_price_label = commaSeparateNumber(Math.floor(currentPrice))  + " per year.";
+    price.total_price_label = commaSeparateNumber(Math.floor(currentPrice));
     price.population_label = commaSeparateNumber(population);
     price.plan_fee_label = currentPlanFee;
 
 
-
-
-
-
-
-
-
-    price.price_base_label = commaSeparateNumber(currentPlanFee) + " set up fee.";
+    price.price_base_label = commaSeparateNumber(currentPlanFee);
 
     if (range.population_start >= 800000) {
       price.population_label = "800,000 and up";
-      price.total_price_label = commaSeparateNumber(Math.floor(currentPrice)) + " and up";      
-      price.price_base_label = commaSeparateNumber(currentPlanFee) + " and up" + " setup fee."
-      price.price_5_years = price.total_price + (Math.floor(currentPlanFee / 5));
+      price.total_price_label = commaSeparateNumber(Math.floor(currentPrice)) + "+";  
+      price.price_base_label = commaSeparateNumber(currentPlanFee) + "+";
+      //price.price_5_years = price.total_price + (Math.floor(currentPlanFee / 5));
     }
 
 
