@@ -88,6 +88,22 @@ $(document).ready(function() {
 
   }
 
+  function updatePriceDisplay(price) {
+
+        $( "#price" ).val( "$" + price.per_capita);
+        $( "#total_price" ).val( "$" + price.total_price_label );
+        $( "#population" ).val(price.population_label );
+        $( "#price_base" ).val("$" + price.price_base_label );
+
+  }
+
+  function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+    }
+    return val;
+  };
+
   function priceFormula(range, population) {
 
     var currentPrice = 0;
@@ -109,17 +125,16 @@ $(document).ready(function() {
 
     price.population = population;
     price.total_price = Math.floor(currentPrice);
-    price.total_price_label = Math.floor(currentPrice);
+    price.total_price_label = commaSeparateNumber(Math.floor(currentPrice));
+    price.population_label = commaSeparateNumber(population);
 
-    price.population_label = population;
 
-
-    price.price_base_label = range.price_base;
+    price.price_base_label = commaSeparateNumber(range.price_base);
 
     if (range.population_start >= 800000) {
       price.population_label = "800,000 and up";
-      price.total_price_label = Math.floor(currentPrice) + " and up";      
-      price.price_base_label = range.price_base + " and up"
+      price.total_price_label = commaSeparateNumber(Math.floor(currentPrice)) + " and up";      
+      price.price_base_label = commaSeparateNumber(range.price_base) + " and up"
     }
 
 
@@ -137,12 +152,7 @@ $(document).ready(function() {
 
 
         price = determinePrice(ui.value);
-
-
-        $( "#price" ).val( "$" + price.per_capita);
-        $( "#total_price" ).val( "$" + price.total_price_label );
-        $( "#population" ).val(price.population_label );
-        $( "#price_base" ).val(price.price_base_label );
+        updatePriceDisplay(price);
 
 
       }
@@ -150,10 +160,6 @@ $(document).ready(function() {
   
 
   price = determinePrice(defaultPopulation);
-  $( "#price" ).val( "$" + price.per_capita);
-  $( "#total_price" ).val( "$" + price.total_price );
-  $( "#population" ).val(price.population );
-  $( "#price_base" ).val(price.price_base_label );
-
+  updatePriceDisplay(price);
 
 });
