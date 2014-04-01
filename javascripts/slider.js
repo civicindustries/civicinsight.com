@@ -3,10 +3,10 @@ $(document).ready(function() {
 
   var priceSettings = {
     small: {
-      population_start: 100,
+      population_start: 50,
       population_end: 50000,
-      range_start: 0,
-      range_end: 10,
+      range_start: 1,
+      range_end: 30,
       range_subtract: 0,
       price_base: 1000,
       support_hours: 5,
@@ -15,9 +15,9 @@ $(document).ready(function() {
     medium: {
       population_start: 50001,
       population_end: 200000,
-      range_start: 11,
-      range_subtract: 10,
-      range_end: 20,
+      range_start: 31,
+      range_end: 60,
+      range_subtract: 30,
       price_base: 5000,
       support_hours: 50,
       multiplier: 0.05
@@ -25,9 +25,9 @@ $(document).ready(function() {
     large: {
       population_start: 200001,
       population_end: 800000,
-      range_start: 21,
-      range_subtract: 20,
-      range_end: 30,
+      range_start: 61,
+      range_end: 90,
+      range_subtract: 60,
       price_base: 15000,
       support_hours: 150,
       multiplier: 0.04
@@ -35,9 +35,9 @@ $(document).ready(function() {
     metro: {
       population_start: 800001,
       population_end: 1000000,
-      range_start: 31,
-      range_subtract: 30,
-      range_end: 40,
+      range_start: 91,
+      range_end: 120,
+      range_subtract: 90,
       price_base: 30000,
       support_hours: 150,
       multiplier: 0.03
@@ -196,7 +196,7 @@ $(document).ready(function() {
   };
 
 
-  var defaultPopulation = 20;
+  var defaultPopulation = 50;
   $("input[type='radio'][name='data_plan']").filter('[value="house_facts"]').attr('checked', true);
 
 
@@ -209,8 +209,8 @@ $(document).ready(function() {
 
   $( "#slider" ).slider({
       value: defaultPopulation,
-      min: 0,
-      max: 40,
+      min: 1,
+      max: 120,
       step: 1,
       slide: function( event, ui ) {
         price = determinePrice(ui.value);
