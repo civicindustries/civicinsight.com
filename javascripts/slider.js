@@ -5,6 +5,8 @@ $(document).ready(function() {
     small: {
       population_start: 0,
       population_end: 49999,
+      range_start: 0,
+      range_end: 10,
       price_base: 1000,
       support_hours: 5,
       multiplier: 0.07
@@ -12,6 +14,8 @@ $(document).ready(function() {
     medium: {
       population_start: 50000,
       population_end: 199999,
+      range_start: 11,
+      range_end: 20,
       price_base: 5000,
       support_hours: 50,
       multiplier: 0.05
@@ -19,6 +23,8 @@ $(document).ready(function() {
     large: {
       population_start: 200000,
       population_end: 799999,
+      range_start: 21,
+      range_end: 30,
       price_base: 15000,
       support_hours: 150,
       multiplier: 0.04
@@ -26,6 +32,8 @@ $(document).ready(function() {
     metro: {
       population_start: 800000,
       population_end: 1000000,
+      range_start: 31,
+      range_end: 40,
       price_base: 30000,
       support_hours: 150,
       multiplier: 0.03
@@ -38,24 +46,18 @@ $(document).ready(function() {
       per_capita: 0,
       population: 0,
       population_label: 0,
-      
       price_base_label: 0
-
     };
 
 
   function updateBox(size) {
     if($('.category.' + size).hasClass('active') ) {
-
-
+      // Do nothing.
     }
     else {
       $('.category').removeClass('active');  
       $('.category.' + size).addClass('active');
-    }
-    
-
-    
+    }    
   };
 
   function determinePrice(value) {
@@ -64,7 +66,6 @@ $(document).ready(function() {
 
       for (size in priceSettings) {
         range = rangeMatch(value, size);
-        console.log(size);
         if (range) { 
           currentPrice = priceFormula(range, value);
           updateBox(size);
@@ -81,12 +82,10 @@ $(document).ready(function() {
       currentRange = priceSettings[size];
     }
     
-    if (value >= currentRange.population_start && value <= currentRange.population_end ) {      
+    if (value >= currentRange.range_start && value <= currentRange.range_end ) {      
       return currentRange;
     }
-
-
-  }
+  };
 
   function updatePriceDisplay(price) {
 
@@ -95,7 +94,7 @@ $(document).ready(function() {
         $( "#population" ).val(price.population_label );
         $( "#price_base" ).val("$" + price.price_base_label );
 
-  }
+  };
 
   function commaSeparateNumber(val){
     while (/(\d+)(\d{3})/.test(val.toString())){
@@ -104,9 +103,17 @@ $(document).ready(function() {
     return val;
   };
 
-  function priceFormula(range, population) {
+  function priceFormula(range, value) {
 
     var currentPrice = 0;
+
+    var population = 0;
+
+    var rangeDifference = range.population_end - range.population_start;
+
+    var rangeIncrement = rangeDifference / 10;
+
+    population = Math.floor(value * rangeIncrement);
 
     if (range.population_start >= 800000) {
       currentPrice = range.price_base + (range.multiplier * 800000);  
@@ -141,20 +148,19 @@ $(document).ready(function() {
     return price;
   }
 
-  var defaultPopulation = 200000;
+
+
+
+  var defaultPopulation = 20;
 
   $( "#slider" ).slider({
       value:defaultPopulation,
       min: 0,
-      max: 1000000,
-      step: 40,
+      max: 40,
+      step: 1,
       slide: function( event, ui ) {
-
-
         price = determinePrice(ui.value);
         updatePriceDisplay(price);
-
-
       }
     });
   
