@@ -1218,3 +1218,37 @@ b, strong, em{
 }
 
 
+
+
+#prices {
+  padding: 10px;
+  width: 300px;
+}
+
+#prices input {
+  border: 0;
+  width: 200px;
+}
+
+
+
+#slider {
+  margin-top: 40px;
+}
+
+.category {
+  float: left;
+  margin-right: 10px;
+  width: 17%;
+  padding: 10px;
+  background-color: #ffffff;
+  min-height: 250px;
+}
+
+.category.active {
+  background-color: #dddddd;
+}
+
+.category h4 {
+  line-height: 1em;
+}
