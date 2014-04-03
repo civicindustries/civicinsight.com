@@ -4,11 +4,12 @@ $(document).ready(function() {
   // Settings for the pricing slider.
   var priceSettings = {
     small: {
-      population_start: 50,
+      population_start: 0,
       population_end: 50000,
-      range_start: 1,
-      range_end: 30,
-      range_subtract: 0, // used for converting place on slider to population
+      range_start: 0,
+      range_end: 25,
+      range_slope: 2000, //50000-0/25-0, // spelling slope calculations out, they are y2-y1/x2-x1
+      range_subtract: 0,
       price_base: 1000, // base price for level
       support_hours: 5,
       multiplier: 0.07
@@ -16,9 +17,10 @@ $(document).ready(function() {
     medium: {
       population_start: 50001,
       population_end: 200000,
-      range_start: 31,
-      range_end: 60,
-      range_subtract: 30,
+      range_start: 25,
+      range_end: 50,
+      range_slope: 6000, // 200000-50000/50-25
+      range_subtract: 25,
       price_base: 5000,
       support_hours: 50,
       multiplier: 0.05
@@ -26,9 +28,10 @@ $(document).ready(function() {
     large: {
       population_start: 200001,
       population_end: 800000,
-      range_start: 61,
-      range_end: 90,
-      range_subtract: 60,
+      range_start: 50,
+      range_end: 75,
+      range_slope: 24000, //800000-200000/75-50,
+      range_subtract: 50,
       price_base: 15000,
       support_hours: 150,
       multiplier: 0.04
@@ -36,9 +39,10 @@ $(document).ready(function() {
     metro: {
       population_start: 800001,
       population_end: 1000000,
-      range_start: 91,
-      range_end: 120,
-      range_subtract: 90,
+      range_start: 75,
+      range_end: 100,
+      range_slope: 8000, //1000000-800000/100-75,
+      range_subtract: 75,
       price_base: 30000,
       support_hours: 150,
       multiplier: 0.03
@@ -98,7 +102,7 @@ $(document).ready(function() {
       currentRange = priceSettings[size];
     }
     
-    if (value >= currentRange.range_start && value <= currentRange.range_end ) {      
+    if (value > currentRange.range_start && value <= currentRange.range_end ) {      
       return currentRange;
     }
   }
@@ -113,29 +117,6 @@ $(document).ready(function() {
         $( "#price_5_years" ).val("$" + price.price_5_years );
         // $( "#plan_fee" ).val("$" + price.plan_fee_label );
   }
-
-  // @TODO finish
-  // Add settings to URL bar so that price can be updated based on URL path.
-  // 
-  // function updateURLParamsPricing(settings) {
-  //   var settings = {
-
-  //   }
-  //   for (item in settings) {
-  //     updateQueryStringParameter('#pricing', key, value);
-  //   }
-  // }
-
-  // function updateQueryStringParameter(uri, key, value) {
-  //   var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
-  //   var separator = uri.indexOf('?') !== -1 ? "&" : "?";
-  //   if (uri.match(re)) {
-  //     return uri.replace(re, '$1' + key + "=" + value + '$2');
-  //   }
-  //   else {
-  //     return uri + separator + key + "=" + value;
-  //   }
-  // }
 
   // Get current fee based on radio box selection.
   function getImplementationFee() {
@@ -164,36 +145,38 @@ $(document).ready(function() {
     var population = 0;
     var currentPlanFee = 0;
 
-
     // Population is calculated as the position on the slider times a multiplier
     // (The range slider is smoothed out, but increments at the 'medium city' are bigger than smaller city range.)
-    population  = Math.ceil((range.population_end * value ) / range.range_end);
+    console.log(value-range.range_subtract, range.range_slope);
+    population = Math.ceil((value-range.range_subtract) * range.range_slope) + range.population_start;
+    //population = Math.ceil((range.population_end * value ) / range.range_end);
+    population = Math.round(population / 10) * 10 
     
     // Figure out which plan is selected.
     currentPlanFee = getImplementationFee();
 
     // If population is big, set the top end of the scale.
-    if (range.population_start >= 800000) {
-      currentPrice = range.price_base + (range.multiplier * 800000); 
-      currentPrice5Years = range.price_base + (range.multiplier * 800000); 
-    }
-    else {
+    // if (range.population_start >= 800000) {
+    //   currentPrice = range.price_base + (range.multiplier * 800000); 
+    //   currentPrice5Years = range.price_base + (range.multiplier * 800000); 
+    // }
+    // else {
       currentPrice = range.price_base + (range.multiplier * population);  
       currentPrice5Years = range.price_base + (currentPlanFee / 5) + (range.multiplier * population);  
-    }
+    //}
 
     // Determine price per capita
-    if (population < 2 ) {
-      // Keep bottom end of range from zero'ing out and showing big numbers.
-      price.per_capita = 0;
-      price.price_5_years = 0;
-    }
-    else {
+    // if (population < 2 ) {
+    //   // Keep bottom end of range from zero'ing out and showing big numbers.
+    //   price.per_capita = 0;
+    //   price.price_5_years = 0;
+    // }
+    // else {
       price.per_capita = Number(currentPrice / population).toFixed(2);
       
       // Total price ever, including set up fee.
       price.price_5_years = Number(currentPrice5Years / population).toFixed(2);
-    }
+    //}
 
 
 
@@ -206,11 +189,11 @@ $(document).ready(function() {
     price.price_base_label = commaSeparateNumber(currentPlanFee);
 
     // Override value labels if population is large.
-    if (range.population_start >= 800000) {
-      price.population_label = "800,000 and up";
-      price.total_price_label = commaSeparateNumber(Math.floor(currentPrice)) + "+";  
-      price.price_base_label = commaSeparateNumber(currentPlanFee) + "+";
-    }
+    // if (range.population_start >= 800000) {
+    //   price.population_label = "800,000 and up";
+    //   price.total_price_label = commaSeparateNumber(Math.floor(currentPrice)) + "+";  
+    //   price.price_base_label = commaSeparateNumber(currentPlanFee) + "+";
+    // }
 
     return price;
   }
@@ -221,6 +204,37 @@ $(document).ready(function() {
     price = determinePrice(value);
     updatePriceDisplay(price);
   }
+
+
+
+
+  // @TODO finish
+  // Add settings to URL bar so that price can be updated based on URL path.
+  // 
+  // function updateURLParamsPricing(settings) {
+  //   var settings = {
+
+  //   }
+  //   for (item in settings) {
+  //     updateQueryStringParameter('#pricing', key, value);
+  //   }
+  // }
+
+  // function updateQueryStringParameter(uri, key, value) {
+  //   var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+  //   var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  //   if (uri.match(re)) {
+  //     return uri.replace(re, '$1' + key + "=" + value + '$2');
+  //   }
+  //   else {
+  //     return uri + separator + key + "=" + value;
+  //   }
+  // }
+
+
+
+
+
 
 
   // ------------------------------------
@@ -240,9 +254,9 @@ $(document).ready(function() {
   // Make slider interactive.
   $( "#slider" ).slider({
       value: rangeDefault,
-      min: 1,
-      max: 120,
-      step: 1,
+      min: 0.1,
+      max: 100,
+      step: 0.1,
       slide: function( event, ui ) {
         price = determinePrice(ui.value);
         updatePriceDisplay(price);
