@@ -11,7 +11,7 @@ $(document).ready(function() {
       range_slope: 2000, //50000-0/25-0, // spelling slope calculations out, they are y2-y1/x2-x1
       range_subtract: 0,
       price_base: 1000, // base price for level
-      support_hours: 5,
+      support_hours: 10,
       multiplier: 0.07
     },
     medium: {
@@ -21,9 +21,9 @@ $(document).ready(function() {
       range_end: 50,
       range_slope: 6000, // 200000-50000/50-25
       range_subtract: 25,
-      price_base: 5000,
+      price_base: 3000,
       support_hours: 50,
-      multiplier: 0.05
+      multiplier: 0.04
     },
     large: {
       population_start: 200001,
@@ -32,9 +32,9 @@ $(document).ready(function() {
       range_end: 75,
       range_slope: 24000, //800000-200000/75-50,
       range_subtract: 50,
-      price_base: 15000,
-      support_hours: 150,
-      multiplier: 0.04
+      price_base: 6000,
+      support_hours: 100,
+      multiplier: 0.025
     },
     metro: {
       population_start: 800001,
@@ -43,9 +43,9 @@ $(document).ready(function() {
       range_end: 100,
       range_slope: 8000, //1000000-800000/100-75,
       range_subtract: 75,
-      price_base: 30000,
+      price_base: 10000,
       support_hours: 150,
-      multiplier: 0.03
+      multiplier: 0.02
     }
   };
 
