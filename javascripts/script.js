@@ -8,7 +8,13 @@
  */
 
 
+
+
 $(document).ready(function() {
+
+  // Wake up heroku
+  $.get( "http://civicinsight-signup.herokuapp.com/" );
+
 	
 	// Cache the Window object
 	$window = $(window);
