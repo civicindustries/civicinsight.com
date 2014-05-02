@@ -68,6 +68,10 @@ $(document).ready(function() {
     'custom': 15000
   };
 
+  // function activateModals() {
+    
+  // }
+
 
   // Highlight current city in css.
   function highlightCity(size) {
