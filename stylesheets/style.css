@@ -224,11 +224,11 @@ a:hover{
 }
 
 ul#nav {	
-	padding: 15px;
+	padding: 18px;
 }
 ul#nav li{
 	display: inline;
-	padding: 10px 22px;
+	padding: 15px 10px 10px 10px;
 	font-size: 20px;
 	list-style: none;
 }
@@ -237,7 +237,6 @@ ul#nav li a{
 	font-weight: 400;
 	text-decoration: none;
 }
-
 
 ul{
 	padding: 0;
@@ -815,9 +814,8 @@ blockquote{
 
 
 #case-studies{
-  text-align: white !important;
-  background-color: #00b9bd !important ;  
-  height: 700px !important;
+  background-color: #f8f8f8 !important ;  
+  /*height: 700px !important;*/
 }
 
 #case-studies li{
@@ -945,6 +943,12 @@ blockquote{
   text-align: center;
   line-height: 230%;
   font-size: 100%;
+}
+
+#case-studies .quote-text {
+  font-style: italic;
+  min-height: 130px;
+  font-size: 110%;
 }
 
 #clients .quote-text{
