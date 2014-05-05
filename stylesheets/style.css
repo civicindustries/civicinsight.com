@@ -802,6 +802,19 @@ blockquote{
 
 }
 
+#feature-list .panel-default .panel-heading {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+
+#feature-list .panel-title{
+  font-size: 150%;
+  font-weight: normal;
+  text-align: center;  
+}
+
+
 
 #cities-citizens ul{
 	position: relative;
