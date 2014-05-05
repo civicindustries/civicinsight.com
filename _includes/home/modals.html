@@ -5,42 +5,31 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
 
         <div style="width: 900px; margin: 0 auto">
+          <p>Your annual subscription fee is based on the size of your agency’s jurisdiction.
+Use the slider below to estimate your annual subscription fee.</p>
+
 
           <div id="prices" class="left-column box white-background" >
 
             <label for="population">Population:</label>
             <input type="text" id="population">
 
-            <label for="price_base">One time setup fee:</label>
-            <input type="text" id="price_base">
-
             <label for="total_price">Annual fee:</label>
             <input type="text" id="total_price">
 
+
+            <label for="price_base">One time setup fee:</label>
+            <input type="text" id="price_base">
 
             <label for="price">Price per capita:</label>
             <input type="text" id="price">
 
             <label for="price_5_years">Total price per capita 5 years including depreciated setup fee:</label>
             <input type="text" id="price_5_years">
-
-
-
-           <!--  <label for="plan_fee">Plan fee:</label>
-            <input type="text" id="plan_fee"> -->
-
-
-          </div>
-
-          <div id="plans"  class="right-column box white-background" >
-            <input type="radio" name="data_plan" value="house_facts">House Facts<br />
-            <input type="radio" name="data_plan" value="partner">Partner program data (Accela/Socrata)<br />
-            <input type="radio" name="data_plan" value="custom">Custom Data<br />
           </div>
 
           <div class="clear"></div>
@@ -51,36 +40,59 @@
             <div class="category active small">
               <span class="icon"><img src="images/pricing/city_town_hall.png" />
               <h4>Small City</h4>
-
-              <p>Description</p>
-
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$1k</span></div>
+              <div class="plus-sign"><span class="glyphicon gylphicon-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.070</span></div>
+              <ul>
+                <li>All Product Features</li>
+                <li>Stable Cloud Infrastructure</li>
+                <li>Support: 10 hours/year</li>
+              </ul>
             </div>
             <div class="category medium">
               <span class="icon"><img src="images/pricing/city_small.png" />
-              <h4>Medium City</h4>
-
-              <p>Description</p>
+              <h4>Mid-size City</h4>
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$3k</span></div>
+              <div class="plus-sign"><span class="glyphicon gylphicon-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.040</span></div>
+              <ul>
+                <li>All Product Features</li>
+                <li>Stable Cloud Infrastructure</li>
+                <li>Support: 20 hours/year</li>
+              </ul>
 
             </div>
             <div class="category large">
               <span class="icon"><img src="images/pricing/city_medium.png" />
               <h4>Large City</h4>
-
-              <p>Description</p>
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$6k</span></div>
+              <div class="plus-sign"><span class="glyphicon gylphicon-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.025</span></div>
+              <ul>
+                <li>All Product Features</li>
+                <li>Stable Cloud Infrastructure</li>
+                <li>Support: 40 hours/year</li>
+              </ul>
 
             </div>
             <div class="category metro">
               <span class="icon"><img src="images/pricing/city_large.png" />
               <h4>Metropolis</h4>
-
-              <p>Description</p>
-
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$10k</span></div>
+              <div class="plus-sign"><span class="glyphicon gylphicon-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.025</span></div>
+              <ul>
+                <li>All Product Features</li>
+                <li>Stable Cloud Infrastructure</li>
+                <li>Support: 80 hours/year</li>
+              </ul>
             </div>
           </div>
+
        </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+      <button type="button" class="btn btn-default" data-dismiss="modal"><div class="pricing-done-button">Ok, that's looks right</div></button>
     </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
@@ -97,10 +109,42 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-      SET UP FEE content here (move slider here if necessary)
+        <p>Your initial, one-time setup fee is based on the data sources that hold the data you’d like to represent in Civic Insight.</p>
+        <p>Select the option that sounds most like you to estimate your one-time setup fee.</p>
+
+
+
+          <div id="plans"  class="right-column box white-background" >
+            <div class="plan">
+              <input type="radio" name="data_plan" value="house_facts">House Facts Integration<br />
+              <p><em>Select this option if:</em> your agency’s relevant datasets are compliant with the <a href="link_to_housefacts">HouseFacts</a> data standard, and are available on a data portal or .csv file.</p>
+              <div class="amount">$1000</div>
+            </div>
+            <div class="plan">
+              <input type="radio" name="data_plan" value="partner">Partner Integration<br />
+              <p><em>Select this option if:</em> your agency’s relevant datasets are available via one of the following partner systems: 
+              <ul>
+                <li>Accela Automation</li>
+                <li>Davenport LAMA</li>
+                <li>Socrata Open Data</li>
+              </ul>
+            </p>
+            <div class="amount">$5000</div>
+            </div>
+            <div class="plan">
+              <input type="radio" name="data_plan" value="custom">Custom Integration<br />
+              <p><em>Select this option if:</em> the other two options don’t apply to you! We’ll develop custom importrs to pull the relevant datasets from your existing systems.</p>
+              <div class="amount">$15,000</div>
+            </div>
+
+            
+          </div>
+
+
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><div class="pricing-done-button">Ok, that's looks right</div></button>
       </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
