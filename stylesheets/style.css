@@ -301,9 +301,15 @@ ul#nav li a {
 }
 
 #feature-list .panel-title {
-  font-size: 150%;
-  font-weight: 400;
+  font-size: 200%;
+  font-weight: normal;
   text-align: center;
+  margin: 5px 0;
+}
+
+#feature-list .panel-title a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 /** PARTNERS **/
 #partners .logos {

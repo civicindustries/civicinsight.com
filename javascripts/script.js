@@ -93,6 +93,22 @@ $(document).ready(function() {
     }, "json");
 
   });
+
+
+
+  function collapseAccordionArrows() {
+      $('#full-feature-list').on('show.bs.collapse', function () {
+       $(".glyphicon-chevron-right").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-up");
+    });
+
+    $('#full-feature-list').on('hide.bs.collapse', function () {
+       $(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-right");
+    });
+  }
+
+
+  collapseAccordionArrows();
+
 });
 
 /*
