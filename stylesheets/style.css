@@ -279,7 +279,23 @@ ul#nav li a {
   margin: 0 auto;
 }
 
-/** QUOTE **/
+
+/** PRICING **/
+#pricing h3 {
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+#pricing .columns {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+#pricing .flush {
+  margin: 0;
+  padding: 0;
+}
+
 #pricing .left-column,#pricing .center-column,#pricing .right-column {
   width: 25% !important;
   float: left;
@@ -288,16 +304,43 @@ ul#nav li a {
   margin-left: 7%;
 }
 
-#pricing h1,#press h1 {
-  height: 120px;
+#pricing .quote-button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 150%;
+  cursor: pointer;
 }
 
+#pricing .calculate .amount {
+  border-bottom: 2px dotted #F1601D;
+  margin-bottom: 6px;
+  font-style: italic;
+  color:  #F1601D;
+}
+#quote,
+#about-subscription {
+  padding: 20px;
+}
 
+#about-subscription ul.options,
+#about-subscription ul.options strong {
+  font-size: 100%;
+}
+
+#about-subscription ul.options li {
+  margin-bottom: 10px;
+  list-style-image:url('../images/double-arrow.png');
+  list-style-position: inside;
+}
 /** FEATURE LIST **/
 
-#feature-list .panel-default .panel-heading {
+#feature-list .panel-default .panel-heading,
+#feature-list .panel-default .panel-body {
   background-color: gray;
   color: #fff;
+  border: none;
 }
 
 #feature-list .panel-title {
@@ -327,6 +370,10 @@ ul#nav li a {
 
 
 /** PRESS **/
+#press h1 {
+  height: 120px;
+}
+
 #press ul li {
   padding: 0 0 25px;
 }
