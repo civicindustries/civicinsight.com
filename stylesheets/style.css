@@ -202,8 +202,8 @@ ul#nav li a {
 #newsletter .form input,
 #newsletter .form select {
   font-size: 150%;
-  margin: 20px 5px 30px;
-  padding: 7px;
+  margin: 0px 5px;
+  padding: 10px 30px;
 }
 
 #newsletter input[type=checkbox] {
@@ -227,19 +227,19 @@ ul#nav li a {
 }
 
 #newsletter input[type=checkbox]  ~ label:before {
-    content: '';
-    width: 32px;
-    height: 32px;
-    background: url(http://dl.dropbox.com/u/51558405/unchecked.png) no-repeat; /* @TODO Change to local graphics */
-    display: inline-block;
-    cursor: pointer;
-    vertical-align: middle;
-    margin-right: 3px; /*rtl*/
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url(http://dl.dropbox.com/u/51558405/unchecked.png) no-repeat; /* @TODO Change to local graphics */
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 3px; /*rtl*/
 }
 
 #newsletter input[type=checkbox]:checked ~ label:before {
-    content: '';
-    background: url(http://dl.dropbox.com/u/51558405/checked.png) no-repeat; /* @TODO Change to local graphics */
+  content: '';
+  background: url(http://dl.dropbox.com/u/51558405/checked.png) no-repeat; /* @TODO Change to local graphics */
 }
 
 
@@ -480,7 +480,7 @@ footer {
 
 .pricing-price .menu-button {
   font-size: 65%;
-  padding: 8px 20px 12px;
+  padding: 8px 20px 12px 10px;
 }
 
 .pricing-plan-intro {
