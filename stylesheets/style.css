@@ -138,8 +138,64 @@ ul#nav li a {
 
 
 /** AUDIENCE **/
+#who-for h2 {
+  margin-bottom: 20px;
+}
+
+#who-for .benefits {
+  text-align: left;
+  text-align: center;
+  min-height: 125px;
+  margin: 0 25px 20px 0;
+}
+
+#who-for .image {
+  text-align: center !important;
+}
+
+#who-for .summary {
+  text-align: left;
+  font-weight: normal;
+}
+
+#who-for .title {
+  font-weight: 400;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#who-for .summary p,#who-for .summary strong {
+  font-size: 130%;
+  line-height: 120%;
+}
+
 
 /** USES **/
+.case-studies .section-pad {
+  margin-bottom: 20px;
+}
+
+.case-studies p {
+
+}
+.case-studies .quote-text {
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.case-studies .attribution,
+.case-studies .attribution a {
+  font-size: 100%;
+  text-align: right;
+}
+
+.case-studies .attribution a {
+  font-weight: bold;
+  font-size: 150%;
+  margin-top: 30px;
+  text-decoration: underline;
+  display: block;
+}
 
 /** MAILCHIMP **/
 
@@ -541,38 +597,7 @@ footer {
   width: 150px;
 }
 
-/*#neighborhood-revitalization .benefits {
-  text-align: left;
-}
 
-#neighborhood-revitalization .summary {
-  padding-top: 140px;
-  text-align: left;
-}
-
-#neighborhood-revitalization .summary p,#neighborhood-revitalization .summary strong {
-  font-size: 130%;
-  line-height: 120%;
-  font-weight: 300;
-}
-
-#neighborhood-revitalization .summary strong {
-  font-weight: 400;
-}
-
-#neighborhood-revitalization .image {
-  text-align: center !important;
-}
-
-#neighborhood-revitalization .benefits {
-  text-align: center;
-  min-height: 125px;
-  float: left;
-  width: 230px;
-  margin-right: 20px;
-  position: relative;
-}
-*/
 /*#clients {
   height: 425px;
 }

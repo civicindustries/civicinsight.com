@@ -40,14 +40,14 @@
 }
 
 /*  SimpleFlex Grid  */
-.row:before,.row:after {
+/*.row:before,.row:after {
   display: table;
   content: "";
 }
 
 .row:after {
   clear: both;
-}
+}*/
 
 .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11 {
   margin-right: 3.5%;
@@ -55,10 +55,10 @@
   min-height: 1px;
 }
 
-.row > [class*=span]:last-child {
+/*.row > [class*=span]:last-child {
   margin-right: 0;
 }
-
+*/
 .span1 {
   width: 5.125%;
 }

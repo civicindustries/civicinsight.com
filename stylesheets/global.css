@@ -207,6 +207,11 @@ label {
   border-radius: 5px;
   font-size: 90%;
 }
+.menu-button:hover {
+  background-color: #E0500C;
+  color: #FFF;
+}
+
 
 .button {
   background-color: #F1601D;
@@ -215,22 +220,6 @@ label {
   text-align: center;
   width: 150px;
 }
-
-.menu-button:hover {
-  background-color: #E0500C;
-  color: #FFF;
-}
-
-.left-column .button {
-  width: 70%;
-  margin-left: 87px;
-}
-
-.right-column .button {
-  width: 70%;
-  margin-left: -3px;
-}
-
 .button a {
   color: #FFF;
 }
@@ -248,21 +237,29 @@ label {
 }
 
 
+.left-column .button {
+  width: 70%;
+  margin-left: 87px;
+}
+
+.right-column .button {
+  width: 70%;
+  margin-left: -3px;
+}
+
+
 .offwhite-background {
   background-color: #f8f8f8;
   color: #444;
-  /* Blackish */
 }
 
 .white-background {
   background-color: #FFF;
   color: #444;
-/* Blackish */
 }
 
 .teal-background {
   background-color: #00b9bd;
-/* Teal */
   color: #FFF !important;
 }
 
@@ -276,6 +273,10 @@ label {
 
 .black-font {
   color: #000;
+}
+
+.orange-font {
+  color: #F1601D;
 }
 
 .blurb {
