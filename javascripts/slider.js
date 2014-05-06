@@ -114,12 +114,18 @@ $(document).ready(function() {
   // Update display of price in markup.
   function updatePriceDisplay(price) {
 
-        $( "#price" ).val( "$" + price.per_capita);
+        // $( "#price" ).val( "$" + price.per_capita);
         $( "#total_price" ).val( "$" + price.total_price_label );
         $( "#population" ).val(price.population_label );
-        $( "#price_base" ).val("$" + price.price_base_label );
-        $( "#price_5_years" ).val("$" + price.price_5_years );
+        // $( "#price_base" ).val("$" + price.price_base_label );
+        // $( "#price_5_years" ).val("$" + price.price_5_years );
         // $( "#plan_fee" ).val("$" + price.plan_fee_label );
+        var sliderPosition = $('.ui-slider-handle').offset() ;
+        var sliderPositionX = sliderPosition.left - 150;
+        
+        console.log(sliderPositionX);
+        
+        $('#prices').offset({left: sliderPositionX});
   }
 
   // Get current fee based on radio box selection.

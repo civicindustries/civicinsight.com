@@ -136,6 +136,26 @@ ul#nav li a {
   font-size: 120%;
 }
 
+.cities-citizens-icons {
+  height: 115px;
+  left: 0;
+  position: absolute;
+  top: -15px;
+  width: 95px;
+}
+
+
+#cities-citizens ul {
+  position: relative;
+}
+
+#cities-citizens li {
+  padding: 0 45px 35px 105px;
+  position: relative;
+  min-height: 80px;
+}
+
+
 
 /** AUDIENCE **/
 #who-for h2 {
@@ -171,6 +191,27 @@ ul#nav li a {
 
 
 /** USES **/
+
+
+#case-studies {
+  background-color: #f8f8f8 !important;
+}
+
+#case-studies li {
+  list-style: none;
+  margin-left: 0;
+  padding: 5px 0;
+}
+
+#case-studies h1 {
+  font-size: 300%;
+}
+
+#case-studies .benefit-types img {
+  padding-top: 20px;
+  width: 150px;
+}
+
 .case-studies .section-pad {
   margin-bottom: 20px;
 }
@@ -490,51 +531,236 @@ footer {
   line-height: 130%;
 }
 
-#prices {
-  padding: 10px;
+#quote-annual-fee .menu-button {
+  font-size: 150%;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.arrow-box {
   width: 300px;
+  background-color: #e6e6e6;
+  border: none;
+  text-shadow: none;
+  font-size: 150%;
+  position: relative;
+  background:  #e6e6e6;
+  cursor: pointer;
+}
+
+
+.arrow-box:after, .arrow_box:before {
+  right: 50%;
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow-box:after {
+  border-color:  transparent;
+  border-top-color: #e6e6e6;
+  border-width: 15px;
+  margin-right: -15px;
+}
+
+
+
+.population {
+  background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.total-price {
+  background-color: #e6e6e6;
+    padding: 10px;
 }
 
 #prices input {
   border: 0;
   width: 200px;
+  background-color: transparent;
 }
 
 #slider {
   margin-top: 40px;
+  width: 800px;
+  background-color: #b3b3b3;
+  border-radius: 0;
+  border: none;
+}
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default {
+  background-color: #f1601d;
+  height: 33px;
+  width: 20px;
+  border-radius: 3px;
+  border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.8em;
+}
+
+.per-capita .lbl,
+.base-rate .lbl {
+  display: block;
+  font-size: 0.8em;
+}
+
+.per-capita,
+.base-rate {
+  width: 35%;
+  display: inline-block;
+}
+
+
+.plus-sign {
+  width: 20%;
+  display: inline-block;
+
+}
+
+.plus-sign span {
+  margin-top: -10px;
+}
+
+.categories {
+  height: auto;
 }
 
 .category {
   float: left;
-  margin-right: 10px;
-  width: 17%;
-  padding: 10px;
-  background-color: #fff;
-  min-height: 250px;
+  font-size: 100%;
+  margin-right: 0px;
+  width: 22.5%;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: 1px #999999 solid;
+  border-right: none;
+  min-height: 300px;
+}
+.category:last-child {
+  border-right: 1px #999999 solid;
 }
 
+
 .category.active {
-  background-color: #ddd;
+  background-color: #e6e6e6;
 }
 
 .category h4 {
   line-height: 1em;
+  font-size: 150%;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #4d4d4d;
+}
+
+.category hr {
+/*  border: 0;
+  color: #4d4d4d;
+  background-color: #4d4d4d;
+  height: 1px;*/
+}
+
+.category.active h4 {
+  color: #f1601d;
+}
+
+.category .options {
+  text-align: center;
+  
+}
+.category .options li{
+  margin-bottom: 10px;
+
+}
+
+#default .category .options li,
+#default .category .options li strong {
+  font-size: 110%;
 }
 
 
+.modal-header {
+  border-bottom: none;
+}
 
+.modal-footer {
+  border-top: none;
+  text-align: center;
+}
 
+/** About **/
+#about {
+  height: 200px;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  border: solid #999;
+  border-width: 1px 0 0;
+  font-weight: 400;
+  font-size: 110%;
+}
 
-/** Special sections **/
+.brought-to-you {
+  line-height: 135%;
+  font-weight: 700;
+  color: #444;
+}
 
+#about a,#about li,#about li a {
+  font-weight: 400;
+  font-size: 110%;
+}
 
+#about strong,#about .offset2 {
+  font-size: 110%;
+}
 
+.page-top-offset,#about-page {
+  margin-top: 150px;
+}
 
+#about .columns {
+  padding: 30px 0;
+}
+
+#funders {
+  margin-top: 40px;
+}
+
+.social li {
+  list-style: none;
+}
+
+.bio .face {
+  border: 1px solid #DDD;
+  margin: 5px 20px 60px 0;
+  padding: 0;
+  text-align: center;
+  width: 175px;
+  float: left;
+}
+
+.bio h2 {
+  margin: 0 20px;
+}
+
+.bio .bio-text {
+  margin: 0;
+}
 
 
 /** DISORGANIZED **/
-
-
 #knowledge-is-power {
   height: 385px;
   margin: 0 auto;
@@ -580,180 +806,3 @@ footer {
 #mission {
   margin-top: 150px;
 }
-
-#about {
-  height: 200px;
-  margin: 0 auto;
-  max-width: 1920px;
-  padding: 20px 0;
-  position: relative;
-  width: 100%;
-  border: solid #999;
-  border-width: 1px 0 0;
-  font-weight: 400;
-  font-size: 110%;
-}
-
-.brought-to-you {
-  line-height: 135%;
-  font-weight: 700;
-  color: #444;
-}
-
-#about a,#about li,#about li a {
-  font-weight: 400;
-  font-size: 110%;
-}
-
-#about strong,#about .offset2 {
-  font-size: 110%;
-}
-
-#funders {
-  margin-top: 40px;
-}
-
-.social li {
-  list-style: none;
-}
-
-.bio .face {
-  border: 1px solid #DDD;
-  margin: 5px 20px 60px 0;
-  padding: 0;
-  text-align: center;
-  width: 175px;
-  float: left;
-}
-
-.bio h2 {
-  margin: 0 20px;
-}
-
-.bio .bio-text {
-  margin: 0;
-}
-
-.page-top-offset,#about-page {
-  margin-top: 150px;
-}
-
-#about .columns {
-  padding: 30px 0;
-}
-
-
-#cities-citizens ul {
-  position: relative;
-}
-
-#cities-citizens li {
-  padding: 0 45px 35px 105px;
-  position: relative;
-  min-height: 80px;
-}
-
-#case-studies {
-  background-color: #f8f8f8 !important;
-}
-
-#case-studies li {
-  list-style: none;
-  margin-left: 0;
-  padding: 5px 0;
-}
-
-#case-studies h1 {
-  font-size: 300%;
-}
-
-#case-studies .benefit-types img {
-  padding-top: 20px;
-  width: 150px;
-}
-
-
-/*#clients {
-  height: 425px;
-}
-
-#clients .summary {
-  width: 300px;
-  margin-left: 90px;
-  text-align: left;
-  font-size: 120%;
-  padding: 20px 10px;
-}
-
-#clients .quote {
-  text-align: left;
-  padding-left: 60px;
-  position: relative;
-  font-size: 100%;
-  width: 40%;
-  font-size: 110%;
-  float: left;
-}
-
-#clients .circular-image {
-  margin: 65px 0;
-}
-
-#clients .circular-image img {
-  left: 0;
-  top: 0;
-  width: 108px !important;
-}
-
-#clients strong {
-  font-size: 125%;
-  text-align: center;
-  line-height: 230%;
-  font-size: 100%;
-}
-
-#case-studies .quote-text {
-  font-style: italic;
-  min-height: 130px;
-  font-size: 110%;
-}
-
-#clients .quote-text {
-
-  min-height: 130px;
-  font-size: 100%;
-}
-
-#clients .quote-name {
-  font-size: 100%;
-  text-align: right;
-  margin: 5px 0;
-}
-
-#clients .watch-video {
-  font-size: 100%;
-  text-align: right;
-  margin: 5px 0;
-}*/
-
-
-
-.cities-citizens-icons {
-  height: 115px;
-  left: 0;
-  position: absolute;
-  top: -15px;
-  width: 95px;
-}
-
-#interest {
-  width: 500px;
-  margin: 0 auto;
-}
-
-#form-depth label {
-  padding-left: 10px !important;
-}
-
-
-
