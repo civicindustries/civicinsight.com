@@ -199,38 +199,61 @@ ul#nav li a {
 
 /** MAILCHIMP **/
 
-.form {
-  text-align: center;
-}
-
-.form input,.form select {
+#newsletter .form input,
+#newsletter .form select {
   font-size: 150%;
   margin: 20px 5px 30px;
   padding: 7px;
 }
 
-.mc-field-group {
-  margin-bottom: 10px;
-}
-
-#mc_embed_signup input[type=checkbox] {
+#newsletter input[type=checkbox] {
   margin: 7px 0;
+  display:none;
+}
+#newsletter .info {
+  margin-bottom: 20px;
 }
 
-.mc-field-group-first label {
-  font-size: 100% !important;
+#newsletter .option {
+  text-align: left;
+  margin-left: 11%;
+  margin-bottom: 5px;
+}
+
+#newsletter .menu-button {
+  font-size: 200%;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+#newsletter input[type=checkbox]  ~ label:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url(http://dl.dropbox.com/u/51558405/unchecked.png) no-repeat; /* @TODO Change to local graphics */
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 3px; /*rtl*/
+}
+
+#newsletter input[type=checkbox]:checked ~ label:before {
+    content: '';
+    background: url(http://dl.dropbox.com/u/51558405/checked.png) no-repeat; /* @TODO Change to local graphics */
+}
+
+
+#newsletter label {
+  font-size: 150% !important;
   font-family: Lato !important;
 }
 
-#signup {
-  height: 700px;
-}
-
-#signup form input[type=text],#signup form input[type=email] {
+#newsletter form input[type=text],
+#newsletter form input[type=email] {
   margin: 20px 0 5px;
 }
 
-#signup input[type=radio] {
+#newsletter input[type=radio] {
   margin: 4px;
   padding: 0;
 }
