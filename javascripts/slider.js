@@ -68,10 +68,30 @@ $(document).ready(function() {
     'custom': 15000
   };
 
-  // function activateModals() {
-    
-  // }
+  function setupQuoteCalculator() {
+    closeAnnualSubscriptionModal();
+    closeSetupFeeModal();
+  }
+  function closeAnnualSubscriptionModal() {
+    // on modal close
+    // take value
+    // load into the other thing
+    // check if both values have been set up
+  }
 
+  function closeSetupFeeModal() {
+
+  }
+
+  function updateQuote() {
+    // change the class
+    // update share button
+    setupShareButton();
+  }
+
+  function setupShareButton() {
+
+  }
 
   // Highlight current city in css.
   function highlightCity(size) {
@@ -279,4 +299,6 @@ $(document).ready(function() {
   // Update default settings on page load.
   updatePrice(rangeDefault);
   updatePriceTooltip();
+  setupQuoteCalculator();
+
 });
