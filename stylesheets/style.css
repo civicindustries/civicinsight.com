@@ -246,7 +246,7 @@ ul#nav li a {
   margin: 0px 5px;
   padding: 10px 30px;
 }
-
+.checkbox,
 #newsletter input[type=checkbox] {
   margin: 7px 0;
   display:none;
@@ -254,6 +254,7 @@ ul#nav li a {
 #newsletter .info {
   margin-bottom: 20px;
 }
+
 
 #newsletter .option {
   text-align: left;
@@ -266,7 +267,7 @@ ul#nav li a {
   text-transform: uppercase;
   padding: 0 20px;
 }
-
+.checkbox ~ label:before,
 #newsletter input[type=checkbox]  ~ label:before {
   content: '';
   width: 32px;
@@ -278,6 +279,7 @@ ul#nav li a {
   margin-right: 3px; /*rtl*/
 }
 
+.checkbox:checked ~ label:before,
 #newsletter input[type=checkbox]:checked ~ label:before {
   content: '';
   background: url(http://dl.dropbox.com/u/51558405/checked.png) no-repeat; /* @TODO Change to local graphics */
@@ -531,12 +533,6 @@ footer {
   line-height: 130%;
 }
 
-#quote-annual-fee .menu-button {
-  font-size: 150%;
-  padding: 10px 20px;
-  text-align: center;
-  margin: 10px 0;
-}
 .annual-subscription-calculator .info {
   text-align: center;
 }
@@ -583,8 +579,6 @@ footer {
 #prices {
   display: none;
 }
-
-
 
 #prices input {
   border: 0;
@@ -700,10 +694,12 @@ footer {
   color: #f1601d;
 }
 
+.plan .options,
 .category .options {
   text-align: center;
   
 }
+.plan .options li,
 .category .options li{
   margin-bottom: 10px;
 }
@@ -711,6 +707,10 @@ footer {
 #default .category .options li,
 #default .category .options li strong {
   font-size: 110%;
+}
+
+.modal-title {
+  display: none; /* hidden but available for accessibility reasons */
 }
 
 .modal-header {
@@ -721,6 +721,103 @@ footer {
   border-top: none;
   text-align: center;
 }
+
+.modal-footer .menu-button {
+  font-size: 150%;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#quote-setup-fee .info {
+  font-size: 100%;
+}
+
+#plans .plan {
+  float: left;
+  font-size: 100%;
+  margin-right: 10px;
+  width: 30%;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-right: none;
+  min-height: 340px;
+}
+
+.plan .options {
+  margin-top: 10px;
+  display: block;
+}
+.plan .options li {
+  margin-bottom: 5px;
+  font-size: 90%;
+  text-align: left;
+}
+
+
+#quote-setup-fee .info {
+  text-align: center;
+  display: block;
+  margin: 0 10% 20px 10%;
+}
+
+#plans {
+  display: block;
+  margin: 0 10%;
+}
+
+#default  #plans p,
+#default  #quote-setup-fee p {
+  font-size: 120%;
+}
+#default  #plans strong,
+#default #quote-setup-fee strong {
+  font-size: 120%;
+}
+
+.plan label{
+  font-size: 150% !important;
+  color: #F1601D;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+.plan em {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.plan label {
+  width: 80%;
+  display: inline-block;
+}
+
+.plan label span{  
+  text-align: right;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+#plans .amount{
+  font-size: 200%;
+  color: #F1601D;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 5%;
+}
+
+#plans .amount span{
+  font-size: 75%;
+  color: #444;
+  text-align: center;
+  margin-left: 10px;
+  display: block;
+}
+
+
+
 
 /** About **/
 #about {

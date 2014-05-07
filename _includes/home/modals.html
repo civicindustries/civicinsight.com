@@ -1,10 +1,11 @@
 
 
-<div class="modal fade" id="quote-annual-fee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="quote-annual-fee" tabindex="-1" role="dialog" aria-labelledby="quote-annual-fee-title" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="quote-annual-fee-title">Calculate Annual Fee</h4>
       </div>
       <div class="modal-body">
         <div class="annual-subscription-calculator row">
@@ -107,41 +108,44 @@
 
 
 
-<div class="modal fade" id="quote-setup-fee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade" id="quote-setup-fee" tabindex="-1" role="dialog" aria-labelledby="quote-setup-fee-title" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="quote-setup-fee-title">Calcuate Setup Fee</h4>
       </div>
       <div class="modal-body">
-        <p>Your initial, one-time setup fee is based on the data sources that hold the data you’d like to represent in Civic Insight.</p>
-        <p>Select the option that sounds most like you to estimate your one-time setup fee.</p>
-          <div id="plans"  class="right-column box white-background" >
+        <div class="col-md-12 col-md-10 col-offset-md-1 info">
+          <p>Your initial, one-time setup fee is based on the data sources that hold the data you’d like to represent in Civic Insight.</p>
+          <p><strong>Select the option that sounds most like you to estimate your one-time setup fee.</strong></p>
+        </div>
+          <div id="plans" class="col-md-10 col-offset-md-1">
             <div class="plan">
-              <input type="radio" name="data_plan" value="house_facts">House Facts Integration<br />
+              <input type="radio" name="data_plan" value="house_facts"><label for="house_facts"><span>House Facts Integration</span></label><br />
               <p><em>Select this option if:</em> your agency’s relevant datasets are compliant with the <a href="link_to_housefacts">HouseFacts</a> data standard, and are available on a data portal or .csv file.</p>
               <div class="amount">$1000</div>
             </div>
             <div class="plan">
-              <input type="radio" name="data_plan" value="partner">Partner Integration<br />
+              <input type="radio" name="data_plan" value="partner"><label for="partner"><span>Partner Integration</span></label><br />
               <p><em>Select this option if:</em> your agency’s relevant datasets are available via one of the following partner systems: 
-              <ul>
-                <li>Accela Automation</li>
-                <li>Davenport LAMA</li>
-                <li>Socrata Open Data</li>
+              <ul class="options">
+                <li>&raquo; Accela Automation</li>
+                <li>&raquo; Davenport LAMA</li>
+                <li>&raquo; Socrata Open Data</li>
               </ul>
             </p>
             <div class="amount">$5000</div>
             </div>
             <div class="plan">
-              <input type="radio" name="data_plan" value="custom">Custom Integration<br />
+              <input type="radio" name="data_plan" value="custom"><label for="custom"><span>Custom Integration</span></label><br />
               <p><em>Select this option if:</em> the other two options don’t apply to you! We’ll develop custom importrs to pull the relevant datasets from your existing systems.</p>
-              <div class="amount">$15,000</div>
+              <div class="amount"><span>starting at</span>$15,000</div>
             </div>     
           </div>
       </div>
       <div class="modal-footer">
-        <button type="menu-button" class="btn btn-default" data-dismiss="modal"><div class="pricing-done-button">Ok, that's looks right</div></button>
+        <button type="button" class="btn btn-default menu-button" data-dismiss="modal"><div class="pricing-done-button">Ok, that's looks right</div></button>
       </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
