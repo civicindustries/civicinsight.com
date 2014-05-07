@@ -537,6 +537,9 @@ footer {
   text-align: center;
   margin: 10px 0;
 }
+.annual-subscription-calculator .info {
+  text-align: center;
+}
 
 .arrow-box {
   width: 300px;
@@ -548,7 +551,6 @@ footer {
   background:  #e6e6e6;
   cursor: pointer;
 }
-
 
 .arrow-box:after, .arrow_box:before {
   right: 50%;
@@ -568,8 +570,6 @@ footer {
   margin-right: -15px;
 }
 
-
-
 .population {
   background-color: #f2f2f2;
     padding: 10px;
@@ -579,6 +579,12 @@ footer {
   background-color: #e6e6e6;
     padding: 10px;
 }
+
+#prices {
+  display: none;
+}
+
+
 
 #prices input {
   border: 0;
@@ -592,7 +598,37 @@ footer {
   background-color: #b3b3b3;
   border-radius: 0;
   border: none;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  z-index: 8000;
 }
+.slider-increments {
+  z-index: 9000;  
+  margin-top: -53px;
+  height: 50px;
+  margin-left: 16%;
+}
+.slider-increment {
+  width: 25%;
+  display: inline-block;
+}
+
+.slider-increment div {
+  font-size: 80%;
+  color: #000;
+  border-right: 1px solid #999;
+  margin-right: 50%;
+  padding-top: 20px;
+  height: 20px;
+  display: block;
+}
+
+.slider-increment span {
+  position: relative;
+  left: 47px;
+  display: block;
+}
+
 .ui-state-default, 
 .ui-widget-content .ui-state-default, 
 .ui-widget-header .ui-state-default {
@@ -619,11 +655,9 @@ footer {
   display: inline-block;
 }
 
-
 .plus-sign {
   width: 20%;
   display: inline-block;
-
 }
 
 .plus-sign span {
@@ -632,6 +666,7 @@ footer {
 
 .categories {
   height: auto;
+  margin-left: 5%;
 }
 
 .category {
@@ -649,7 +684,6 @@ footer {
   border-right: 1px #999999 solid;
 }
 
-
 .category.active {
   background-color: #e6e6e6;
 }
@@ -662,13 +696,6 @@ footer {
   color: #4d4d4d;
 }
 
-.category hr {
-/*  border: 0;
-  color: #4d4d4d;
-  background-color: #4d4d4d;
-  height: 1px;*/
-}
-
 .category.active h4 {
   color: #f1601d;
 }
@@ -679,14 +706,12 @@ footer {
 }
 .category .options li{
   margin-bottom: 10px;
-
 }
 
 #default .category .options li,
 #default .category .options li strong {
   font-size: 110%;
 }
-
 
 .modal-header {
   border-bottom: none;
