@@ -45,7 +45,7 @@ $(document).ready(function() {
       range_subtract: 75,
       price_base: 10000,
       support_hours: 150,
-      multiplier: 0.02
+      multiplier: 0.025
     }
   };
 
