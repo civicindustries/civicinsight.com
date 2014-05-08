@@ -1,8 +1,13 @@
-   
+
 $(document).ready(function() {
+  CivicInsight.Pricing.init();
+});
+
+var CivicInsight = CivicInsight || {};
+CivicInsight.Pricing = {
 
   // Settings for the pricing slider.
-  var priceSettings = {
+  priceSettings: {
     small: {
       population_start: 0,
       population_end: 50000,
@@ -47,10 +52,10 @@ $(document).ready(function() {
       support_hours: 150,
       multiplier: 0.025
     }
-  };
+  },
 
   // Default price.
-  var price = {
+  price: {
     total_price: 0,
     total_price_label: 0,
     per_capita: 0,
@@ -59,21 +64,113 @@ $(document).ready(function() {
     price_base_label: 0,
     plan_fee_label: 0,
     price_5_years: 0
-  };
+  },
 
   // Default fees.
-  var fees = {
+  fees: {
     'house_facts': 1000,
     'partner': 5000,
     'custom': 15000
-  };
+  },
 
-  function setupQuoteCalculator() {
-    closeAnnualSubscriptionModal();
-    closeSetupFeeModal();
-  }
+  init: function(){
+    // Set default range
+    var rangeDefault = 50;
 
-  function getParams() {
+    // Make slider interactive.
+    $( "#slider" ).slider({
+        value: rangeDefault,
+        min: 0.1,
+        max: 100,
+        step: 0.1,
+        slide: function( event, ui ) {
+          price = CivicInsight.Pricing.determinePrice(ui.value);
+          CivicInsight.Pricing.updatePriceDisplay(price);
+        }
+      });
+
+    // Update default settings on page load.
+    CivicInsight.Pricing.updatePrice(rangeDefault);
+    CivicInsight.Pricing.updatePriceTooltip();
+    CivicInsight.Pricing.setupQuoteCalculator();
+
+  },
+
+  setupQuoteCalculator: function() {
+    CivicInsight.Pricing.closeAnnualSubscriptionModal();
+    CivicInsight.Pricing.closeSetupFeeModal();
+  },
+
+  closeAnnualSubscriptionModal: function() {
+    var params = CivicInsight.Pricing.getParams(params);
+    console.log(params);
+    var population = $('#quote-annual-fee #population').val();
+    var setup_fee = $('#quote-setup-fee input[name="data_plan"]').attr("checked",true).attr('amount');
+
+    if(params.population && params.range) {
+      var rangeDefault = CivicInsight.Pricing.getSliderRangeDefaultFromPopulation(params.population, params.range);
+       console.log(rangeDefault);
+       CivicInsight.Pricing.updatePrice(rangeDefault);
+
+      if(params.population == undefined) {
+        $('#quote-annual-fee #population').val(0);
+
+      }
+      else {
+        $('#quote-annual-fee #population').val(params.population);
+      }
+
+      if(params.range !== undefined) {
+        $('.category').removeClass('active');
+        $('.category .' + params.range).addClass('active');
+      }
+
+      var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');
+      $('#annual-fee .amount').text(annual_fee);
+
+
+      CivicInsight.Pricing.showShareButton();
+
+    }
+
+    if(params.setup_fee == undefined) {
+      $('#setup-fee .amount').text("0");
+    }
+    else {
+      if( $('#quote-setup-fee input[value="' + params.setup_fee + '"]') !== undefined ) {
+        $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("checked",true);
+        var setup_amount = $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("amount");
+        $('#setup-fee .amount').text(setup_amount);
+      }
+    }
+
+  },
+
+
+  showShareButton: function() {
+    $('.share').show();
+
+    $('.share').click(function() {
+      $('.share .url').text(window.location.href);
+      $('.share .url').show();
+    });
+  },
+
+  closeSetupFeeModal: function() {
+
+  },
+
+  updateQuote: function() {
+    // change the class
+    // update share button
+    CivicInsight.Pricing.setupShareButton();
+  },
+
+  setupShareButton: function() {
+
+  },
+
+  getParams: function() {
 
     var path = window.location.hash
     var queryString = path;
@@ -89,251 +186,171 @@ $(document).ready(function() {
       for ( i = 0, l = queries.length; i < l; i++ ) {
         temp = queries[i].split('=');
         params[temp[0]] = temp[1];
-      }      
+      }
     }
     return params;
-  }
-  
+  },
 
-  function closeAnnualSubscriptionModal() {
-    var params = getParams(params);
-    console.log(params);
-    var population = $('#quote-annual-fee #population').val();
-    var setup_fee = $('#quote-setup-fee input[name="data_plan"]').attr("checked",true).attr('amount');
-
-    if(params.population && params.range) {
-      var rangeDefault = getSliderRangeDefaultFromPopulation(params.population, params.range);
-       console.log(rangeDefault);
-       updatePrice(rangeDefault);
-
-      if(params.population == undefined) {
-        $('#quote-annual-fee #population').val(0);
-        
-      }
-      else {
-        $('#quote-annual-fee #population').val(params.population);
-      }
-
-      if(params.range !== undefined) {
-        $('.category').removeClass('active');
-        $('.category .' + params.range).addClass('active');
-      }
-
-      var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');
-      $('#annual-fee .amount').text(annual_fee);
-
-
-      showShareButton();
-
-    }
-
-    if(params.setup_fee == undefined) {
-      $('#setup-fee .amount').text("0");
-    }
-    else {
-      if( $('#quote-setup-fee input[value="' + params.setup_fee + '"]') !== undefined ) {
-        $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("checked",true);
-        var setup_amount = $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("amount");
-        $('#setup-fee .amount').text(setup_amount);
-      }
-    }
-
-  }
-
-
-  function showShareButton() {
-    $('.share').show();
-
-    $('.share').click(function() {
-      $('.share .url').text(window.location.href);
-      $('.share .url').show();
-    });
-
-
-  }
-  function closeSetupFeeModal() {
-
-  }
-
-  function updateQuote() {
-    // change the class
-    // update share button
-    setupShareButton();
-  }
-
-  function setupShareButton() {
-
-  }
 
   // Highlight current city in css.
-  function highlightCity(size) {
+  highlightCity: function(size) {
     // Only update if we are in a new range.
     if(!$('.category.' + size).hasClass('active') ) {
-      $('.category').removeClass('active');  
+      $('.category').removeClass('active');
       $('.category.' + size).addClass('active');
-    }    
-  }
+    }
+  },
 
   // Figure out price based on position on slider.
-  function determinePrice(value) {
+  determinePrice: function(value) {
       var range;
       var currentPrice = 0;
 
-      for (size in priceSettings) {
-        range = rangeMatch(value, size);
-        if (range) { 
-          currentPrice = priceFormula(range, value);
-          highlightCity(size);
+      for (size in CivicInsight.Pricing.priceSettings) {
+        range = CivicInsight.Pricing.rangeMatch(value, size);
+        if (range) {
+          currentPrice = CivicInsight.Pricing.priceFormula(range, value);
+          CivicInsight.Pricing.highlightCity(size);
         }
       }
-      
+
       return currentPrice;
-  }
+  },
 
   // Figure out which range we are in on the slider.
-  function rangeMatch(value, size) {
-    currentRange = priceSettings.small;
-    
+  rangeMatch: function(value, size) {
+    currentRange = CivicInsight.Pricing.priceSettings.small;
+
     if(size) {
-      currentRange = priceSettings[size];
+      currentRange = CivicInsight.Pricing.priceSettings[size];
     }
-    
-    if (value > currentRange.range_start && value <= currentRange.range_end ) {      
+
+    if (value > currentRange.range_start && value <= currentRange.range_end ) {
       return currentRange;
     }
-  }
+  },
 
   // Update display of price in markup.
-  function updatePriceDisplay(price) {
+  updatePriceDisplay: function(price) {
     $( "#total_price" ).val( "$" + price.total_price_label );
     $( "#population" ).val(price.population_label );
-    updatePriceTooltip();
-    updateURLParameters(price);
-  }
+    CivicInsight.Pricing.updatePriceTooltip();
+    CivicInsight.Pricing.updateURLParameters(price);
+  },
 
-  function updateURLParameters(price) {
+  updateURLParameters: function(price) {
     console.log(price);
     var params = {};
     params.population = price.population;
     params.range = $('.category.active').attr('range');
-    params.setup_fee = getImplementationSetting();
-    
+    params.setup_fee = CivicInsight.Pricing.getImplementationSetting();
+
     window.location.hash = jQuery.param( params );
     console.log(params);
 
-  }
+  },
 
   // Update display of price in markup.
-  function updatePriceTooltip() {
+  updatePriceTooltip: function() {
     var sliderPosition = $('.ui-slider-handle').offset();
-    var sliderPositionX = sliderPosition.left - 150;  
+    var sliderPositionX = sliderPosition.left - 150;
     $('#prices').offset({left: sliderPositionX});
 
     $('#quote-annual-fee').on('shown.bs.modal', function(){
-      updatePriceTooltip();
+      CivicInsight.Pricing.updatePriceTooltip();
       $('#prices').show();
     });
 
-
     $('#quote-annual-fee').on('hidden.bs.modal', function(){
-      closeAnnualSubscriptionModal();
-      
+      CivicInsight.Pricing.closeAnnualSubscriptionModal();
     });
 
-  }
-
-
+  },
 
   // Get current fee based on radio box selection.
-  function getImplementationFee() {
-    var selectedVal = getImplementationSetting();
+  getImplementationFee: function() {
+    var selectedVal = CivicInsight.Pricing.getImplementationSetting();
     if(selectedVal) {
       var fee;
-      fee = fees[selectedVal];
+      fee = CivicInsight.Pricing.fees[selectedVal];
       return fee;
     }
-  }
+  },
 
-  function getImplementationSetting() {
+  getImplementationSetting: function() {
     var selected = $("input[type='radio'][name='data_plan']:checked");
     var selectedVal = 0;
     if (selected.length > 0) {
         selectedVal = selected.val();
     }
     return selectedVal;
-  }
+  },
 
   // Convert number to comma-separated number (for display.)
-  function commaSeparateNumber(val){
+  commaSeparateNumber: function(val){
     while (/(\d+)(\d{3})/.test(val.toString())){
       val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
     }
     return val;
-  }
+  },
 
-  function getSliderRangeDefaultFromPopulation(population, range) {
+  getSliderRangeDefaultFromPopulation: function(population, range) {
     var rangeDefault = 0;
-    var range = priceSettings[range];
+    var range = CivicInsight.Pricing.priceSettings[range];
 
     rangeDefault = ((Number(population) - range.population_start)/ range.range_slope) + range.range_subtract;
     return rangeDefault;
-  }
+  },
 
 
   // Figure out pricing values to display.
-  function priceFormula(range, value) {
+  priceFormula: function(range, value) {
     var currentPrice = 0;
-    
+
     var population = 0;
     var currentPlanFee = 0;
 
     // Population is calculated as the position on the slider times a multiplier
     // (The range slider is smoothed out, but increments at the 'medium city' are bigger than smaller city range.)
-    console.log(value-range.range_subtract, range.range_slope);
     population = Math.ceil((value-range.range_subtract) * range.range_slope) + range.population_start;
-    //population = Math.ceil((range.population_end * value ) / range.range_end);
-    population = Math.round(population / 10) * 10 
-    
+    population = Math.round(population / 10) * 10
+
     // Figure out which plan is selected.
-    currentPlanFee = getImplementationFee();
+    currentPlanFee = CivicInsight.Pricing.getImplementationFee();
+    currentPrice = (range.multiplier * population);
 
-    // currentPrice = range.price_base + (range.multiplier * population);  
-
-    currentPrice = (range.multiplier * population);  
-      
-
+    var price = CivicInsight.Pricing.price;
     price.per_capita = Number(currentPrice / population).toFixed(2);
-      
 
     // Set values and put in object which can be rendered on the front end.
     price.population = population;
     price.total_price = Math.floor(currentPrice);
-    price.total_price_label = commaSeparateNumber(Math.floor(currentPrice));
-    price.population_label = commaSeparateNumber(population);
-    
-    price.price_base_label = commaSeparateNumber(currentPlanFee);
+    price.total_price_label = CivicInsight.Pricing.commaSeparateNumber(Math.floor(currentPrice));
+    price.population_label = CivicInsight.Pricing.commaSeparateNumber(population);
+
+    price.price_base_label = CivicInsight.Pricing.commaSeparateNumber(currentPlanFee);
 
     return price;
-  }
+  },
 
-  // Update price. 
-  function updatePrice(value) {
+  // Update price.
+  updatePrice: function(value) {
     var price;
-    price = determinePrice(value);
-    updatePriceDisplay(price);
-  }
+    price = CivicInsight.Pricing.determinePrice(value);
+    CivicInsight.Pricing.updatePriceDisplay(price);
+  },
 
 
-  function updateURLParamsPricing(settings) {
+  updateURLParamsPricing: function(settings) {
     var settings = {
 
     }
     for (item in settings) {
-      updateQueryStringParameter('#pricing', key, value);
+      CivicInsight.Pricing.updateQueryStringParameter('#pricing', key, value);
     }
-  }
+  },
 
-  function updateQueryStringParameter(uri, key, value) {
+  updateQueryStringParameter: function(uri, key, value) {
     var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
     var separator = uri.indexOf('?') !== -1 ? "&" : "?";
     if (uri.match(re)) {
@@ -342,37 +359,5 @@ $(document).ready(function() {
     else {
       return uri + separator + key + "=" + value;
     }
-  }
-
-  // ------------------------------------
-
-  // Set default range
-  var rangeDefault = 50;
-
-  // // Set housefacts to be true by default.
-  // $("input[type='radio'][name='data_plan']").filter('[value="house_facts"]').attr('checked', true);
-
-
-  // // Make radio box interactive.
-  // $("input[type='radio'][name='data_plan']").change(function(){
-  //   updatePrice($('#slider').slider("option", "value")  );
-  // });
-
-  // Make slider interactive.
-  $( "#slider" ).slider({
-      value: rangeDefault,
-      min: 0.1,
-      max: 100,
-      step: 0.1,
-      slide: function( event, ui ) {
-        price = determinePrice(ui.value);
-        updatePriceDisplay(price);
-      }
-    });
-  
-  // Update default settings on page load.
-  updatePrice(rangeDefault);
-  updatePriceTooltip();
-  setupQuoteCalculator();
-
-});
+  },
+};
