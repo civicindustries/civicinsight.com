@@ -36,7 +36,7 @@
             <div class="slider-increment"><div><span>800k residents</span></div></div>
           </div>
           <div class="categories">
-            <div class="category active small">
+            <div class="category active small" range="small">
               
               <h4>Small City</h4>
               <hr />
@@ -50,7 +50,7 @@
                 <li><strong>Support:</strong> 10 hours/year</li>
               </ul>
             </div>
-            <div class="category medium">
+            <div class="category medium" range="medium">
               
               <h4>Mid-size City</h4>
               <hr />
@@ -65,7 +65,7 @@
               </ul>
 
             </div>
-            <div class="category large">
+            <div class="category large" range="large">
               
               <h4>Large City</h4>
               <hr />
@@ -80,7 +80,7 @@
               </ul>
 
             </div>
-            <div class="category metro">
+            <div class="category metro" range="metro">
               
               <h4>Metropolis</h4>
               <hr />
@@ -122,12 +122,12 @@
         </div>
           <div id="plans" class="col-md-10 col-offset-md-1">
             <div class="plan">
-              <input type="radio" name="data_plan" value="house_facts"><label for="house_facts"><span>House Facts Integration</span></label><br />
+              <input type="radio" name="data_plan" value="house_facts" amount="1,000" checked><label for="house_facts"><span>House Facts Integration</span></label><br />
               <p><em>Select this option if:</em> your agency’s relevant datasets are compliant with the <a href="link_to_housefacts">HouseFacts</a> data standard, and are available on a data portal or .csv file.</p>
               <div class="amount">$1000</div>
             </div>
             <div class="plan">
-              <input type="radio" name="data_plan" value="partner"><label for="partner"><span>Partner Integration</span></label><br />
+              <input type="radio" name="data_plan" value="partner" amount="5,000"><label for="partner"><span>Partner Integration</span></label><br />
               <p><em>Select this option if:</em> your agency’s relevant datasets are available via one of the following partner systems: 
               <ul class="options">
                 <li>&raquo; Accela Automation</li>
@@ -138,7 +138,7 @@
             <div class="amount">$5000</div>
             </div>
             <div class="plan">
-              <input type="radio" name="data_plan" value="custom"><label for="custom"><span>Custom Integration</span></label><br />
+              <input type="radio" name="data_plan" value="custom" amount="15,000+"><label for="custom"><span>Custom Integration</span></label><br />
               <p><em>Select this option if:</em> the other two options don’t apply to you! We’ll develop custom importrs to pull the relevant datasets from your existing systems.</p>
               <div class="amount"><span>starting at</span>$15,000</div>
             </div>     

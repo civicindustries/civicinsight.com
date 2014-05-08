@@ -136,6 +136,23 @@ ul#nav li a {
   font-size: 120%;
 }
 
+.share {
+  display: none;
+}
+
+.share .menu-button {
+  font-size: 125%;
+  text-align: center;
+  margin: 20px 20% 10px 0;
+}
+
+.share .url {
+  display: none;
+  margin: 0 5px;
+  background-color: #fff;
+  color: #666;
+}
+
 .cities-citizens-icons {
   height: 115px;
   left: 0;

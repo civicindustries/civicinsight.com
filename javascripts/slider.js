@@ -72,13 +72,85 @@ $(document).ready(function() {
     closeAnnualSubscriptionModal();
     closeSetupFeeModal();
   }
+
+  function getParams() {
+
+    var path = window.location.hash
+    var queryString = path;
+
+    var params = {}, queries, temp, i, l;
+
+    // Split into key/value pairs
+    if(queryString !== undefined){
+
+      queries = queryString.split("&");
+
+      // Convert the array of strings into an object
+      for ( i = 0, l = queries.length; i < l; i++ ) {
+        temp = queries[i].split('=');
+        params[temp[0]] = temp[1];
+      }      
+    }
+    return params;
+  }
+  
+
   function closeAnnualSubscriptionModal() {
-    // on modal close
-    // take value
-    // load into the other thing
-    // check if both values have been set up
+    var params = getParams(params);
+    console.log(params);
+    var population = $('#quote-annual-fee #population').val();
+    var setup_fee = $('#quote-setup-fee input[name="data_plan"]').attr("checked",true).attr('amount');
+
+    if(params.population && params.range) {
+      var rangeDefault = getSliderRangeDefaultFromPopulation(params.population, params.range);
+       console.log(rangeDefault);
+       updatePrice(rangeDefault);
+
+      if(params.population == undefined) {
+        $('#quote-annual-fee #population').val(0);
+        
+      }
+      else {
+        $('#quote-annual-fee #population').val(params.population);
+      }
+
+      if(params.range !== undefined) {
+        $('.category').removeClass('active');
+        $('.category .' + params.range).addClass('active');
+      }
+
+      var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');
+      $('#annual-fee .amount').text(annual_fee);
+
+
+      showShareButton();
+
+    }
+
+    if(params.setup_fee == undefined) {
+      $('#setup-fee .amount').text("0");
+    }
+    else {
+      if( $('#quote-setup-fee input[value="' + params.setup_fee + '"]') !== undefined ) {
+        $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("checked",true);
+        var setup_amount = $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("amount");
+        $('#setup-fee .amount').text(setup_amount);
+      }
+    }
+
   }
 
+
+  function showShareButton() {
+    $('.share').show();
+
+    $('.share').click(function() {
+      $('.share .url').text(window.location.href);
+      $('.share .url').show();
+    });
+
+
+  }
   function closeSetupFeeModal() {
 
   }
@@ -136,6 +208,19 @@ $(document).ready(function() {
     $( "#total_price" ).val( "$" + price.total_price_label );
     $( "#population" ).val(price.population_label );
     updatePriceTooltip();
+    updateURLParameters(price);
+  }
+
+  function updateURLParameters(price) {
+    console.log(price);
+    var params = {};
+    params.population = price.population;
+    params.range = $('.category.active').attr('range');
+    params.setup_fee = getImplementationSetting();
+    
+    window.location.hash = jQuery.param( params );
+    console.log(params);
+
   }
 
   // Update display of price in markup.
@@ -148,19 +233,34 @@ $(document).ready(function() {
       updatePriceTooltip();
       $('#prices').show();
     });
+
+
+    $('#quote-annual-fee').on('hidden.bs.modal', function(){
+      closeAnnualSubscriptionModal();
+      
+    });
+
   }
+
 
 
   // Get current fee based on radio box selection.
   function getImplementationFee() {
+    var selectedVal = getImplementationSetting();
+    if(selectedVal) {
+      var fee;
+      fee = fees[selectedVal];
+      return fee;
+    }
+  }
+
+  function getImplementationSetting() {
     var selected = $("input[type='radio'][name='data_plan']:checked");
     var selectedVal = 0;
     if (selected.length > 0) {
         selectedVal = selected.val();
     }
-    var fee;
-    fee = fees[selectedVal];
-    return fee;
+    return selectedVal;
   }
 
   // Convert number to comma-separated number (for display.)
@@ -171,10 +271,19 @@ $(document).ready(function() {
     return val;
   }
 
+  function getSliderRangeDefaultFromPopulation(population, range) {
+    var rangeDefault = 0;
+    var range = priceSettings[range];
+
+    rangeDefault = ((Number(population) - range.population_start)/ range.range_slope) + range.range_subtract;
+    return rangeDefault;
+  }
+
+
   // Figure out pricing values to display.
   function priceFormula(range, value) {
     var currentPrice = 0;
-    var currentPrice5Years = 0;
+    
     var population = 0;
     var currentPlanFee = 0;
 
@@ -188,45 +297,21 @@ $(document).ready(function() {
     // Figure out which plan is selected.
     currentPlanFee = getImplementationFee();
 
-    // If population is big, set the top end of the scale.
-    // if (range.population_start >= 800000) {
-    //   currentPrice = range.price_base + (range.multiplier * 800000); 
-    //   currentPrice5Years = range.price_base + (range.multiplier * 800000); 
-    // }
-    // else {
-      currentPrice = range.price_base + (range.multiplier * population);  
-      currentPrice5Years = range.price_base + (currentPlanFee / 5) + (range.multiplier * population);  
-    //}
+    // currentPrice = range.price_base + (range.multiplier * population);  
 
-    // Determine price per capita
-    // if (population < 2 ) {
-    //   // Keep bottom end of range from zero'ing out and showing big numbers.
-    //   price.per_capita = 0;
-    //   price.price_5_years = 0;
-    // }
-    // else {
-      price.per_capita = Number(currentPrice / population).toFixed(2);
+    currentPrice = (range.multiplier * population);  
       
-      // Total price ever, including set up fee.
-      price.price_5_years = Number(currentPrice5Years / population).toFixed(2);
-    //}
 
-
+    price.per_capita = Number(currentPrice / population).toFixed(2);
+      
 
     // Set values and put in object which can be rendered on the front end.
     price.population = population;
     price.total_price = Math.floor(currentPrice);
     price.total_price_label = commaSeparateNumber(Math.floor(currentPrice));
     price.population_label = commaSeparateNumber(population);
-    price.plan_fee_label = currentPlanFee;
+    
     price.price_base_label = commaSeparateNumber(currentPlanFee);
-
-    // Override value labels if population is large.
-    // if (range.population_start >= 800000) {
-    //   price.population_label = "800,000 and up";
-    //   price.total_price_label = commaSeparateNumber(Math.floor(currentPrice)) + "+";  
-    //   price.price_base_label = commaSeparateNumber(currentPlanFee) + "+";
-    // }
 
     return price;
   }
@@ -239,50 +324,39 @@ $(document).ready(function() {
   }
 
 
+  function updateURLParamsPricing(settings) {
+    var settings = {
 
+    }
+    for (item in settings) {
+      updateQueryStringParameter('#pricing', key, value);
+    }
+  }
 
-  // @TODO finish
-  // Add settings to URL bar so that price can be updated based on URL path.
-  // 
-  // function updateURLParamsPricing(settings) {
-  //   var settings = {
-
-  //   }
-  //   for (item in settings) {
-  //     updateQueryStringParameter('#pricing', key, value);
-  //   }
-  // }
-
-  // function updateQueryStringParameter(uri, key, value) {
-  //   var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
-  //   var separator = uri.indexOf('?') !== -1 ? "&" : "?";
-  //   if (uri.match(re)) {
-  //     return uri.replace(re, '$1' + key + "=" + value + '$2');
-  //   }
-  //   else {
-  //     return uri + separator + key + "=" + value;
-  //   }
-  // }
-
-
-
-
-
-
+  function updateQueryStringParameter(uri, key, value) {
+    var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+    var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+    if (uri.match(re)) {
+      return uri.replace(re, '$1' + key + "=" + value + '$2');
+    }
+    else {
+      return uri + separator + key + "=" + value;
+    }
+  }
 
   // ------------------------------------
 
   // Set default range
   var rangeDefault = 50;
 
-  // Set housefacts to be true by default.
-  $("input[type='radio'][name='data_plan']").filter('[value="house_facts"]').attr('checked', true);
+  // // Set housefacts to be true by default.
+  // $("input[type='radio'][name='data_plan']").filter('[value="house_facts"]').attr('checked', true);
 
 
-  // Make radio box interactive.
-  $("input[type='radio'][name='data_plan']").change(function(){
-    updatePrice($('#slider').slider("option", "value")  );
-  });
+  // // Make radio box interactive.
+  // $("input[type='radio'][name='data_plan']").change(function(){
+  //   updatePrice($('#slider').slider("option", "value")  );
+  // });
 
   // Make slider interactive.
   $( "#slider" ).slider({
