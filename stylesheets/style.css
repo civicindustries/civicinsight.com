@@ -176,7 +176,7 @@ ul#nav li a {
 
 /** AUDIENCE **/
 #who-for h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #who-for .benefits {
@@ -230,7 +230,7 @@ ul#nav li a {
 }
 
 .case-studies .section-pad {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .case-studies p {
@@ -431,7 +431,7 @@ ul#nav li a {
 
 /** PRESS **/
 #press h1 {
-  height: 120px;
+  height: 100px;
 }
 
 #press ul li {
