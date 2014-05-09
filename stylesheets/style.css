@@ -176,7 +176,7 @@ ul#nav li a {
 
 /** AUDIENCE **/
 #who-for h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #who-for .benefits {
@@ -230,7 +230,7 @@ ul#nav li a {
 }
 
 .case-studies .section-pad {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .case-studies p {
@@ -239,6 +239,7 @@ ul#nav li a {
 .case-studies .quote-text {
   font-style: italic;
   margin-left: 20px;
+  padding: 20px 0;
 }
 
 .case-studies .attribution,
@@ -259,9 +260,9 @@ ul#nav li a {
 
 #newsletter .form input,
 #newsletter .form select {
-  font-size: 150%;
+  font-size: 140%;
   margin: 0px 5px;
-  padding: 10px 30px;
+  padding: 5px 30px;
 }
 .checkbox,
 #newsletter input[type=checkbox] {
@@ -310,7 +311,7 @@ ul#nav li a {
 
 #newsletter form input[type=text],
 #newsletter form input[type=email] {
-  margin: 20px 0 5px;
+  margin: 20px 1px 5px;
 }
 
 #newsletter input[type=radio] {
@@ -344,6 +345,7 @@ ul#nav li a {
 #pricing h3 {
   line-height: 1em;
   margin-bottom: 20px;
+  text-align: center;
 }
 #pricing .columns {
   margin-top: 0;
@@ -431,7 +433,7 @@ ul#nav li a {
 
 /** PRESS **/
 #press h1 {
-  height: 120px;
+  height: 100px;
 }
 
 #press ul li {
@@ -444,7 +446,7 @@ ul#nav li a {
   max-width: 1920px;
   position: relative;
   color: #FFF;
-  height: 850px;
+  height: 820px;
 }
 
 

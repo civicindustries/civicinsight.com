@@ -279,6 +279,7 @@ label {
 
 .orange-font {
   color: #F1601D;
+  padding-top: 20px;
 }
 
 .blurb {
@@ -322,7 +323,7 @@ blockquote {
   width: 80%;
   margin: 10px;
   position: relative;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 .speech-bubble:after {
