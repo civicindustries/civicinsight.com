@@ -105,6 +105,8 @@ App.Pricing = {
     App.Pricing.updatePrice(rangeDefault);
     App.Pricing.updatePriceTooltip();
 
+    App.Pricing.closeSetupFeeModal();
+
     if(params.slider && params.setup_fee) {
       App.Pricing.displaySettingsFromURL();
     }
@@ -137,6 +139,7 @@ App.Pricing = {
         $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("checked",true);
         var setup_amount = $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("amount");
         $('#setup-fee .amount').text(setup_amount);
+        $('#setup-fee').attr('amount', setup_amount);
       }
     }
 
@@ -144,7 +147,7 @@ App.Pricing = {
 
     var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');
     $('#annual-fee .amount').text(annual_fee);
-
+    $('#annual-fee').attr('amount', annual_fee);
 
     console.log(population);
     console.log(annual_fee);
@@ -163,8 +166,64 @@ App.Pricing = {
     });
 
     $('#quote-annual-fee .pricing-done-button').bind('click', function(){
-      App.Pricing.updateAnnualFee();
+      App.Pricing.closeAnnualFeeModal();
     });
+  },
+  closeAnnualFeeModal: function () {
+
+    var population = $('#quote-annual-fee #population').val();
+
+    var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');
+    $('#annual-fee .amount').text(annual_fee);
+    $('#annual-fee').attr('amount', annual_fee);
+
+    App.Pricing.updateClosedModals();
+
+  },
+  closeSetupFeeModal: function () {
+
+    $('#quote-setup-fee .pricing-done-button').bind('click', function(){
+      var selectedVal = App.Pricing.getImplementationSetting();
+      if( $('#quote-setup-fee input[value="' + selectedVal + '"]') !== undefined ) {
+        $('#quote-setup-fee input[value="' + selectedVal + '"]').attr("checked",true);
+        var setup_amount = $('#quote-setup-fee input[value="' + selectedVal + '"]').attr("amount");
+        $('#setup-fee .amount').text(setup_amount);
+        $('#setup-fee').attr('amount', setup_amount);
+      }
+
+    });
+
+    App.Pricing.updateClosedModals();
+  },
+
+  updateClosedModals: function () {
+    var params = {};
+    params.slider = $('#slider').val();
+    params.setup_fee = App.Pricing.getImplementationSetting();
+
+    var annualFee = $('#annual-fee .amount').text();
+    var setupFee = $('#setup-fee .amount').text();
+
+    if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') {
+      App.Pricing.showShareButton();
+    }
+    // update URL params
+    // see if show share link
+
+
+    // fix share link
+    // process total
+    App.Pricing.calculateTotals();
+  },
+
+  calculateTotals: function () {
+    var setupFee = $('#setup-fee').attr('amount');
+    var annualFee = $('#annual-fee').attr('amount');
+    var firstYear = setupFee + annualFee;
+
+    $('.total-first-year .amount').text(firstYear);
+    $('.total-recurring .amount').text(annualFee);
+
   },
 
   showShareButton: function() {
@@ -287,20 +346,6 @@ App.Pricing = {
       App.Pricing.updateQueryStringParameter(uri, key, value);
     }
   },
-
-  updateURLParameters: function(price) {
-    console.log(price);
-    var params = {};
-    params.population = price.population;
-    params.range = $('.category.active').attr('range');
-    params.setup_fee = App.Pricing.getImplementationSetting();
-
-    // window.location.hash = jQuery.param( params );
-    console.log(params);
-
-  },
-
-
 
   updateQueryStringParameter: function(uri, key, value) {
     var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");

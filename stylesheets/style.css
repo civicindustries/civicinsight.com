@@ -136,6 +136,10 @@ ul#nav li a {
   font-size: 120%;
 }
 
+.total-first-year,
+.total-recurring {
+  display: none;
+}
 .share {
   display: none;
 }
@@ -305,7 +309,7 @@ ul#nav li a {
 
 
 #newsletter label {
-  font-size: 150% !important;
+  font-size: 100% !important;
   font-family: Lato !important;
 }
 
@@ -341,6 +345,11 @@ ul#nav li a {
 }
 
 
+/*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+#mce-responses
+
+*/
 /** PRICING **/
 #pricing h3 {
   line-height: 1em;
