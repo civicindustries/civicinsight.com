@@ -157,6 +157,9 @@ ul#nav li a {
   color: #666;
 }
 
+.share .url:hover {
+   /*background-color: yellow;*/
+}
 .cities-citizens-icons {
   height: 115px;
   left: 0;

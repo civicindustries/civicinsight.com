@@ -80,10 +80,10 @@ App.Pricing = {
     var params = App.Pricing.getParams();
     console.log(params);
     if(params.slider && params.setup_fee) {
-      rangeDefault = params.slider;      
+      rangeDefault = params.slider;
     }
     else {
-      rangeDefault = 50;      
+      rangeDefault = 50;
     }
 
     // Make slider interactive.
@@ -121,10 +121,9 @@ App.Pricing = {
   displaySettingsFromURL: function() {
     var params = App.Pricing.getParams();
     console.log(params);
-    
+
     App.Pricing.updateFeesFromParams(params);
-    // Set setup fee.
-    App.Pricing.showShareButton();
+    App.Pricing.updateShareButton();
 
   },
 
@@ -149,6 +148,8 @@ App.Pricing = {
 
     console.log(population);
     console.log(annual_fee);
+
+    App.Pricing.updateClosedModals();
   },
 
 
@@ -199,24 +200,28 @@ App.Pricing = {
 
     var annualFee = $('#annual-fee .amount').text();
     var setupFee = $('#setup-fee .amount').text();
-        
-    if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') { 
+
+    if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') {
       App.Pricing.calculateTotals();
       $('#quote h3.title').text('My Quote');
-      App.Pricing.updateShareButton(params);
+      $('.share').show();
     }
+
+    App.Pricing.updateShareButton(params);
+
   },
 
   updateShareButton: function(params) {
-    $('.share').show();
+    var path = "?" + $.param( params ) + "#pricing";
+    $('.share .url').val(window.location.origin + path);
 
-    // window.location.search = "?" + jQuery.param( params );
-    // window.location.hash= "#pricing";
+    // window.location.search = $.param( params );
 
     $('.share').click(function() {
-      $('.share .url').text(window.location.href);
       $('.share .url').show();
+      $('.share .url').select();
     });
+
   },
 
 
@@ -341,10 +346,11 @@ App.Pricing = {
   getParams: function() {
     var params = {}, queries, temp, i, l;
 
-    var queryString = window.location.hash;
-    
+    var queryString = window.location.search;
+
     // Split into key/value pairs
     if(queryString !== undefined){
+      queryString = queryString.replace("?",'');
       queryString = queryString.replace("#",'');
       queries = queryString.split("&");
 
