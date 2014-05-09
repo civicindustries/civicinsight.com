@@ -344,6 +344,9 @@ ul#nav li a {
   margin: 0 auto;
 }
 
+.see-quote {
+  display: none;
+}
 
 /*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 
@@ -351,6 +354,20 @@ ul#nav li a {
 
 */
 /** PRICING **/
+/*
+:target {
+    display: block;    
+    position: relative;     
+    top: -100px;
+    visibility: hidden;
+}
+*/
+
+/*#pricing {
+  padding-top: 100px; 
+  margin-top: -100px;
+}*/
+
 #pricing h3 {
   line-height: 1em;
   margin-bottom: 20px;
@@ -489,7 +506,7 @@ footer {
 
 /** MODALS **/
 
-/** PRICING **/
+/** PRICing **/
 
 .pricing-table {
   text-align: left;

@@ -73,8 +73,6 @@ App.Pricing = {
     'custom': 15000
   },
 
-  //updateURLParams(settings, '#pricing');
-
 
   init: function(){
     // Set default range or get from URL params.
@@ -189,32 +187,38 @@ App.Pricing = {
         var setup_amount = $('#quote-setup-fee input[value="' + selectedVal + '"]').attr("amount");
         $('#setup-fee .amount').text(setup_amount);
         $('#setup-fee').attr('amount', setup_amount);
+        App.Pricing.updateClosedModals();
       }
-
     });
-
-    App.Pricing.updateClosedModals();
   },
 
   updateClosedModals: function () {
     var params = {};
-    params.slider = $('#slider').val();
+    params.slider = $('#slider').slider( "option", "value" );
     params.setup_fee = App.Pricing.getImplementationSetting();
 
     var annualFee = $('#annual-fee .amount').text();
     var setupFee = $('#setup-fee .amount').text();
-
-    if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') {
-      App.Pricing.showShareButton();
+        
+    if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') { 
+      App.Pricing.calculateTotals();
+      $('#quote h3.title').text('My Quote');
+      App.Pricing.updateShareButton(params);
     }
-    // update URL params
-    // see if show share link
-
-
-    // fix share link
-    // process total
-    App.Pricing.calculateTotals();
   },
+
+  updateShareButton: function(params) {
+    $('.share').show();
+
+    // window.location.search = "?" + jQuery.param( params );
+    // window.location.hash= "#pricing";
+
+    $('.share').click(function() {
+      $('.share .url').text(window.location.href);
+      $('.share .url').show();
+    });
+  },
+
 
   calculateTotals: function () {
     var setupFee = $('#setup-fee').attr('amount');
@@ -224,15 +228,6 @@ App.Pricing = {
     $('.total-first-year .amount').text(firstYear);
     $('.total-recurring .amount').text(annualFee);
 
-  },
-
-  showShareButton: function() {
-    $('.share').show();
-
-    $('.share').click(function() {
-      $('.share .url').text(window.location.href);
-      $('.share .url').show();
-    });
   },
 
   // Highlight current city in css.
@@ -266,7 +261,6 @@ App.Pricing = {
     $( "#total_price" ).val( "$" + price.total_price_label );
     $( "#population" ).val(price.population_label );
     App.Pricing.updatePriceTooltip();
-    // App.Pricing.updateURLParameters(price);
   },
 
   // Get current fee based on radio box selection.
@@ -341,22 +335,8 @@ App.Pricing = {
   },
 
   // Utilities
-  updateURLParams: function(settings, uri) {
-    for (item in settings) {
-      App.Pricing.updateQueryStringParameter(uri, key, value);
-    }
-  },
 
-  updateQueryStringParameter: function(uri, key, value) {
-    var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
-    var separator = uri.indexOf('?') !== -1 ? "&" : "?";
-    if (uri.match(re)) {
-      return uri.replace(re, '$1' + key + "=" + value + '$2');
-    }
-    else {
-      return uri + separator + key + "=" + value;
-    }
-  },
+
 
   getParams: function() {
     var params = {}, queries, temp, i, l;
