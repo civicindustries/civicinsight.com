@@ -281,11 +281,7 @@ ul#nav li a {
   margin-top: 5px;
 }
 
-.checkbox,
-#newsletter input[type=checkbox] {
-  margin: 3px 0 7px 0;
-  display:none;
-}
+
 #newsletter .info {
   margin-bottom: 20px;
 }
@@ -305,7 +301,13 @@ ul#nav li a {
   text-transform: uppercase;
   padding: 0 20px;
 }
-.checkbox ~ label:before,
+
+
+#newsletter input[type=checkbox] {
+  margin: 3px 0 7px 0;
+  display:none;
+}
+
 #newsletter input[type=checkbox]  ~ label:before {
   content: '';
   width: 22px;
@@ -318,10 +320,23 @@ ul#nav li a {
   margin-right: 3px; /*rtl*/
 }
 
-.checkbox:checked ~ label:before,
 #newsletter input[type=checkbox]:checked ~ label:before {
   content: '';
   background: url(../images/checked-small.png) no-repeat;
+}
+
+.radio-checkbox input[type=radio] {
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background: url(../images/unchecked.png) left center no-repeat;    
+  background-size: 32px; 
+}
+
+.radio-checkbox input[type="radio"]:checked {
+  background: url(../images/checked.png) left center no-repeat;
 }
 
 #newsletter label {

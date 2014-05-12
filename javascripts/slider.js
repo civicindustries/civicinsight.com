@@ -262,7 +262,6 @@ App.Pricing = {
 
   // Update display of price in markup.
   updatePriceDisplay: function(price) {
-    console.log(price);
     $( "#total_price" ).val( "$" + price.total_price_label );
     $( "#population" ).val(price.population_label );
     App.Pricing.updatePriceTooltip();
