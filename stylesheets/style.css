@@ -267,24 +267,37 @@ ul#nav li a {
 
 #newsletter .form input,
 #newsletter .form select {
-  font-size: 140%;
-  margin: 0px 5px;
-  padding: 5px 30px;
+  font-size: 120%;
+  font-family: Lato !important;
+  padding: 5px 5px;
+  border: none;
+
 }
+
+#newsletter .form input[type="submit"] {
+  font-size: 200%;
+  color: #fff;
+  padding: 5px 30px;
+  margin-top: 5px;
+}
+
 .checkbox,
 #newsletter input[type=checkbox] {
-  margin: 7px 0;
+  margin: 3px 0 7px 0;
   display:none;
 }
 #newsletter .info {
   margin-bottom: 20px;
 }
 
-
 #newsletter .option {
   text-align: left;
-  margin-left: 11%;
+  /*margin-left: 11%;*/
   margin-bottom: 5px;
+}
+
+#newsletter form h3 {
+  text-align: center;
 }
 
 #newsletter .menu-button {
@@ -295,30 +308,33 @@ ul#nav li a {
 .checkbox ~ label:before,
 #newsletter input[type=checkbox]  ~ label:before {
   content: '';
-  width: 32px;
-  height: 32px;
-  background: url(http://dl.dropbox.com/u/51558405/unchecked.png) no-repeat; /* @TODO Change to local graphics */
+  width: 22px;
+  height: 22px;
+  background: url(../images/unchecked-small.png) no-repeat;
   display: inline-block;
   cursor: pointer;
   vertical-align: middle;
+  margin-top: -4px;
   margin-right: 3px; /*rtl*/
 }
 
 .checkbox:checked ~ label:before,
 #newsletter input[type=checkbox]:checked ~ label:before {
   content: '';
-  background: url(http://dl.dropbox.com/u/51558405/checked.png) no-repeat; /* @TODO Change to local graphics */
+  background: url(../images/checked-small.png) no-repeat;
 }
 
-
 #newsletter label {
-  font-size: 100% !important;
+  font-size: 120% !important;
   font-family: Lato !important;
 }
 
 #newsletter form input[type=text],
 #newsletter form input[type=email] {
-  margin: 20px 1px 5px;
+  margin: 20px 10px 5px 0px;
+  color: #4d4d4d;
+  width: 23%;
+  
 }
 
 #newsletter input[type=radio] {
