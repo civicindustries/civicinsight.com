@@ -201,11 +201,16 @@ App.Pricing = {
     var annualFee = $('#annual-fee .amount').text();
     var setupFee = $('#setup-fee .amount').text();
 
+    $('.share .url').hide();
+    $('#quote h3.title').text('My Quote');
+
     if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') {
       App.Pricing.calculateTotals();
-      $('#quote h3.title').text('My Quote');
-      $('.share').show();
+      $('.share .url').hide();
+      $('#quote').addClass('complete');
     }
+
+    
 
     App.Pricing.updateShareButton(params);
 
@@ -228,9 +233,9 @@ App.Pricing = {
   calculateTotals: function () {
     var setupFee = $('#setup-fee').attr('amount');
     var annualFee = $('#annual-fee').attr('amount');
-    var firstYear = setupFee + annualFee;
+    var firstYear = Number(setupFee.replace(",", "")) + Number(annualFee.replace(",", ""));
 
-    $('.total-first-year .amount').text(firstYear);
+    $('.total-first-year .amount').text( App.Pricing.commaSeparateNumber(Math.floor(firstYear)));
     $('.total-recurring .amount').text(annualFee);
 
   },

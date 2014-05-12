@@ -136,12 +136,68 @@ ul#nav li a {
   font-size: 120%;
 }
 
+#pricing .quote-plus-sign {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+
+#quote.complete .quote-plus-sign {
+  font-size: 2em;
+  float: left;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+
 .total-first-year,
 .total-recurring {
   display: none;
 }
+
 .share {
   display: none;
+}
+
+#quote.complete .share,
+#quote.complete .total-first-year,
+#quote.complete .total-recurring {
+  display: block;
+}
+
+#quote .bar {
+  border-bottom: none;
+}
+
+#quote.complete .bar {
+  border-bottom: 2px solid #F1601D;
+}
+
+#quote .quote-button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+#quote.complete .quote-button {
+  background-color: #f8f8f8;
+  text-align: right;
+}
+
+#quote.complete .quote-button .calculate {
+  float: right;
+}
+
+#quote.complete .total-recurring {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 150%;
+  cursor: pointer;
 }
 
 .share .menu-button {
@@ -424,15 +480,6 @@ ul#nav li a {
   font-size: 120%;
   border: none;
   margin-left: 7%;
-}
-
-#pricing .quote-button {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 150%;
-  cursor: pointer;
 }
 
 #pricing .calculate .amount {
