@@ -83,7 +83,7 @@ App.Pricing = {
       rangeDefault = params.slider;
     }
     else {
-      rangeDefault = 50;
+      rangeDefault = 55;
     }
 
     // Make slider interactive.
@@ -309,7 +309,7 @@ App.Pricing = {
 
     // Figure out which plan is selected.
     currentPlanFee = App.Pricing.getImplementationFee();
-    currentPrice = (range.multiplier * population);
+    currentPrice = (range.multiplier * population) + range.price_base;
 
     var price = App.Pricing.price;
     price.per_capita = Number(currentPrice / population).toFixed(2);

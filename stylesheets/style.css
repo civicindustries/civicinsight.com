@@ -651,23 +651,21 @@ footer {
 }
 
 #slider {
-  margin-top: 40px;
-  width: 800px;
+  width: 761px;
   background-color: #b3b3b3;
   border-radius: 0;
   border: none;
-  margin-left: 5%;
-  margin-bottom: 50px;
+  margin: 40px 5% 50px 5%;
   z-index: 8000;
 }
 .slider-increments {
-  z-index: 9000;  
-  margin-top: -53px;
-  height: 50px;
-  margin-left: 16%;
+  z-index: 9000;
+  width: 761px;
+  height: 60px;
+  margin: -60px 5% 0 5%;
 }
 .slider-increment {
-  width: 25%;
+  width: 188px;
   display: inline-block;
 }
 
@@ -675,15 +673,15 @@ footer {
   font-size: 80%;
   color: #000;
   border-right: 1px solid #999;
-  margin-right: 50%;
-  padding-top: 20px;
+  margin-right: 100%;
+  padding-top: 28px;
   height: 20px;
   display: block;
 }
 
 .slider-increment span {
   position: relative;
-  left: 63px;
+  left: -7px;
   display: block;
 }
 
@@ -736,7 +734,7 @@ footer {
   background-color: #f2f2f2;
   border: 1px #999999 solid;
   border-right: none;
-  min-height: 300px;
+  min-height: 265px;
 }
 .category:last-child {
   border-right: 1px #999999 solid;
@@ -781,9 +779,15 @@ footer {
   border-bottom: none;
 }
 
+.modal-body {
+  padding-top: 0;
+}
+
 .modal-footer {
   border-top: none;
   text-align: center;
+  margin-top: 0px;
+  padding: 0px 20px 20px;
 }
 
 .modal-footer .menu-button {
