@@ -235,8 +235,8 @@ App.Pricing = {
     var annualFee = $('#annual-fee').attr('amount');
     var firstYear = Number(setupFee.replace(",", "")) + Number(annualFee.replace(",", ""));
 
-    $('.total-first-year .amount').text( App.Pricing.commaSeparateNumber(Math.floor(firstYear)));
-    $('.total-recurring .amount').text(annualFee);
+    $('.total-first-year .amount').text('$' + App.Pricing.commaSeparateNumber(Math.floor(firstYear)));
+    $('.total-recurring .amount').text('$'  + annualFee + '/year');
 
   },
 

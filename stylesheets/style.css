@@ -182,14 +182,60 @@ ul#nav li a {
   cursor: pointer;
 }
 
+#quote.complete .quote-plus-sign {
+  margin-right: 10px;
+  margin-top: -3px;
+  margin-left: 6px;
+}
+
 #quote.complete .quote-button {
   background-color: #f8f8f8;
-  text-align: right;
+  text-align: left;
+  padding-top: 0;
 }
 
 #quote.complete .quote-button .calculate {
-  float: right;
+  position: relative;
+  right: 0;
 }
+
+#quote.complete .quote-button .fee {
+
+}
+
+
+#quote.complete .quote-button .fee,
+#quote.complete .quote-button .calculate {
+  display: inline-block;
+  font-size: 77%;
+}
+
+#quote.complete .total-first-year {
+  margin: 20px 0;
+}
+
+#quote.complete .total-first-year strong {
+ font-size: 100%; 
+}
+
+#quote.complete .total-first-year .amount {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 110%;
+}
+
+#quote.complete .total-recurring .amount {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 90%;
+}
+
+
+#quote.complete .total-recurring strong {
+  font-size: 100%;
+}
+
+
 
 #quote.complete .total-recurring {
   padding: 10px;
@@ -198,6 +244,7 @@ ul#nav li a {
   text-align: center;
   font-size: 150%;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .share .menu-button {
