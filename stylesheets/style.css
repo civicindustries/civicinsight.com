@@ -235,8 +235,6 @@ ul#nav li a {
   font-size: 100%;
 }
 
-
-
 #quote.complete .total-recurring {
   padding: 10px;
   border-radius: 5px;
@@ -253,6 +251,7 @@ ul#nav li a {
 
 #quote.complete .annual-fee.quote-button .calculate {
  width: 73px; 
+ border-bottom: none;
 } 
 
 #quote.complete .quote-plus-sign {
@@ -266,7 +265,11 @@ ul#nav li a {
 
 #quote.complete .setup-fee.quote-button .calculate {
   width: 74px; 
+
 } 
+
+
+
 
 #quote.complete .total-first-year .fee {
   width: 200px;
@@ -575,6 +578,14 @@ ul#nav li a {
   font-style: italic;
   color:  #F1601D;
 }
+
+
+#pricing #quote.complete .setup-fee.quote-button .amount,
+#pricing #quote.complete .annual-fee.quote-button .amount {
+  border-bottom: none;
+}
+
+
 #quote,
 #about-subscription {
   padding: 20px;
