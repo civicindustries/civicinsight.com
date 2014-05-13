@@ -135,7 +135,7 @@ App.Pricing = {
       if( $('#quote-setup-fee input[value="' + params.setup_fee + '"]') !== undefined ) {
         $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("checked",true);
         var setup_amount = $('#quote-setup-fee input[value="' + params.setup_fee + '"]').attr("amount");
-        $('#setup-fee .amount').text(setup_amount);
+        $('#setup-fee .amount').text('$' + setup_amount);
         $('#setup-fee').attr('amount', setup_amount);
       }
     }
@@ -143,7 +143,7 @@ App.Pricing = {
     var population = $('#quote-annual-fee #population').val();
 
     var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');
-    $('#annual-fee .amount').text(annual_fee);
+    $('#annual-fee .amount').text('$' + annual_fee);
     $('#annual-fee').attr('amount', annual_fee);
 
     console.log(population);

@@ -247,6 +247,46 @@ ul#nav li a {
   margin-top: 20px;
 }
 
+#quote.complete .annual-fee.quote-button .fee {
+  width: 190px;
+}
+
+#quote.complete .annual-fee.quote-button .calculate {
+ width: 73px; 
+} 
+
+#quote.complete .quote-plus-sign {
+ width: 15px;
+
+}
+
+#quote.complete .setup-fee.quote-button .fee {
+ width: 168px;
+}
+
+#quote.complete .setup-fee.quote-button .calculate {
+  width: 74px; 
+} 
+
+#quote.complete .total-first-year .fee {
+  width: 200px;
+  display: inline-block;
+}
+
+#quote.complete .total-first-year .calculate {
+  width: 100px; 
+  display: inline-block;
+}
+
+#quote.complete .total-recurring .fee {
+  width: 200px;
+}
+
+#quote.complete .total-recurring .calculate {
+  width: 100px; 
+}
+
+
 .share .menu-button {
   font-size: 125%;
   text-align: center;
