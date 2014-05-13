@@ -131,10 +131,10 @@ ul#nav li a {
   margin: 0;
 }
 
-#pricing {
-  line-height: 170%;
-  font-size: 120%;
-}
+//#pricing {
+//  line-height: 170%;
+//  font-size: 120%;
+//}
 
 #pricing .quote-plus-sign {
   font-size: 3em;
@@ -792,12 +792,12 @@ footer {
 
 .population {
   background-color: #f2f2f2;
-    padding: 10px;
+  padding: 0 9px 7px
 }
 
 .total-price {
   background-color: #e6e6e6;
-    padding: 10px;
+  padding: 0 9px 7px
 }
 
 #prices {
@@ -808,6 +808,9 @@ footer {
   border: 0;
   width: 200px;
   background-color: transparent;
+  display: block;
+  font-family: Lato;
+  font-size: 120%;
 }
 
 #slider {
@@ -834,7 +837,7 @@ footer {
   color: #000;
   border-right: 1px solid #999;
   margin-right: 100%;
-  padding-top: 28px;
+  padding-top: 20px;
   height: 20px;
   display: block;
 }
@@ -849,15 +852,22 @@ footer {
 .ui-widget-content .ui-state-default, 
 .ui-widget-header .ui-state-default {
   background-color: #f1601d;
-  height: 33px;
-  width: 20px;
+  height: 28px;
+  width: 16px;
   border-radius: 3px;
   border: none;
 }
 
 .ui-slider-horizontal .ui-slider-handle {
-  top: -0.8em;
+  top: -0.65em;
 }
+
+.population .lbl,
+.total-price .lbl {
+  display: block;
+  font-size: 0.65em;
+}
+
 
 .per-capita .lbl,
 .base-rate .lbl {
@@ -893,12 +903,11 @@ footer {
   width: 22.5%;
   padding: 10px 20px;
   background-color: #f2f2f2;
-  border: 1px #999999 solid;
-  border-right: none;
-  min-height: 265px;
+  border-right: 1px #999999 solid;
+  min-height: 208px;
 }
 .category:last-child {
-  border-right: 1px #999999 solid;
+  border-right: none;
 }
 
 .category.active {
@@ -909,7 +918,7 @@ footer {
   line-height: 1em;
   font-size: 150%;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   color: #4d4d4d;
   text-align: center;
   margin: 8px 0 16px;
@@ -926,12 +935,12 @@ footer {
 }
 .plan .options li,
 .category .options li{
-  margin-bottom: 10px;
+  margin: 7px 0;
 }
 
 #default .category .options li,
 #default .category .options li strong {
-  font-size: 110%;
+  font-size: 106%;
 }
 
 .modal-title {
@@ -958,6 +967,7 @@ footer {
   padding: 10px 20px;
   text-align: center;
   margin: 10px 0;
+  font-family: Lato;
 }
 
 #quote-setup-fee .info {
