@@ -508,7 +508,7 @@ ul#nav li a {
 }
 
 #newsletter .columns {
-  padding: 30px 0 80px;
+  padding: 30px 0 55px;
 }
 
 #newsletter .unsubscribe {
@@ -869,6 +869,7 @@ footer {
 .base-rate {
   width: 35%;
   display: inline-block;
+  text-align: center;
 }
 
 .plus-sign {
@@ -910,6 +911,8 @@ footer {
   text-transform: uppercase;
   font-weight: normal;
   color: #4d4d4d;
+  text-align: center;
+  margin: 8px 0 16px;
 }
 
 .category.active h4 {
