@@ -171,6 +171,7 @@ ul#nav li a {
 
 #quote.complete .bar {
   border-bottom: 2px solid #F1601D;
+  margin-top: 8px;
 }
 
 #quote .quote-button {
@@ -184,14 +185,15 @@ ul#nav li a {
 
 #quote.complete .quote-plus-sign {
   margin-right: 10px;
-  margin-top: -3px;
+  margin-top: -7px;
   margin-left: 6px;
+
 }
 
 #quote.complete .quote-button {
   background-color: #f8f8f8;
   text-align: left;
-  padding-top: 0;
+  padding: 0px 10px 5px;
 }
 
 #quote.complete .quote-button .calculate {
@@ -220,14 +222,14 @@ ul#nav li a {
 
 #quote.complete .total-first-year .amount {
   font-weight: bold;
-  font-style: italic;
-  font-size: 110%;
+/* font-style: italic; */
+  font-size: 140%;
 }
 
 #quote.complete .total-recurring .amount {
   font-weight: bold;
-  font-style: italic;
-  font-size: 90%;
+/* font-style: italic; */
+  font-size: 110%;
 }
 
 
@@ -236,7 +238,7 @@ ul#nav li a {
 }
 
 #quote.complete .total-recurring {
-  padding: 10px;
+  padding: 10px 24px;
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
@@ -274,6 +276,8 @@ ul#nav li a {
 #quote.complete .total-first-year .fee {
   width: 200px;
   display: inline-block;
+  font-size: 120%;
+  padding-left: 10px;
 }
 
 #quote.complete .total-first-year .calculate {
@@ -576,7 +580,7 @@ ul#nav li a {
   border-bottom: 2px dotted #F1601D;
   margin-bottom: 6px;
   font-style: italic;
-  color:  #F1601D;
+  color: #F1601D;
 }
 
 
