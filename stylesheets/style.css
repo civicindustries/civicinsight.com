@@ -762,7 +762,7 @@ footer {
 }
 
 .arrow-box {
-  width: 300px;
+  width: 145px;
   background-color: #e6e6e6;
   border: none;
   text-shadow: none;
@@ -792,16 +792,19 @@ footer {
 
 .population {
   background-color: #f2f2f2;
-  padding: 0 9px 7px
+  padding: 0 15% 7px 20%;
+  
 }
 
 .total-price {
   background-color: #e6e6e6;
-  padding: 0 9px 7px
+  padding: 0 15% 7px 20%;
+  
 }
 
 #prices {
   display: none;
+  z-index: 9000;
 }
 
 #prices input {
@@ -824,11 +827,11 @@ footer {
 .slider-increments {
   z-index: 9000;
   width: 761px;
-  height: 60px;
-  margin: -60px 5% 0 5%;
+  height: 25px;
+  margin: -75px 5% 0 5%;
 }
 .slider-increment {
-  width: 188px;
+  width: 186.5px;
   display: inline-block;
 }
 
@@ -838,14 +841,16 @@ footer {
   border-right: 1px solid #999;
   margin-right: 100%;
   padding-top: 20px;
-  height: 20px;
+  height: 15px;
   display: block;
 }
 
 .slider-increment span {
   position: relative;
   left: -7px;
+  top: -33px;
   display: block;
+  width: 100px;
 }
 
 .ui-state-default, 

@@ -156,7 +156,7 @@ App.Pricing = {
   // Update display of price in markup.
   updatePriceTooltip: function() {
     var sliderPosition = $('.ui-slider-handle').offset();
-    var sliderPositionX = sliderPosition.left - 150;
+    var sliderPositionX = sliderPosition.left - 65;
     $('#prices').offset({left: sliderPositionX});
 
     $('#quote-annual-fee').on('shown.bs.modal', function(){
