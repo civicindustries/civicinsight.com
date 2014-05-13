@@ -943,6 +943,12 @@ footer {
   font-size: 106%;
 }
 
+#partner-options li {
+  font-size: 120%;
+  line-height: inherit;
+  margin-left: 18px;
+}
+
 .modal-title {
   display: none; /* hidden but available for accessibility reasons */
 }
@@ -977,12 +983,12 @@ footer {
 #plans .plan {
   float: left;
   font-size: 100%;
-  margin-right: 10px;
+  margin: 15px 10px;
   width: 30%;
-  padding: 10px 20px;
+  padding: 22px 20px;
   background-color: #f2f2f2;
   border-right: none;
-  min-height: 340px;
+  min-height: 330px;
 }
 
 .plan .options {
@@ -1045,7 +1051,7 @@ footer {
   margin-top: 20px;
   font-style: italic;
   position: absolute;
-  bottom: 10px;
+  bottom: 35px;
   margin-left: 5%;
 }
 
