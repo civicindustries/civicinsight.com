@@ -639,11 +639,9 @@ ul#nav li a {
 
 #about-subscription {
   /* padding: 20px 90px; */
-  padding: 20px 20% 20px 5%;
-  min-height: 430px;
+  padding: 20px 20% 40px 5%;
+  
   width: 58%;
-  height: 100%;
-
 }
 
 #about-subscription ul.options,

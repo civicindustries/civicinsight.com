@@ -209,6 +209,13 @@ App.Pricing = {
       App.Pricing.calculateTotals();
       $('.share ').show();
       $('#quote').addClass('complete');
+
+      // Resize subscription.
+      if($(window).width() > 1000) {
+        var subscriptionHeight = $('#pricing .flush').height() - 50;
+        $('#about-subscription').height(subscriptionHeight);
+      }
+
     }
 
     
