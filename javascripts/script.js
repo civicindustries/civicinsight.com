@@ -8,26 +8,48 @@
  */
 
 
+
 $(document).ready(function() {
 
 	// Cache the Window object
 	$window = $(window);
 
-	$('section[data-type="background"]').each(function(){
-		var $bgobj = $(this); // assigning the object
 
-		$(window).scroll(function() {
-			// Scroll the background at var speed
-			// the yPos is a negative value because we're scrolling it UP!
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
 
-			// Put together our final background position
-			var coords = '50% '+ yPos + 'px';
+  $(window).on('hashchange', function(e) {
+    var target = window.location.hash.split("#");
+    console.log(target);
+    if( $('#'+target[1]).length){
+      e.preventDefault();
 
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-		}); // window scroll Ends
- 	});
+      $.scrollTo( $('#'+target[1]).offset().top - 100, 200 , {easing:'swing'});
+    }
+  });
+
+
+  var target = window.location.hash.split("#");
+  console.log(target);
+
+  if( $('#'+target[1]).length){
+    $.scrollTo( $('#'+target[1]).offset().top - 100, 200 , {easing:'swing'});
+  }
+
+
+	// $('section[data-type="background"]').each(function(){
+	// 	var $bgobj = $(this); // assigning the object
+
+	// 	$(window).scroll(function() {
+	// 		// Scroll the background at var speed
+	// 		// the yPos is a negative value because we're scrolling it UP!
+	// 		var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+	// 		// Put together our final background position
+	// 		var coords = '50% '+ yPos + 'px';
+
+	// 		// Move the background
+	// 		$bgobj.css({ backgroundPosition: coords });
+	// 	}); // window scroll Ends
+ // 	});
 
  	$('#nav a').click(function(e){
 
