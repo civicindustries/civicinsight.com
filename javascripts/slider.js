@@ -162,7 +162,6 @@ App.Pricing = {
     });
 
     $('#quote-annual-fee .pricing-done-button').on('click', function(e){
-      console.log('clcik');
       e.preventDefault();
       App.Pricing.closeAnnualFeeModal();
       $('#quote-annual-fee').modal('hide'); 
@@ -220,7 +219,15 @@ App.Pricing = {
 
   updateShareButton: function(params) {
     var path = "?" + $.param( params ) + "#pricing";
-    $('.share .url').val(window.location.origin + path);
+    if (!window.location.origin) {
+      var origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+      $('.share .url').val(origin + path);
+    }
+    else {
+      $('.share .url').val(window.location.origin + path);  
+    }
+
+    
 
     // window.location.search = $.param( params );
 

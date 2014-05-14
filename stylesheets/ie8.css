@@ -69,9 +69,6 @@ width: 94%;
 .category {
   padding-left: 0;
   padding-right: 0;
-  min-height: auto;
-  height: 140px;
-  overflow-y: scroll;
 }
 
 
@@ -80,6 +77,6 @@ width: 94%;
 }
 
 #plans .plan .amount {
-  position: absolute;
+  position: relative;
   bottom: 0px;
 }

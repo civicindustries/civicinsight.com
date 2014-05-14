@@ -973,7 +973,7 @@ footer {
   float: left;
   font-size: 100%;
   margin-right: 0px;
-  width: 22.5%;
+  width: 190px;
   padding: 20px;
   background-color: #f2f2f2;
   border-right: 1px #999999 solid;
@@ -1036,7 +1036,13 @@ footer {
 }
 
 .modal-body {
+  top: -8px;
+}
+
+.modal-body {
   padding-top: 0;
+  padding-bottom: 0;
+  top: -10px;
 }
 
 .modal-footer {
