@@ -62,6 +62,12 @@ ul#nav li a {
   padding-top: 6px;
 }
 
+
+
+
+
+
+
 .notice {
   font-style: italic;
   font-weight: 200;
@@ -131,10 +137,12 @@ ul#nav li a {
   margin: 0;
 }
 
-//#pricing {
+/*//#pricing {
 //  line-height: 170%;
 //  font-size: 120%;
 //}
+*/
+
 
 #pricing .quote-plus-sign {
   font-size: 3em;
@@ -294,19 +302,33 @@ ul#nav li a {
 }
 
 
-.share .menu-button {
-  font-size: 125%;
+.share {
+  font-size: 100%;
+  font-style: italic;
   text-align: center;
-  margin: 20px 20% 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .share .url {
-  display: none;
-  margin: 0 5px;
+  margin: 10px 0 10px 0;
   background-color: #fff;
   color: #666;
+  width: 80%;
 }
 
+.share .copied {
+  display: none;
+  background-color: #999;
+  color: white;
+  font-size: 100%;
+  z-index: 1000;
+  position: relative;
+  top: -30px;
+  width: 77%;
+  left: 30px;
+  margin: 2px;
+  opacity: 0.9;
+}
 .share .url:hover {
    /*background-color: yellow;*/
 }
@@ -351,6 +373,19 @@ ul#nav li a {
   text-align: left;
   font-weight: normal;
 }
+
+
+#who-for .face {
+  width: 200px;
+  display: inline-block;
+  
+
+}
+#who-for .summary {
+  display: inline-block;
+  width: 55%;
+}
+
 
 #who-for .title {
   font-weight: 400;
@@ -485,6 +520,13 @@ ul#nav li a {
   background-size: 32px; 
 }
 
+@-moz-document url-prefix() {
+  .radio-checkbox input[type=radio] {
+    width: auto;
+    height: auto;
+  }
+}
+
 .radio-checkbox input[type="radio"]:checked {
   background: url(../images/checked.png) left center no-repeat;
 }
@@ -590,13 +632,18 @@ ul#nav li a {
 }
 
 
-#quote{
-  padding: 20px;
+
+#quote {
+  padding: 20px 20px 20px 15%;
 }
 
+#about-subscription {
+  /* padding: 20px 90px; */
+  padding: 20px 20% 20px 5%;
+  min-height: 430px;
+  width: 58%;
+  height: 100%;
 
-#about-subscription{
-  padding: 20px 90px;
 }
 
 #about-subscription ul.options,
@@ -924,7 +971,7 @@ footer {
   float: left;
   font-size: 100%;
   margin-right: 0px;
-  width: 22.5%;
+  width: 190px;
   padding: 20px;
   background-color: #f2f2f2;
   border-right: 1px #999999 solid;
@@ -973,6 +1020,11 @@ footer {
   margin-left: 18px;
 }
 
+.modal {
+  z-index: 9000;
+  overflow-y: scroll;
+}
+
 .modal-title {
   display: none; /* hidden but available for accessibility reasons */
 }
@@ -982,7 +1034,13 @@ footer {
 }
 
 .modal-body {
+  top: -8px;
+}
+
+.modal-body {
   padding-top: 0;
+  padding-bottom: 0;
+  top: -10px;
 }
 
 .modal-footer {

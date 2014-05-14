@@ -78,7 +78,7 @@ App.Pricing = {
     // Set default range or get from URL params.
     var rangeDefault;
     var params = App.Pricing.getParams();
-    console.log(params);
+
     if(params.slider && params.setup_fee) {
       rangeDefault = params.slider;
     }
@@ -98,7 +98,7 @@ App.Pricing = {
         }
       });
 
-    console.log(rangeDefault);
+
     // Update default settings on page load.
     App.Pricing.updatePrice(rangeDefault);
     App.Pricing.updatePriceTooltip();
@@ -120,7 +120,7 @@ App.Pricing = {
 
   displaySettingsFromURL: function() {
     var params = App.Pricing.getParams();
-    console.log(params);
+    
 
     App.Pricing.updateFeesFromParams(params);
     App.Pricing.updateShareButton();
@@ -146,9 +146,6 @@ App.Pricing = {
     $('#annual-fee .amount').text('$' + annual_fee);
     $('#annual-fee').attr('amount', annual_fee);
 
-    console.log(population);
-    console.log(annual_fee);
-
     App.Pricing.updateClosedModals();
   },
 
@@ -164,8 +161,10 @@ App.Pricing = {
       $('#prices').show();
     });
 
-    $('#quote-annual-fee .pricing-done-button').bind('click', function(){
+    $('#quote-annual-fee .pricing-done-button').on('click', function(e){
+      e.preventDefault();
       App.Pricing.closeAnnualFeeModal();
+      $('#quote-annual-fee').modal('hide'); 
     });
   },
   closeAnnualFeeModal: function () {
@@ -181,7 +180,8 @@ App.Pricing = {
   },
   closeSetupFeeModal: function () {
 
-    $('#quote-setup-fee .pricing-done-button').bind('click', function(){
+    $('#quote-setup-fee .pricing-done-button').on('click', function(e){
+      e.preventDefault();
       var selectedVal = App.Pricing.getImplementationSetting();
       if( $('#quote-setup-fee input[value="' + selectedVal + '"]') !== undefined ) {
         $('#quote-setup-fee input[value="' + selectedVal + '"]').attr("checked",true);
@@ -189,6 +189,7 @@ App.Pricing = {
         $('#setup-fee .amount').text('$' + setup_amount);
         $('#setup-fee').attr('amount', setup_amount);
         App.Pricing.updateClosedModals();
+        $('#quote-setup-fee').modal('hide');
       }
     });
   },
@@ -201,12 +202,12 @@ App.Pricing = {
     var annualFee = $('#annual-fee .amount').text();
     var setupFee = $('#setup-fee .amount').text();
 
-    $('.share .url').hide();
+    $('.share').hide();
     $('#quote h3.title').text('My Quote');
 
     if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') {
       App.Pricing.calculateTotals();
-      $('.share .url').hide();
+      $('.share ').show();
       $('#quote').addClass('complete');
     }
 
@@ -218,13 +219,47 @@ App.Pricing = {
 
   updateShareButton: function(params) {
     var path = "?" + $.param( params ) + "#pricing";
-    $('.share .url').val(window.location.origin + path);
+    if (!window.location.origin) {
+      var origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+      $('.share .url').val(origin + path);
+    }
+    else {
+      $('.share .url').val(window.location.origin + path);  
+    }
+
+    
 
     // window.location.search = $.param( params );
 
     $('.share').click(function() {
-      $('.share .url').show();
+      // $('.share .url').show();
+      $('.share .url').focus();
       $('.share .url').select();
+      // $('.share .copied').show().fadeOut( "slow" );
+
+
+      // var performCopy = function() {
+      //     $('.share .url').text($('.share .url').text());
+      //     $('.share .url').focus();
+      //     $('.share .url').select();
+      // };
+
+
+      // $.ctrl = function(key, callback, args) {
+      //     $(document).keydown(function(e) {
+      //         if(!args) args=[]; // IE barks when args is null
+      //         if(e.keyCode == key && e.ctrlKey) {
+      //             callback.apply(this, args);
+      //             return false;
+      //         }
+      //     });
+      // };
+
+      // $.ctrl('C'.charCodeAt(0), performCopy);
+
+
+        
+  
     });
 
   },

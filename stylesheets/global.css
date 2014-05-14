@@ -384,7 +384,7 @@ blockquote {
   -ms-border-radius: 150px;
   -o-border-radius: 150px;
   border-radius: 150px;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   left: 35px;
 }

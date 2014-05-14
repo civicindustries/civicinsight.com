@@ -7,27 +7,42 @@
 
  */
 
-
 $(document).ready(function() {
 
 	// Cache the Window object
 	$window = $(window);
+  $(window).on('hashchange', function(e) {
+    var target = window.location.hash.split("#");
 
-	$('section[data-type="background"]').each(function(){
-		var $bgobj = $(this); // assigning the object
+    if( $('#'+target[1]).length){
+      e.preventDefault();
 
-		$(window).scroll(function() {
-			// Scroll the background at var speed
-			// the yPos is a negative value because we're scrolling it UP!
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+      $.scrollTo( $('#'+target[1]).offset().top - 100, 200 , {easing:'swing'});
+    }
+  });
 
-			// Put together our final background position
-			var coords = '50% '+ yPos + 'px';
+  // Fix hash scroll
+  var target = window.location.hash.split("#");
+  if( $('#'+target[1]).length){
+    $.scrollTo( $('#'+target[1]).offset().top - 100, 200 , {easing:'swing'});
+  }
 
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-		}); // window scroll Ends
- 	});
+
+	// $('section[data-type="background"]').each(function(){
+	// 	var $bgobj = $(this); // assigning the object
+
+	// 	$(window).scroll(function() {
+	// 		// Scroll the background at var speed
+	// 		// the yPos is a negative value because we're scrolling it UP!
+	// 		var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+	// 		// Put together our final background position
+	// 		var coords = '50% '+ yPos + 'px';
+
+	// 		// Move the background
+	// 		$bgobj.css({ backgroundPosition: coords });
+	// 	}); // window scroll Ends
+ // 	});
 
  	$('#nav a').click(function(e){
 
@@ -46,7 +61,6 @@ $(document).ready(function() {
 
   var query = BlightStatus.URL.getQueryParams();
   if(query.select && ($('input[name=PLAN]').length > 1) ){
-    // console.log("selected_plan",selected_plan);
     $('input[name=PLAN][value='+query.select+']').prop('checked',true);
   }
 
@@ -81,7 +95,6 @@ $(document).ready(function() {
         $(current_form).html('<h1>Thank you!</h1><br><h4 style="padding: 20px">You will recieve an email shortly.<br><br> Please confirm you email and we will contact you the next business-day.<br><br>If you encounter any difficulties, please contact us at support@civicinsight.com</h4><br><br>');
       }
       else {
-        // console.log(data);
         $(current_form).find('input[type=submit]').val('Submit').prop('disabled', false).css('background-color', "#E0500C");
 
         if(data.errors){
@@ -94,7 +107,11 @@ $(document).ready(function() {
 
   });
 
-
+  // Resize subscription.
+  if($(window).width() > 1000) {
+    var subscriptionHeight = $('#pricing .flush').height();
+    $('#about-subscription').height(subscriptionHeight);
+  }
 
   function collapseAccordionArrows() {
       $('#full-feature-list').on('show.bs.collapse', function () {
