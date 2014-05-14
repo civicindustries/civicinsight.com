@@ -26,10 +26,8 @@ $(document).ready(function() {
     }
   });
 
-
+  // Fix hash scroll
   var target = window.location.hash.split("#");
-  console.log(target);
-
   if( $('#'+target[1]).length){
     $.scrollTo( $('#'+target[1]).offset().top - 100, 200 , {easing:'swing'});
   }
@@ -116,6 +114,14 @@ $(document).ready(function() {
 
   });
 
+
+
+
+  // Resize subscription.
+  if($(window).width() > 1000) {
+    var subscriptionHeight = $('#pricing .flush').height();
+    $('#about-subscription').height(subscriptionHeight);
+  }
 
 
   function collapseAccordionArrows() {

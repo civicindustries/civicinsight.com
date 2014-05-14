@@ -3,3 +3,41 @@
 /*  margin-top: -60px;*/
 }
 
+
+
+
+#newsletter input[type=checkbox] {
+  margin: 3px 0 7px 0;
+  display: inherit;
+}
+
+#newsletter input[type=checkbox]  ~ label:before {
+  content: inherit;
+  width: auto;
+  height: auto;
+  background:  none;
+  display: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 3px; /*rtl*/
+}
+
+#newsletter input[type=checkbox]:checked ~ label:before {
+  content: '';
+  background: url(../images/checked-small.png) no-repeat;
+}
+
+.radio-checkbox input[type=radio] {
+  float: left;
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background: url(../images/unchecked.png) left center no-repeat;    
+  background-size: 32px; 
+}
+
+.radio-checkbox input[type="radio"]:checked {
+  background: url(../images/checked.png) left center no-repeat;
+}

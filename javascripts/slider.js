@@ -159,17 +159,20 @@ App.Pricing = {
     var sliderPositionX = sliderPosition.left - 65;
     $('#prices').offset({left: sliderPositionX});
 
+    console.log("closed up");
+
     $('#quote-annual-fee').on('shown.bs.modal', function(){
       App.Pricing.updatePriceTooltip();
       $('#prices').show();
     });
 
     $('#quote-annual-fee .pricing-done-button').bind('click', function(){
+      console.log('cli');
       App.Pricing.closeAnnualFeeModal();
     });
   },
   closeAnnualFeeModal: function () {
-
+    console.log("closed");
     var population = $('#quote-annual-fee #population').val();
 
     var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');
