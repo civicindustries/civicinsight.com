@@ -7,18 +7,13 @@
 
  */
 
-
-
 $(document).ready(function() {
 
 	// Cache the Window object
 	$window = $(window);
-
-
-
   $(window).on('hashchange', function(e) {
     var target = window.location.hash.split("#");
-    console.log(target);
+
     if( $('#'+target[1]).length){
       e.preventDefault();
 
@@ -66,7 +61,6 @@ $(document).ready(function() {
 
   var query = BlightStatus.URL.getQueryParams();
   if(query.select && ($('input[name=PLAN]').length > 1) ){
-    // console.log("selected_plan",selected_plan);
     $('input[name=PLAN][value='+query.select+']').prop('checked',true);
   }
 
@@ -101,7 +95,6 @@ $(document).ready(function() {
         $(current_form).html('<h1>Thank you!</h1><br><h4 style="padding: 20px">You will recieve an email shortly.<br><br> Please confirm you email and we will contact you the next business-day.<br><br>If you encounter any difficulties, please contact us at support@civicinsight.com</h4><br><br>');
       }
       else {
-        // console.log(data);
         $(current_form).find('input[type=submit]').val('Submit').prop('disabled', false).css('background-color', "#E0500C");
 
         if(data.errors){
@@ -114,15 +107,11 @@ $(document).ready(function() {
 
   });
 
-
-
-
   // Resize subscription.
   if($(window).width() > 1000) {
     var subscriptionHeight = $('#pricing .flush').height();
     $('#about-subscription').height(subscriptionHeight);
   }
-
 
   function collapseAccordionArrows() {
       $('#full-feature-list').on('show.bs.collapse', function () {

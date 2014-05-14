@@ -78,7 +78,7 @@ App.Pricing = {
     // Set default range or get from URL params.
     var rangeDefault;
     var params = App.Pricing.getParams();
-    console.log(params);
+
     if(params.slider && params.setup_fee) {
       rangeDefault = params.slider;
     }
@@ -98,7 +98,7 @@ App.Pricing = {
         }
       });
 
-    console.log(rangeDefault);
+
     // Update default settings on page load.
     App.Pricing.updatePrice(rangeDefault);
     App.Pricing.updatePriceTooltip();
@@ -120,7 +120,7 @@ App.Pricing = {
 
   displaySettingsFromURL: function() {
     var params = App.Pricing.getParams();
-    console.log(params);
+    
 
     App.Pricing.updateFeesFromParams(params);
     App.Pricing.updateShareButton();
@@ -146,9 +146,6 @@ App.Pricing = {
     $('#annual-fee .amount').text('$' + annual_fee);
     $('#annual-fee').attr('amount', annual_fee);
 
-    console.log(population);
-    console.log(annual_fee);
-
     App.Pricing.updateClosedModals();
   },
 
@@ -159,20 +156,17 @@ App.Pricing = {
     var sliderPositionX = sliderPosition.left - 65;
     $('#prices').offset({left: sliderPositionX});
 
-    console.log("closed up");
-
     $('#quote-annual-fee').on('shown.bs.modal', function(){
       App.Pricing.updatePriceTooltip();
       $('#prices').show();
     });
 
     $('#quote-annual-fee .pricing-done-button').bind('click', function(){
-      console.log('cli');
       App.Pricing.closeAnnualFeeModal();
     });
   },
   closeAnnualFeeModal: function () {
-    console.log("closed");
+
     var population = $('#quote-annual-fee #population').val();
 
     var annual_fee = $('#quote-annual-fee #total_price').val().replace("$",'');

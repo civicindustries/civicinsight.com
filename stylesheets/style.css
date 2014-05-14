@@ -1015,6 +1015,10 @@ footer {
   margin-left: 18px;
 }
 
+.modal {
+  z-index: 9000;
+}
+
 .modal-title {
   display: none; /* hidden but available for accessibility reasons */
 }
