@@ -201,12 +201,12 @@ App.Pricing = {
     var annualFee = $('#annual-fee .amount').text();
     var setupFee = $('#setup-fee .amount').text();
 
-    $('.share .url').hide();
+    $('.share').hide();
     $('#quote h3.title').text('My Quote');
 
     if (annualFee !== 'Calculate it!' && setupFee !== 'Calculate it!') {
       App.Pricing.calculateTotals();
-      $('.share .url').hide();
+      $('.share ').show();
       $('#quote').addClass('complete');
     }
 
@@ -223,7 +223,7 @@ App.Pricing = {
     // window.location.search = $.param( params );
 
     $('.share').click(function() {
-      $('.share .url').show();
+      // $('.share .url').show();
       $('.share .url').select();
     });
 

@@ -294,17 +294,18 @@ ul#nav li a {
 }
 
 
-.share .menu-button {
-  font-size: 125%;
+.share {
+  font-size: 100%;
+  font-style: italic;
   text-align: center;
-  margin: 20px 20% 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .share .url {
-  display: none;
-  margin: 0 5px;
+  margin: 10px 0 10px 0;
   background-color: #fff;
   color: #666;
+  width: 80%;
 }
 
 .share .url:hover {
