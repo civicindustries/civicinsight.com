@@ -218,13 +218,39 @@ App.Pricing = {
 
   updateShareButton: function(params) {
     var path = "?" + $.param( params ) + "#pricing";
-    $('.share .url').val(window.location.origin + path);
+    $('.share .url').text(window.location.origin + path);
 
     // window.location.search = $.param( params );
 
     $('.share').click(function() {
       // $('.share .url').show();
+      $('.share .url').focus();
       $('.share .url').select();
+      // $('.share .copied').show().fadeOut( "slow" );
+
+
+      var performCopy = function() {
+          $('.share .url').text($('.share .url').text());
+          $('.share .url').focus();
+          $('.share .url').select();
+      };
+
+
+      $.ctrl = function(key, callback, args) {
+          $(document).keydown(function(e) {
+              if(!args) args=[]; // IE barks when args is null
+              if(e.keyCode == key && e.ctrlKey) {
+                  callback.apply(this, args);
+                  return false;
+              }
+          });
+      };
+
+      $.ctrl('C'.charCodeAt(0), performCopy);
+
+
+        
+  
     });
 
   },

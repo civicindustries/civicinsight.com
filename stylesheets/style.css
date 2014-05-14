@@ -308,6 +308,19 @@ ul#nav li a {
   width: 80%;
 }
 
+.share .copied {
+  display: none;
+  background-color: #999;
+  color: white;
+  font-size: 100%;
+  z-index: 1000;
+  position: relative;
+  top: -30px;
+  width: 77%;
+  left: 30px;
+  margin: 2px;
+  opacity: 0.9;
+}
 .share .url:hover {
    /*background-color: yellow;*/
 }
@@ -591,10 +604,20 @@ ul#nav li a {
 }
 
 
-#quote,
-#about-subscription {
-  padding: 20px;
+#quote {
+  padding: 20px 20px 20px 15%;
 }
+
+#about-subscription {
+  padding: 20px 20% 20px 5%;
+  min-height: 430px;
+  width: 58%;
+
+}
+
+
+
+
 
 #about-subscription ul.options,
 #about-subscription ul.options strong {
