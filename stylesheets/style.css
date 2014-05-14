@@ -520,6 +520,13 @@ ul#nav li a {
   background-size: 32px; 
 }
 
+@-moz-document url-prefix() {
+  .radio-checkbox input[type=radio] {
+    width: auto;
+    height: auto;
+  }
+}
+
 .radio-checkbox input[type="radio"]:checked {
   background: url(../images/checked.png) left center no-repeat;
 }
@@ -1017,6 +1024,7 @@ footer {
 
 .modal {
   z-index: 9000;
+  overflow-y: scroll;
 }
 
 .modal-title {

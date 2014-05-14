@@ -161,8 +161,11 @@ App.Pricing = {
       $('#prices').show();
     });
 
-    $('#quote-annual-fee .pricing-done-button').bind('click', function(){
+    $('#quote-annual-fee .pricing-done-button').on('click', function(e){
+      console.log('clcik');
+      e.preventDefault();
       App.Pricing.closeAnnualFeeModal();
+      $('#quote-annual-fee').modal('hide'); 
     });
   },
   closeAnnualFeeModal: function () {
@@ -178,7 +181,8 @@ App.Pricing = {
   },
   closeSetupFeeModal: function () {
 
-    $('#quote-setup-fee .pricing-done-button').bind('click', function(){
+    $('#quote-setup-fee .pricing-done-button').on('click', function(e){
+      e.preventDefault();
       var selectedVal = App.Pricing.getImplementationSetting();
       if( $('#quote-setup-fee input[value="' + selectedVal + '"]') !== undefined ) {
         $('#quote-setup-fee input[value="' + selectedVal + '"]').attr("checked",true);
@@ -186,6 +190,7 @@ App.Pricing = {
         $('#setup-fee .amount').text('$' + setup_amount);
         $('#setup-fee').attr('amount', setup_amount);
         App.Pricing.updateClosedModals();
+        $('#quote-setup-fee').modal('hide');
       }
     });
   },
