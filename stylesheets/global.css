@@ -255,6 +255,11 @@ label {
   color: #444;
 }
 
+.grey-background {
+  background-color: #e6e6e6;
+  color: #444;
+}
+
 .white-background {
   background-color: #FFF;
   color: #444;
@@ -317,17 +322,17 @@ blockquote {
 }
 
 .speech-bubble {
-  background: #E6E6E6;
+  background: #fff;
   padding: 17px 20px;
   text-align: center;
   width: 80%;
   margin: 10px;
   position: relative;
-  font-size: 100%;
+  font-size: 95%;
 }
 
 .speech-bubble:after {
-  border-color: #E6E6E6 transparent;
+  border-color: #fff transparent;
   border-style: solid;
   border-width: 40px 0 0 35px;
   bottom: -30px;
@@ -354,7 +359,7 @@ blockquote {
 .video-frame p {
   text-align: center;
   font-size: 180% !important;
-  margin: 10px 0 25px;
+  margin: 0 0 16px;
   color: #FFF;
   padding: 0 0 10px;
 }

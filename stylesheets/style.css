@@ -590,9 +590,13 @@ ul#nav li a {
 }
 
 
-#quote,
-#about-subscription {
+#quote{
   padding: 20px;
+}
+
+
+#about-subscription{
+  padding: 20px 90px;
 }
 
 #about-subscription ul.options,
@@ -603,7 +607,7 @@ ul#nav li a {
 #about-subscription ul.options li {
   margin-bottom: 10px;
   list-style-image:url('../images/double-arrow.png');
-  list-style-position: inside;
+  list-style-position: outside;
 }
 /** FEATURE LIST **/
 
@@ -1091,10 +1095,10 @@ footer {
   height: 200px;
   margin: 0 auto;
   max-width: 1920px;
-  padding: 20px 0;
+/*  padding: 20px 0; */
   position: relative;
   width: 100%;
-  border: solid #999;
+/*  border: solid #999; */
   border-width: 1px 0 0;
   font-weight: 400;
   font-size: 110%;
