@@ -212,7 +212,7 @@ App.Pricing = {
 
       // Resize subscription.
       if($(window).width() > 1000) {
-        var subscriptionHeight = $('#pricing .flush').height() - 50;
+        var subscriptionHeight = $('#pricing .flush').height() - 70;
         $('#about-subscription').height(subscriptionHeight);
       }
 

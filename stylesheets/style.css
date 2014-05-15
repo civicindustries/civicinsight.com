@@ -310,7 +310,7 @@ ul#nav li a {
 }
 
 .share .url {
-  margin: 10px 0 10px 0;
+  margin: 5px 0 5px;
   background-color: #fff;
   color: #666;
   width: 80%;
@@ -596,9 +596,10 @@ ul#nav li a {
 
 #pricing h3 {
   line-height: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   text-align: center;
 }
+
 #pricing .columns {
   margin-top: 0;
   margin-bottom: 0;
@@ -637,8 +638,12 @@ ul#nav li a {
   padding: 20px 62px 20px 14%;
 }
 
+.share .orange-font{
+  padding-top: 5px;
+}
+
 #about-subscription {
-  padding: 20px 18% 20px 8%;
+  padding: 20px 18% 50px 8%;
   /* min-height: 430px;
   padding: 20px 20% 40px 5%; */
   width: 58%;
