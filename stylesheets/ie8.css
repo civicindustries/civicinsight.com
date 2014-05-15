@@ -6,12 +6,12 @@
 
 
 
-#newsletter input[type=checkbox] {
+#sign-up input[type=checkbox] {
   margin: 3px 0 7px 0;
   display: inline-block;
 }
 
-#newsletter input[type=checkbox]  ~ label:before {
+#sign-up input[type=checkbox]  ~ label:before {
   content: inherit;
   width: auto;
   height: auto;
@@ -23,7 +23,7 @@
   margin-right: 3px; /*rtl*/
 }
 
-#newsletter input[type=checkbox]:checked ~ label:before {
+#sign-up input[type=checkbox]:checked ~ label:before {
   content: inherit;
   background:none;
 }

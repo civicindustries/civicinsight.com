@@ -28,9 +28,9 @@ table hd{
   padding: 0 10px;
 }
 
-#newsletter{
+#sign-up{
     background: #aaa !important;
 }
-#newsletter h1, #newsletter p{
+#sign-up h1, #sign-up p{
   color: black !important;
 }

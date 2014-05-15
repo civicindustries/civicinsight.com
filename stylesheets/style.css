@@ -450,8 +450,8 @@ ul#nav li a {
 
 /** MAILCHIMP **/
 
-#newsletter .form input,
-#newsletter .form select {
+#sign-up .form input,
+#sign-up .form select {
   font-size: 120%;
   font-family: Lato !important;
   padding: 5px 5px;
@@ -459,7 +459,7 @@ ul#nav li a {
 
 }
 
-#newsletter .form input[type="submit"] {
+#sign-up .form input[type="submit"] {
   font-size: 200%;
   color: #fff;
   padding: 5px 30px;
@@ -467,33 +467,33 @@ ul#nav li a {
 }
 
 
-#newsletter .info {
+#sign-up .info {
   margin-bottom: 20px;
 }
 
-#newsletter .option {
+#sign-up .option {
   text-align: left;
   /*margin-left: 11%;*/
   margin-bottom: 5px;
 }
 
-#newsletter form h3 {
+#sign-up form h3 {
   text-align: center;
 }
 
-#newsletter .menu-button {
+#sign-up .menu-button {
   font-size: 200%;
   text-transform: uppercase;
   padding: 0 20px;
 }
 
 
-#newsletter input[type=checkbox] {
+#sign-up input[type=checkbox] {
   margin: 3px 0 7px 0;
   display:none;
 }
 
-#newsletter input[type=checkbox]  ~ label:before {
+#sign-up input[type=checkbox]  ~ label:before {
   content: '';
   width: 22px;
   height: 22px;
@@ -505,7 +505,7 @@ ul#nav li a {
   margin-right: 3px; /*rtl*/
 }
 
-#newsletter input[type=checkbox]:checked ~ label:before {
+#sign-up input[type=checkbox]:checked ~ label:before {
   content: '';
   background: url(../images/checked-small.png) no-repeat;
 }
@@ -531,33 +531,33 @@ ul#nav li a {
   background: url(../images/checked.png) left center no-repeat;
 }
 
-#newsletter label {
+#sign-up label {
   font-size: 120% !important;
   font-family: Lato !important;
 }
 
-#newsletter form input[type=text],
-#newsletter form input[type=email] {
+#sign-up form input[type=text],
+#sign-up form input[type=email] {
   margin: 20px 10px 5px 0px;
   color: #4d4d4d;
   width: 23%;
   
 }
 
-#newsletter input[type=radio] {
+#sign-up input[type=radio] {
   margin: 4px;
   padding: 0;
 }
 
-#newsletter {
+#sign-up {
   font-size: 100%;
 }
 
-#newsletter .columns {
+#sign-up .columns {
   padding: 30px 0 55px;
 }
 
-#newsletter .unsubscribe {
+#sign-up .unsubscribe {
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -565,7 +565,7 @@ ul#nav li a {
   font-weight: 300;
 }
 
-#newsletter p {
+#sign-up p {
   text-align: center;
   margin: 0 auto;
 }
