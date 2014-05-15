@@ -199,7 +199,7 @@ ul#nav li a {
 }
 
 #quote.complete .quote-button {
-  background-color: #f8f8f8;
+  background-color: #eee;
   text-align: left;
   padding: 0px 10px 5px;
 }
@@ -638,10 +638,9 @@ ul#nav li a {
 }
 
 #about-subscription {
-/*  padding: 20px 18% 20px 8%;
-  min-height: 430px; */
-
-  padding: 20px 20% 40px 5%;
+  padding: 20px 18% 20px 8%;
+  /* min-height: 430px;
+  padding: 20px 20% 40px 5%; */
   width: 58%;
 }
 
