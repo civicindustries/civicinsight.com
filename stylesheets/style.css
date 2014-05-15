@@ -574,6 +574,14 @@ ul#nav li a {
   display: none;
 }
 
+#mce-success-response{
+  color:#fff; 
+  text-align: center; 
+  padding: 0 0 20px 130px; 
+  font-size: 1.25em; 
+  font-weight: normal;
+}
+
 /*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 
 #mce-responses
