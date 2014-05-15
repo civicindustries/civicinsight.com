@@ -403,7 +403,7 @@ ul#nav li a {
 
 
 #case-studies {
-  background-color: #f8f8f8 !important;
+  background-color: #eee !important;
 }
 
 #case-studies li {
@@ -634,12 +634,11 @@ ul#nav li a {
 
 
 #quote {
-  padding: 20px 20px 20px 15%;
+  padding: 20px 62px 20px 14%;
 }
 
 #about-subscription {
-  /* padding: 20px 90px; */
-  padding: 20px 20% 20px 5%;
+  padding: 20px 18% 20px 8%;
   min-height: 430px;
   width: 58%;
   height: 100%;
