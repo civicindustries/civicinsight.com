@@ -17,3 +17,7 @@ tmp
 _yardoc
 doc/
 
+.DS_Store
+_drafts/
+_site/
+*.swp
