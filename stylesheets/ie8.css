@@ -1,0 +1,82 @@
+#logo, #nav{  
+  z-index: 100;
+/*  margin-top: -60px;*/
+}
+
+
+
+
+#newsletter input[type=checkbox] {
+  margin: 3px 0 7px 0;
+  display: inline-block;
+}
+
+#newsletter input[type=checkbox]  ~ label:before {
+  content: inherit;
+  width: auto;
+  height: auto;
+  background:  none;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 3px; /*rtl*/
+}
+
+#newsletter input[type=checkbox]:checked ~ label:before {
+  content: inherit;
+  background:none;
+}
+
+
+#quote {
+  width: 100%;
+  padding: 20px 29% 20px 32%;
+  min-height: auto;
+}
+
+
+#about-subscription {
+  width: 100%;
+  padding: 20px 29% 20px 32%;
+  min-height: auto;
+}
+
+
+
+.radio-checkbox input[type=radio] {
+  float: auto;
+  -webkit-appearance: inherit;
+  border: none;
+  width: auto;
+  height: auto;
+  background: none;
+  background-size: auto;
+}
+
+.radio-checkbox input[type="radio"]:checked {
+  background: none;
+}
+
+#about {
+margin: 0 3%;
+max-width: 1920px;
+padding: 20px 0;
+position: relative;
+width: 94%;
+}
+
+.category {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+#plans .plan {
+  min-height: 250px;
+}
+
+#plans .plan .amount {
+  position: relative;
+  bottom: 0px;
+}

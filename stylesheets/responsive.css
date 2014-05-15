@@ -1,0 +1,25 @@
+/* responsive */
+@media (max-width: 767px) {
+
+
+#about-subscription {
+  width: 100%;
+  padding: 20px 29% 20px 32%;
+  min-height: auto;
+}
+
+
+}
+
+
+@media (max-width: 480px) {
+
+#about-subscription {
+  width: 100%;
+  padding: 20px 5% 20px 5%;
+  min-height: auto;
+
+}
+
+
+}
