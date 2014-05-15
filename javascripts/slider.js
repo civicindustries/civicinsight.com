@@ -83,7 +83,7 @@ App.Pricing = {
       rangeDefault = params.slider;
     }
     else {
-      rangeDefault = 55;
+      rangeDefault = 69;
     }
 
     // Make slider interactive.
