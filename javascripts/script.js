@@ -113,6 +113,17 @@ $(document).ready(function() {
     $('#about-subscription').height(subscriptionHeight);
   }
 
+
+  var placeholder = 'placeholder' in document.createElement('input');  
+  if (!placeholder) {      
+    $.getScript("../js/placeholder.js", function() {   
+        $(":input").each(function(){   // this will work for all input fields
+          $(this).placeHolder();
+        });
+    });
+  } 
+
+
   function collapseAccordionArrows() {
       $('#full-feature-list').on('show.bs.collapse', function () {
        $(".glyphicon-chevron-right").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-up");
