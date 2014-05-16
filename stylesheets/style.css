@@ -187,7 +187,7 @@ ul#nav li a {
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
-  font-size: 150%;
+  font-size: 170%;
   cursor: pointer;
 }
 
@@ -196,6 +196,12 @@ ul#nav li a {
   margin-top: -7px;
   margin-left: 6px;
 
+}
+
+.modal-plus{
+  top: -4px;
+  left: 9px;
+  font-size: 150%;
 }
 
 #quote.complete .quote-button {
@@ -284,7 +290,7 @@ ul#nav li a {
 #quote.complete .total-first-year .fee {
   width: 200px;
   display: inline-block;
-  font-size: 120%;
+  font-size: 125%;
   padding-left: 10px;
 }
 
