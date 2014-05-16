@@ -425,9 +425,10 @@ ul#nav li a {
   margin-bottom: 30px;
 }
 
-.case-studies p {
-
+.use-intro {
+  padding: 0 115px 10px;
 }
+
 .case-studies .quote-text {
   font-style: italic;
   margin-left: 20px;
