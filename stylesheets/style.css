@@ -187,7 +187,7 @@ ul#nav li a {
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
-  font-size: 150%;
+  font-size: 170%;
   cursor: pointer;
 }
 
@@ -196,6 +196,12 @@ ul#nav li a {
   margin-top: -7px;
   margin-left: 6px;
 
+}
+
+.modal-plus{
+  top: -4px;
+  left: 9px;
+  font-size: 150%;
 }
 
 #quote.complete .quote-button {
@@ -284,7 +290,7 @@ ul#nav li a {
 #quote.complete .total-first-year .fee {
   width: 200px;
   display: inline-block;
-  font-size: 120%;
+  font-size: 125%;
   padding-left: 10px;
 }
 
@@ -354,46 +360,46 @@ ul#nav li a {
 
 
 /** AUDIENCE **/
-#who-for h2 {
+#who-benefits h2 {
   margin-bottom: 40px;
 }
 
-#who-for .benefits {
+#who-benefits .benefits {
   text-align: left;
   text-align: center;
   min-height: 125px;
   margin: 0 25px 20px 0;
 }
 
-#who-for .image {
+#who-benefits .image {
   text-align: center !important;
 }
 
-#who-for .summary {
+#who-benefits .summary {
   text-align: left;
   font-weight: normal;
 }
 
 
-#who-for .face {
+#who-benefits .face {
   width: 200px;
   display: inline-block;
   
 
 }
-#who-for .summary {
+#who-benefits .summary {
   display: inline-block;
   width: 55%;
 }
 
 
-#who-for .title {
+#who-benefits .title {
   font-weight: 400;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#who-for .summary p,#who-for .summary strong {
+#who-benefits .summary p,#who-benefits .summary strong {
   font-size: 130%;
   line-height: 120%;
 }
@@ -425,9 +431,10 @@ ul#nav li a {
   margin-bottom: 30px;
 }
 
-.case-studies p {
-
+.use-intro {
+  padding: 0 115px 10px;
 }
+
 .case-studies .quote-text {
   font-style: italic;
   margin-left: 20px;
@@ -450,8 +457,8 @@ ul#nav li a {
 
 /** MAILCHIMP **/
 
-#newsletter .form input,
-#newsletter .form select {
+#sign-up .form input,
+#sign-up .form select {
   font-size: 120%;
   font-family: Lato !important;
   padding: 5px 5px;
@@ -459,7 +466,7 @@ ul#nav li a {
 
 }
 
-#newsletter .form input[type="submit"] {
+#sign-up .form input[type="submit"] {
   font-size: 200%;
   color: #fff;
   padding: 5px 30px;
@@ -467,33 +474,33 @@ ul#nav li a {
 }
 
 
-#newsletter .info {
+#sign-up .info {
   margin-bottom: 20px;
 }
 
-#newsletter .option {
+#sign-up .option {
   text-align: left;
   /*margin-left: 11%;*/
   margin-bottom: 5px;
 }
 
-#newsletter form h3 {
+#sign-up form h3 {
   text-align: center;
 }
 
-#newsletter .menu-button {
+#sign-up .menu-button {
   font-size: 200%;
   text-transform: uppercase;
   padding: 0 20px;
 }
 
 
-#newsletter input[type=checkbox] {
+#sign-up input[type=checkbox] {
   margin: 3px 0 7px 0;
   display:none;
 }
 
-#newsletter input[type=checkbox]  ~ label:before {
+#sign-up input[type=checkbox]  ~ label:before {
   content: '';
   width: 22px;
   height: 22px;
@@ -505,7 +512,7 @@ ul#nav li a {
   margin-right: 3px; /*rtl*/
 }
 
-#newsletter input[type=checkbox]:checked ~ label:before {
+#sign-up input[type=checkbox]:checked ~ label:before {
   content: '';
   background: url(../images/checked-small.png) no-repeat;
 }
@@ -531,33 +538,33 @@ ul#nav li a {
   background: url(../images/checked.png) left center no-repeat;
 }
 
-#newsletter label {
+#sign-up label {
   font-size: 120% !important;
   font-family: Lato !important;
 }
 
-#newsletter form input[type=text],
-#newsletter form input[type=email] {
+#sign-up form input[type=text],
+#sign-up form input[type=email] {
   margin: 20px 10px 5px 0px;
   color: #4d4d4d;
   width: 23%;
   
 }
 
-#newsletter input[type=radio] {
+#sign-up input[type=radio] {
   margin: 4px;
   padding: 0;
 }
 
-#newsletter {
+#sign-up {
   font-size: 100%;
 }
 
-#newsletter .columns {
+#sign-up .columns {
   padding: 30px 0 55px;
 }
 
-#newsletter .unsubscribe {
+#sign-up .unsubscribe {
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -565,13 +572,21 @@ ul#nav li a {
   font-weight: 300;
 }
 
-#newsletter p {
+#sign-up p {
   text-align: center;
   margin: 0 auto;
 }
 
 .see-quote {
   display: none;
+}
+
+#mce-success-response{
+  color:#fff; 
+  text-align: center; 
+  padding: 0 0 20px 130px; 
+  font-size: 1.25em; 
+  font-weight: normal;
 }
 
 /*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }

@@ -64,7 +64,7 @@ $(document).ready(function() {
     $('input[name=PLAN][value='+query.select+']').prop('checked',true);
   }
 
-  $('#newsletter form').submit(function(e){
+  $('#sign-up form').submit(function(e){
 
     e.preventDefault();
     var current_form = this;
@@ -73,8 +73,8 @@ $(document).ready(function() {
 
     $.post( formAction, formData, function( data ) {
     }, "json").always(function(){
-      $('#newsletter h1').empty();
-      $('#newsletter form').html("<h3>Thank you. You will receive an email short to confirm your signup.</h3>");
+      $('#sign-up h1').empty();
+      $('#sign-up form').html("<h3>Thank you. You will receive an email short to confirm your signup.</h3>");
     });
 
   });

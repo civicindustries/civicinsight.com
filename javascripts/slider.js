@@ -50,7 +50,7 @@ App.Pricing = {
       range_subtract: 75,
       price_base: 10000,
       support_hours: 150,
-      multiplier: 0.025
+      multiplier: 0.02
     }
   },
 
@@ -83,7 +83,7 @@ App.Pricing = {
       rangeDefault = params.slider;
     }
     else {
-      rangeDefault = 55;
+      rangeDefault = 69;
     }
 
     // Make slider interactive.
