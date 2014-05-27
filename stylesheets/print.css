@@ -1,0 +1,22 @@
+@media print {
+  html body .content section {
+   display:none;
+  }
+
+  body {
+      color: #000;
+      background: #fff;
+   }
+
+  #pricing {
+   display:block;
+  }
+
+  footer div {
+    display: none;
+  }
+
+  footer .contact-us {
+    display: block;
+  }
+}

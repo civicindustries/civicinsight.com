@@ -416,4 +416,14 @@ App.Pricing = {
     }
     return val;
   },
+
+
+  printQuote: function() {
+    $('.print-button').click(function (){
+
+    });
+  },
+
+
+
 };

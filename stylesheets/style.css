@@ -1,1290 +1,1292 @@
-/**
- * Parallax Scrolling Tutorial
- * For NetTuts+
- *
- * Author: Mohiuddin Parekh
- *  http://www.mohi.me
- *  @mohiuddinparekh
- */
-
-/** HEADER **/
-header {
-  height: 60px;
-  background: #FFF;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  border-bottom: 1px solid #aaa;
-}
-
-#logo {
-  margin-top: 2px;
-  max-width: 239px;
-}
-
-ul#nav {
-  padding: 18px;
-}
-
-ul#nav li {
-  display: inline;
-  padding: 15px 10px 10px;
-  font-size: 20px;
-  list-style: none;
-}
-
-ul#nav li a {
-  font-weight: 400;
-  text-decoration: none;
-}
-
-
-#notice {
-  background-color: #00B9BD;
-  color: #FFF;
-  font-size: 160%;
-  height: 40px;
-  margin: 63px 0;
-  max-width: 1920px;
-  position: relative;
-  text-align: center;
-  top: -3px;
-  width: 100%;
-  z-index: 50;
-}
-
-#notice p {
-  font-size: 97%;
-  line-height: 135%;
-  font-weight: 400;
-  padding-top: 6px;
-}
-
-
-
-
-
-
-
-.notice {
-  font-style: italic;
-  font-weight: 200;
-}
-
-#notice a {
-  font-weight: 400;
-  color: #FFF;
-}
-
-#notice a:hover {
-  color: #444;
-}
-
-/** HERO **/
-
-.hero {
-  position: relative;
-  top: 100px;
-}
-
-/** PRODUCT **/
-
-#vision {
-  background: url(/images/hero.jpg) 50% 34px no-repeat fixed;
-  height: 600px;
-  margin: 40px auto auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-}
-
-
-#product {
-  margin-bottom: 0;
-}
-
-#product h1 {
-  text-align: left;
-}
-
-#product .center {
-  width: 1000px;
-  margin: 20px auto 0;
-  text-align: center;
-}
-
-#product .center h1 {
-  text-align: center;
-}
-
-#product .columns {
-  padding: 40px 0 80px;
-}
-
-#product .feature {
-  background-color: #FFF;
-  width: 100%;
-}
-
-#product .offwhite {
-  background-color: #eee;
-}
-  
-#product li {
-  padding: 0;
-  margin: 0;
-}
-
-/*//#pricing {
-//  line-height: 170%;
-//  font-size: 120%;
-//}
-*/
-
-
-#pricing .quote-plus-sign {
-  font-size: 3em;
-  text-align: center;
-  margin-bottom: 10px;
-  padding-top: 0;
-}
-
-#quote.complete .quote-plus-sign {
-  font-size: 2em;
-  float: left;
-  margin-bottom: 10px;
-  padding-top: 0;
-}
-
-.total-first-year,
-.total-recurring {
-  display: none;
-}
-
-.share {
-  display: none;
-}
-
-#quote.complete .share,
-#quote.complete .total-first-year,
-#quote.complete .total-recurring {
-  display: block;
-}
-
-#quote .bar {
-  border-bottom: none;
-}
-
-#quote.complete .bar {
-  border-bottom: 2px solid #F1601D;
-  margin-top: 8px;
-}
-
-#quote .quote-button {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 170%;
-  cursor: pointer;
-}
-
-#quote.complete .quote-plus-sign {
-  margin-right: 10px;
-  margin-top: -7px;
-  margin-left: 6px;
-
-}
-
-.modal-plus{
-  top: -4px;
-  left: 9px;
-  font-size: 150%;
-}
-
-#quote.complete .quote-button {
-  background-color: #eee;
-  text-align: left;
-  padding: 0px 10px 5px;
-}
-
-#quote.complete .quote-button .calculate {
-  position: relative;
-  right: 0;
-}
-
-#quote.complete .quote-button .fee {
-
-}
-
-
-#quote.complete .quote-button .fee,
-#quote.complete .quote-button .calculate {
-  display: inline-block;
-  font-size: 77%;
-}
-
-#quote.complete .total-first-year {
-  margin: 10px 0 20px 0;
-}
-
-#quote.complete .total-first-year strong {
- font-size: 100%; 
-}
-
-#quote.complete .total-first-year .amount {
-  font-weight: bold;
-/* font-style: italic; */
-  font-size: 140%;
-}
-
-#quote.complete .total-recurring .amount {
-  font-weight: bold;
-/* font-style: italic; */
-  font-size: 110%;
-}
-
-
-#quote.complete .total-recurring strong {
-  font-size: 100%;
-}
-
-#quote.complete .total-recurring {
-  padding: 10px 24px;
-  border-radius: 5px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 150%;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-#quote.complete .annual-fee.quote-button .fee {
-  width: 190px;
-}
-
-#quote.complete .annual-fee.quote-button .calculate {
- width: 73px; 
- border-bottom: none;
-} 
-
-#quote.complete .quote-plus-sign {
- width: 15px;
-
-}
-
-#quote.complete .setup-fee.quote-button .fee {
- width: 168px;
-}
-
-#quote.complete .setup-fee.quote-button .calculate {
-  width: 74px; 
-
-} 
-
-
-
-
-#quote.complete .total-first-year .fee {
-  width: 200px;
-  display: inline-block;
-  font-size: 125%;
-  padding-left: 10px;
-}
-
-#quote.complete .total-first-year .calculate {
-  width: 100px; 
-  display: inline-block;
-}
-
-#quote.complete .total-recurring .fee {
-  width: 200px;
-}
-
-#quote.complete .total-recurring .calculate {
-  width: 100px; 
-}
-
-
-.share {
-  font-size: 100%;
-  font-style: italic;
-  text-align: center;
-  margin: 10px 0 10px 0;
-}
-
-.share .url {
-  margin: 5px 0 5px;
-  background-color: #fff;
-  color: #666;
-  width: 80%;
-}
-
-.share .copied {
-  display: none;
-  background-color: #999;
-  color: white;
-  font-size: 100%;
-  z-index: 1000;
-  position: relative;
-  top: -30px;
-  width: 77%;
-  left: 30px;
-  margin: 2px;
-  opacity: 0.9;
-}
-.share .url:hover {
-   /*background-color: yellow;*/
-}
-.cities-citizens-icons {
-  height: 115px;
-  left: 0;
-  position: absolute;
-  top: -15px;
-  width: 95px;
-}
-
-
-#cities-citizens ul {
-  position: relative;
-}
-
-#cities-citizens li {
-  padding: 0 45px 35px 105px;
-  position: relative;
-  min-height: 80px;
-}
-
-
-
-/** AUDIENCE **/
-#who-benefits h2 {
-  margin-bottom: 40px;
-}
-
-#who-benefits .benefits {
-  text-align: left;
-  text-align: center;
-  min-height: 125px;
-  margin: 0 25px 20px 0;
-}
-
-#who-benefits .image {
-  text-align: center !important;
-}
-
-#who-benefits .summary {
-  text-align: left;
-  font-weight: normal;
-}
-
-
-#who-benefits .face {
-  width: 200px;
-  display: inline-block;
-  
-
-}
-#who-benefits .summary {
-  display: inline-block;
-  width: 55%;
-}
-
-
-#who-benefits .title {
-  font-weight: 400;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#who-benefits .summary p,#who-benefits .summary strong {
-  font-size: 130%;
-  line-height: 120%;
-}
-
-
-/** USES **/
-
-
-#case-studies {
-  background-color: #eee !important;
-}
-
-#case-studies li {
-  list-style: none;
-  margin-left: 0;
-  padding: 5px 0;
-}
-
-#case-studies h1 {
-  font-size: 300%;
-}
-
-#case-studies .benefit-types img {
-  padding-top: 20px;
-  width: 150px;
-}
-
-.case-studies .section-pad {
-  margin-bottom: 30px;
-}
-
-.use-intro {
-  padding: 0 115px 10px;
-}
-
-.case-studies .quote-text {
-  font-style: italic;
-  margin-left: 20px;
-  padding: 20px 0;
-}
-
-.case-studies .attribution,
-.case-studies .attribution a {
-  font-size: 100%;
-  text-align: right;
-}
-
-.case-studies .attribution a {
-  font-weight: bold;
-  font-size: 150%;
-  margin-top: 30px;
-  text-decoration: underline;
-  display: block;
-}
-
-/** MAILCHIMP **/
-
-#sign-up .form input,
-#sign-up .form select {
-  font-size: 120%;
-  font-family: Lato !important;
-  padding: 5px 5px;
-  border: none;
-
-}
-
-#sign-up .form input[type="submit"] {
-  font-size: 200%;
-  color: #fff;
-  padding: 5px 30px;
-  margin-top: 5px;
-}
-
-
-#sign-up .info {
-  margin-bottom: 20px;
-}
-
-#sign-up .option {
-  text-align: left;
-  /*margin-left: 11%;*/
-  margin-bottom: 5px;
-}
-
-#sign-up form h3 {
-  text-align: center;
-}
-
-#sign-up .menu-button {
-  font-size: 200%;
-  text-transform: uppercase;
-  padding: 0 20px;
-}
-
-
-#sign-up input[type=checkbox] {
-  margin: 3px 0 7px 0;
-  display:none;
-}
-
-#sign-up input[type=checkbox]  ~ label:before {
-  content: '';
-  width: 22px;
-  height: 22px;
-  background: url(../images/unchecked-small.png) no-repeat;
-  display: inline-block;
-  cursor: pointer;
-  vertical-align: middle;
-  margin-top: -4px;
-  margin-right: 3px; /*rtl*/
-}
-
-#sign-up input[type=checkbox]:checked ~ label:before {
-  content: '';
-  background: url(../images/checked-small.png) no-repeat;
-}
-
-.radio-checkbox input[type=radio] {
-  float: left;
-  -webkit-appearance: none;
-  border: none;
-  width: 32px;
-  height: 32px;
-  background: url(../images/unchecked.png) left center no-repeat;    
-  background-size: 32px; 
-}
-
-@-moz-document url-prefix() {
-  .radio-checkbox input[type=radio] {
-    width: auto;
-    height: auto;
+@media screen {
+  /**
+   * Parallax Scrolling Tutorial
+   * For NetTuts+
+   *
+   * Author: Mohiuddin Parekh
+   *  http://www.mohi.me
+   *  @mohiuddinparekh
+   */
+
+  /** HEADER **/
+  header {
+    height: 60px;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #aaa;
   }
-}
-
-.radio-checkbox input[type="radio"]:checked {
-  background: url(../images/checked.png) left center no-repeat;
-}
-
-#sign-up label {
-  font-size: 120% !important;
-  font-family: Lato !important;
-}
-
-#sign-up form input[type=text],
-#sign-up form input[type=email] {
-  margin: 20px 10px 5px 0px;
-  color: #4d4d4d;
-  width: 23%;
-  
-}
-
-#sign-up input[type=radio] {
-  margin: 4px;
-  padding: 0;
-}
-
-#sign-up {
-  font-size: 100%;
-}
-
-#sign-up .columns {
-  padding: 30px 0 55px;
-}
-
-#sign-up .unsubscribe {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 100%;
-  font-weight: 300;
-}
-
-#sign-up p {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.see-quote {
-  display: none;
-}
-
-#mce-success-response{
-  color:#fff; 
-  text-align: center; 
-  padding: 0 0 20px 130px; 
-  font-size: 1.25em; 
-  font-weight: normal;
-}
-
-/*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-
-#mce-responses
-
-*/
-/** PRICING **/
-/*
-:target {
-    display: block;    
-    position: relative;     
-    top: -100px;
-    visibility: hidden;
-}
-*/
-
-/*#pricing {
-  padding-top: 100px; 
-  margin-top: -100px;
-}*/
-
-#pricing h3 {
-  line-height: 1em;
-  margin-bottom: 35px;
-  text-align: center;
-}
-
-#pricing .columns {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-}
-#pricing .flush {
-  margin: 0;
-  padding: 0;
-}
-
-#pricing .left-column,#pricing .center-column,#pricing .right-column {
-  width: 25% !important;
-  float: left;
-  font-size: 120%;
-  border: none;
-  margin-left: 7%;
-}
-
-#pricing .calculate .amount {
-  border-bottom: 2px dotted #F1601D;
-  margin-bottom: 6px;
-  font-style: italic;
-  color: #F1601D;
-}
-
-
-#pricing #quote.complete .setup-fee.quote-button .amount,
-#pricing #quote.complete .annual-fee.quote-button .amount {
-  border-bottom: none;
-}
-
-
-
-#quote {
-  padding: 20px 62px 20px 14%;
-}
-
-.share .orange-font{
-  padding-top: 5px;
-}
-
-#about-subscription {
-  padding: 20px 18% 50px 8%;
-  /* min-height: 430px;
-  padding: 20px 20% 40px 5%; */
-  width: 58%;
-}
-
-#about-subscription ul.options,
-#about-subscription ul.options strong {
-  font-size: 100%;
-}
-
-#about-subscription ul.options li {
-  margin-bottom: 10px;
-  list-style-image:url('../images/double-arrow.png');
-  list-style-position: outside;
-}
-/** FEATURE LIST **/
-
-#feature-list .panel-default .panel-heading,
-#feature-list .panel-default .panel-body {
-  background-color: gray;
-  color: #fff;
-  border: none;
-}
-
-#feature-list .panel-title {
-  font-size: 200%;
-  font-weight: normal;
-  text-align: center;
-  margin: 5px 0;
-}
-
-#feature-list .panel-title a:hover {
-  text-decoration: none;
-  color: #fff;
-}
-/** PARTNERS **/
-#partners .logos {
-  margin: 0 auto;
-}
-
-#partners .image {
-  display: inline;
-}
-
-#partners .image img {
-  width: 180px;
-  padding: 30px 0 50px 80px;
-}
-
-
-/** PRESS **/
-#press h1 {
-  height: 100px;
-}
-
-#press ul li {
-  padding: 0 0 25px;
-}
-
-#press {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  color: #FFF;
-  height: 820px;
-}
-
-
-/** FOOTER **/
-
-footer {
-  width: 100%;
-  position: relative;
-}
-
-#footer {
-  height: 20px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  background: #666;
-  color: #FFF;
-  text-align: center;
-}
-
-#footer p {
-  font-size: 110%;
-  font-weight: 300;
-  color: #CCC;
-}
-
-#footer a {
-  color: #FFF;
-}
-
-/** MODALS **/
-
-/** PRICing **/
-
-.pricing-table {
-  text-align: left;
-  padding: 10px;
-  margin: 70px 0;
-  width: 100%;
-  position: relative;
-}
-
-.price-period sup {
-  font-size: 40%;
-  top: -1.4em;
-}
-
-.pricing-table p {
-  font-size: 100%;
-  font-weight: 700;
-}
-
-.pricing-table h2 {
-  font-size: 200%;
-  text-align: center;
-  margin: -10px 0 15px;
-}
-
-.price-details {
-  padding: 20px 40px;
-  margin-top: 90px;
-  clear: both;
-}
-
-.price-details p,.price-details li {
-  font-size: 110% !important;
-}
-
-.questions p:not(:first-child) {
-  font-size: 90% !important;
-}
-
-.price-details p:first-of-type {
-  padding-bottom: 20px;
-}
-
-.pricing-table td {
-  font-size: 100%;
-  text-align: left;
-  padding: 5px 10px 0;
-}
-
-.pricing-price td {
-  font-size: 150%;
-  text-align: center;
-  margin: 10px 0;
-}
-
-.pricing-table td i {
-  margin: 0 10px;
-}
-
-.pricing-price .menu-button {
-  font-size: 65%;
-  padding: 8px 20px 12px 10px;
-}
-
-.pricing-plan-intro {
-  float: left;
-  width: 200px;
-  text-align: center;
-  line-height: 130%;
-}
-
-.annual-subscription-calculator .info {
-  text-align: center;
-}
-
-.arrow-box {
-  width: 145px;
-  background-color: #e6e6e6;
-  border: none;
-  text-shadow: none;
-  font-size: 150%;
-  position: relative;
-  background:  #e6e6e6;
-  cursor: pointer;
-}
-
-.arrow-box:after, .arrow_box:before {
-  right: 50%;
-  top: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.arrow-box:after {
-  border-color:  transparent;
-  border-top-color: #e6e6e6;
-  border-width: 15px;
-  margin-right: -15px;
-}
-
-.population {
-  background-color: #f2f2f2;
-  padding: 0 15% 7px 20%;
-  margin-top: 30px;
-  position: relative;
-  
-}
-
-.total-price {
-  background-color: #e6e6e6;
-  padding: 0 15% 7px 20%;
-  position: relative;
-  
-}
-
-#prices {
-  display: none;
-  z-index: 9000;
-}
-
-#prices input {
-  border: 0;
-  width: 200px;
-  background-color: transparent;
-  display: block;
-  font-family: Lato;
-  font-size: 125%;
-}
-
-#prices .total-price input {
-  color: #f1601d;
-  font-weight: 125%;
-}
-
-#slider {
-  width: 761px;
-  background-color: #b3b3b3;
-  border-radius: 0;
-  border: none;
-  margin: 40px 5% 50px 5%;
-  z-index: 8000;
-}
-.slider-increments {
-  z-index: 9000;
-  width: 761px;
-  height: 25px;
-  margin: -75px 5% 0 5%;
-}
-.slider-increment {
-  width: 186.5px;
-  display: inline-block;
-}
-
-.slider-increment div {
-  font-size: 80%;
-  color: #000;
-  border-right: 1px solid #999;
-  margin-right: 100%;
-  padding-top: 20px;
-  height: 15px;
-  display: block;
-}
-
-.slider-increment span {
-  position: relative;
-  left: -28px;
-  top: -33px;
-  display: block;
-  width: 100px;
-}
-
-.ui-state-default, 
-.ui-widget-content .ui-state-default, 
-.ui-widget-header .ui-state-default {
-  background-color: #f1601d;
-  height: 28px;
-  width: 16px;
-  border-radius: 3px;
-  border: none;
-}
-
-.ui-slider-horizontal .ui-slider-handle {
-  top: -0.65em;
-}
-
-.population .lbl,
-.total-price .lbl {
-  display: block;
-  font-size: 0.65em;
-  position: absolute;
-  left: 45px;
-  top: 9px;
-}
-
-
-.per-capita .lbl,
-.base-rate .lbl {
-  display: block;
-  font-size: 0.8em;
-}
-
-.per-capita,
-.base-rate {
-  width: 35%;
-  display: inline-block;
-  text-align: center;
-}
-
-.plus-sign {
-  width: 20%;
-  display: inline-block;
-}
-
-.plus-sign span {
-  margin-top: -10px;
-}
-
-.categories {
-  height: auto;
-  margin-left: 5%;
-}
-
-.category {
-  float: left;
-  font-size: 100%;
-  margin-right: 0px;
-  width: 190px;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-right: 1px #999999 solid;
-  min-height: 208px;
-}
-.category:last-child {
-  border-right: none;
-}
-
-.category.active {
-  background-color: #e6e6e6;
-}
-
-.category h4 {
-  line-height: 1em;
-  font-size: 150%;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #4d4d4d;
-  text-align: center;
-  margin: 8px 0 16px;
-}
-
-.category.active h4 {
-  color: #f1601d;
-}
-
-.plan .options,
-.category .options {
-  text-align: center;
-  
-}
-.plan .options li,
-.category .options li{
-  margin: 7px 0;
-}
-
-#default .category .options li,
-#default .category .options li strong {
-  font-size: 106%;
-}
-
-#partner-options li {
-  font-size: 120%;
-  line-height: inherit;
-  margin-left: 18px;
-}
-
-.modal {
-  z-index: 9000;
-  overflow-y: scroll;
-}
-
-.modal-title {
-  display: none; /* hidden but available for accessibility reasons */
-}
-
-.modal-header {
-  border-bottom: none;
-}
-
-.modal-header .close  {
-
-/*   float: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  
-  display: block;
-  padding: 0;
-  margin: 0;*/
-  
-}
-
-.modal-body {
-  top: -8px;
-}
-
-.modal-body {
-  padding-top: 0;
-  padding-bottom: 0;
-  top: -10px;
-}
-
-.modal-footer {
-  border-top: none;
-  text-align: center;
-  margin-top: 0px;
-  padding: 0px 20px 20px;
-}
-
-.modal-footer .menu-button {
-  font-size: 150%;
-  padding: 10px 20px;
-  text-align: center;
-  margin: 10px 0;
-  font-family: Lato;
-}
-
-#quote-setup-fee .info {
-  font-size: 100%;
-}
-
-#plans .plan {
-  float: left;
-  font-size: 100%;
-  margin: 15px 10px;
-  width: 30%;
-  padding: 22px 20px;
-  background-color: #f2f2f2;
-  border-right: none;
-  min-height: 330px;
-}
-
-.plan .options {
-  margin-top: 10px;
-  display: block;
-}
-.plan .options li {
-  margin-bottom: 5px;
-  font-size: 90%;
-  text-align: left;
-}
-
-
-#quote-setup-fee .info {
-  text-align: center;
-  display: block;
-  margin: 0 10% 20px 10%;
-}
-
-#plans {
-  display: block;
-  margin: 0 10%;
-}
-
-#default  #plans p,
-#default  #quote-setup-fee p {
-  font-size: 120%;
-}
-#default  #plans strong,
-#default #quote-setup-fee strong {
-  font-size: 120%;
-}
-
-.plan label{
-  font-size: 150% !important;
-  color: #F1601D;
-  line-height: 1em;
-  margin-bottom: 20px;
-}
-.plan em {
-  font-style: italic;
-  font-weight: normal;
-}
-
-.plan label {
-  width: 80%;
-  display: inline-block;
-}
-
-.plan label span{  
-  text-align: right;
-  margin-left: 10px;
-  display: inline-block;
-}
-
-#plans .amount{
-  font-size: 200%;
-  color: #F1601D;
-  text-align: center;
-  margin-top: 20px;
-  font-style: italic;
-  position: absolute;
-  bottom: 35px;
-  margin-left: 5%;
-}
-
-#plans .amount span{
-  font-size: 75%;
-  color: #444;
-  text-align: center;
-  margin-left: 10px;
-  display: block;
-}
-
-
-
-
-/** About **/
-#about {
-  height: 200px;
-  margin: 0 auto;
-  max-width: 1920px;
-/*  padding: 20px 0; */
-  position: relative;
-  width: 100%;
-/*  border: solid #999; */
-  border-width: 1px 0 0;
-  font-weight: 400;
-  font-size: 110%;
-}
-
-.brought-to-you {
-  line-height: 135%;
-  font-weight: 700;
-  color: #444;
-}
-
-#about a,#about li,#about li a {
-  font-weight: 400;
-  font-size: 110%;
-}
-
-#about strong,#about .offset2 {
-  font-size: 110%;
-}
-
-.page-top-offset,#about-page {
-  margin-top: 150px;
-}
-
-#about .columns {
-  padding: 30px 0;
-}
-
-#funders {
-  margin-top: 40px;
-}
-
-.social li {
-  list-style: none;
-}
-
-.bio .face {
-  border: 1px solid #DDD;
-  margin: 5px 20px 60px 0;
-  padding: 0;
-  text-align: center;
-  width: 175px;
-  float: left;
-}
-
-.bio h2 {
-  margin: 0 20px;
-}
-
-.bio .bio-text {
-  margin: 0;
-}
-
-
-/** DISORGANIZED **/
-#knowledge-is-power {
-  height: 385px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  background: #FFF;
-}
-
-#cities-citizens {
-  height: 520px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  background: #00b9bd;
-}
-
-#get-blightstatus {
-  height: 360px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  background: #FFF;
-}
-
-#demo {
-  height: 390px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  background: url(/images/map-large.png) 0 0 no-repeat fixed;
-}
-
-#background-map {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-#mission {
-  margin-top: 150px;
+
+  #logo {
+    margin-top: 2px;
+    max-width: 239px;
+  }
+
+  ul#nav {
+    padding: 18px;
+  }
+
+  ul#nav li {
+    display: inline;
+    padding: 15px 10px 10px;
+    font-size: 20px;
+    list-style: none;
+  }
+
+  ul#nav li a {
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+
+  #notice {
+    background-color: #00B9BD;
+    color: #FFF;
+    font-size: 160%;
+    height: 40px;
+    margin: 63px 0;
+    max-width: 1920px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+    width: 100%;
+    z-index: 50;
+  }
+
+  #notice p {
+    font-size: 97%;
+    line-height: 135%;
+    font-weight: 400;
+    padding-top: 6px;
+  }
+
+
+
+
+
+
+
+  .notice {
+    font-style: italic;
+    font-weight: 200;
+  }
+
+  #notice a {
+    font-weight: 400;
+    color: #FFF;
+  }
+
+  #notice a:hover {
+    color: #444;
+  }
+
+  /** HERO **/
+
+  .hero {
+    position: relative;
+    top: 100px;
+  }
+
+  /** PRODUCT **/
+
+  #vision {
+    background: url(/images/hero.jpg) 50% 34px no-repeat fixed;
+    height: 600px;
+    margin: 40px auto auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+  }
+
+
+  #product {
+    margin-bottom: 0;
+  }
+
+  #product h1 {
+    text-align: left;
+  }
+
+  #product .center {
+    width: 1000px;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  #product .center h1 {
+    text-align: center;
+  }
+
+  #product .columns {
+    padding: 40px 0 80px;
+  }
+
+  #product .feature {
+    background-color: #FFF;
+    width: 100%;
+  }
+
+  #product .offwhite {
+    background-color: #eee;
+  }
+    
+  #product li {
+    padding: 0;
+    margin: 0;
+  }
+
+  /*//#pricing {
+  //  line-height: 170%;
+  //  font-size: 120%;
+  //}
+  */
+
+
+  #pricing .quote-plus-sign {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 0;
+  }
+
+  #quote.complete .quote-plus-sign {
+    font-size: 2em;
+    float: left;
+    margin-bottom: 10px;
+    padding-top: 0;
+  }
+
+  .total-first-year,
+  .total-recurring {
+    display: none;
+  }
+
+  .share {
+    display: none;
+  }
+
+  #quote.complete .share,
+  #quote.complete .total-first-year,
+  #quote.complete .total-recurring {
+    display: block;
+  }
+
+  #quote .bar {
+    border-bottom: none;
+  }
+
+  #quote.complete .bar {
+    border-bottom: 2px solid #F1601D;
+    margin-top: 8px;
+  }
+
+  #quote .quote-button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 170%;
+    cursor: pointer;
+  }
+
+  #quote.complete .quote-plus-sign {
+    margin-right: 10px;
+    margin-top: -7px;
+    margin-left: 6px;
+
+  }
+
+  .modal-plus{
+    top: -4px;
+    left: 9px;
+    font-size: 150%;
+  }
+
+  #quote.complete .quote-button {
+    background-color: #eee;
+    text-align: left;
+    padding: 0px 10px 5px;
+  }
+
+  #quote.complete .quote-button .calculate {
+    position: relative;
+    right: 0;
+  }
+
+  #quote.complete .quote-button .fee {
+
+  }
+
+
+  #quote.complete .quote-button .fee,
+  #quote.complete .quote-button .calculate {
+    display: inline-block;
+    font-size: 77%;
+  }
+
+  #quote.complete .total-first-year {
+    margin: 10px 0 20px 0;
+  }
+
+  #quote.complete .total-first-year strong {
+   font-size: 100%; 
+  }
+
+  #quote.complete .total-first-year .amount {
+    font-weight: bold;
+  /* font-style: italic; */
+    font-size: 140%;
+  }
+
+  #quote.complete .total-recurring .amount {
+    font-weight: bold;
+  /* font-style: italic; */
+    font-size: 110%;
+  }
+
+
+  #quote.complete .total-recurring strong {
+    font-size: 100%;
+  }
+
+  #quote.complete .total-recurring {
+    padding: 10px 24px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 150%;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  #quote.complete .annual-fee.quote-button .fee {
+    width: 190px;
+  }
+
+  #quote.complete .annual-fee.quote-button .calculate {
+   width: 73px; 
+   border-bottom: none;
+  } 
+
+  #quote.complete .quote-plus-sign {
+   width: 15px;
+
+  }
+
+  #quote.complete .setup-fee.quote-button .fee {
+   width: 168px;
+  }
+
+  #quote.complete .setup-fee.quote-button .calculate {
+    width: 74px; 
+
+  } 
+
+
+
+
+  #quote.complete .total-first-year .fee {
+    width: 200px;
+    display: inline-block;
+    font-size: 125%;
+    padding-left: 10px;
+  }
+
+  #quote.complete .total-first-year .calculate {
+    width: 100px; 
+    display: inline-block;
+  }
+
+  #quote.complete .total-recurring .fee {
+    width: 200px;
+  }
+
+  #quote.complete .total-recurring .calculate {
+    width: 100px; 
+  }
+
+
+  .share {
+    font-size: 100%;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+
+  .share .url {
+    margin: 5px 0 5px;
+    background-color: #fff;
+    color: #666;
+    width: 80%;
+  }
+
+  .share .copied {
+    display: none;
+    background-color: #999;
+    color: white;
+    font-size: 100%;
+    z-index: 1000;
+    position: relative;
+    top: -30px;
+    width: 77%;
+    left: 30px;
+    margin: 2px;
+    opacity: 0.9;
+  }
+  .share .url:hover {
+     /*background-color: yellow;*/
+  }
+  .cities-citizens-icons {
+    height: 115px;
+    left: 0;
+    position: absolute;
+    top: -15px;
+    width: 95px;
+  }
+
+
+  #cities-citizens ul {
+    position: relative;
+  }
+
+  #cities-citizens li {
+    padding: 0 45px 35px 105px;
+    position: relative;
+    min-height: 80px;
+  }
+
+
+
+  /** AUDIENCE **/
+  #who-benefits h2 {
+    margin-bottom: 40px;
+  }
+
+  #who-benefits .benefits {
+    text-align: left;
+    text-align: center;
+    min-height: 125px;
+    margin: 0 25px 20px 0;
+  }
+
+  #who-benefits .image {
+    text-align: center !important;
+  }
+
+  #who-benefits .summary {
+    text-align: left;
+    font-weight: normal;
+  }
+
+
+  #who-benefits .face {
+    width: 200px;
+    display: inline-block;
+    
+
+  }
+  #who-benefits .summary {
+    display: inline-block;
+    width: 55%;
+  }
+
+
+  #who-benefits .title {
+    font-weight: 400;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #who-benefits .summary p,#who-benefits .summary strong {
+    font-size: 130%;
+    line-height: 120%;
+  }
+
+
+  /** USES **/
+
+
+  #case-studies {
+    background-color: #eee !important;
+  }
+
+  #case-studies li {
+    list-style: none;
+    margin-left: 0;
+    padding: 5px 0;
+  }
+
+  #case-studies h1 {
+    font-size: 300%;
+  }
+
+  #case-studies .benefit-types img {
+    padding-top: 20px;
+    width: 150px;
+  }
+
+  .case-studies .section-pad {
+    margin-bottom: 30px;
+  }
+
+  .use-intro {
+    padding: 0 115px 10px;
+  }
+
+  .case-studies .quote-text {
+    font-style: italic;
+    margin-left: 20px;
+    padding: 20px 0;
+  }
+
+  .case-studies .attribution,
+  .case-studies .attribution a {
+    font-size: 100%;
+    text-align: right;
+  }
+
+  .case-studies .attribution a {
+    font-weight: bold;
+    font-size: 150%;
+    margin-top: 30px;
+    text-decoration: underline;
+    display: block;
+  }
+
+  /** MAILCHIMP **/
+
+  #sign-up .form input,
+  #sign-up .form select {
+    font-size: 120%;
+    font-family: Lato !important;
+    padding: 5px 5px;
+    border: none;
+
+  }
+
+  #sign-up .form input[type="submit"] {
+    font-size: 200%;
+    color: #fff;
+    padding: 5px 30px;
+    margin-top: 5px;
+  }
+
+
+  #sign-up .info {
+    margin-bottom: 20px;
+  }
+
+  #sign-up .option {
+    text-align: left;
+    /*margin-left: 11%;*/
+    margin-bottom: 5px;
+  }
+
+  #sign-up form h3 {
+    text-align: center;
+  }
+
+  #sign-up .menu-button {
+    font-size: 200%;
+    text-transform: uppercase;
+    padding: 0 20px;
+  }
+
+
+  #sign-up input[type=checkbox] {
+    margin: 3px 0 7px 0;
+    display:none;
+  }
+
+  #sign-up input[type=checkbox]  ~ label:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: url(../images/unchecked-small.png) no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 3px; /*rtl*/
+  }
+
+  #sign-up input[type=checkbox]:checked ~ label:before {
+    content: '';
+    background: url(../images/checked-small.png) no-repeat;
+  }
+
+  .radio-checkbox input[type=radio] {
+    float: left;
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: url(../images/unchecked.png) left center no-repeat;    
+    background-size: 32px; 
+  }
+
+  @-moz-document url-prefix() {
+    .radio-checkbox input[type=radio] {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .radio-checkbox input[type="radio"]:checked {
+    background: url(../images/checked.png) left center no-repeat;
+  }
+
+  #sign-up label {
+    font-size: 120% !important;
+    font-family: Lato !important;
+  }
+
+  #sign-up form input[type=text],
+  #sign-up form input[type=email] {
+    margin: 20px 10px 5px 0px;
+    color: #4d4d4d;
+    width: 23%;
+    
+  }
+
+  #sign-up input[type=radio] {
+    margin: 4px;
+    padding: 0;
+  }
+
+  #sign-up {
+    font-size: 100%;
+  }
+
+  #sign-up .columns {
+    padding: 30px 0 55px;
+  }
+
+  #sign-up .unsubscribe {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+    font-weight: 300;
+  }
+
+  #sign-up p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .see-quote {
+    display: none;
+  }
+
+  #mce-success-response{
+    color:#fff; 
+    text-align: center; 
+    padding: 0 0 20px 130px; 
+    font-size: 1.25em; 
+    font-weight: normal;
+  }
+
+  /*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+  #mce-responses
+
+  */
+  /** PRICING **/
+  /*
+  :target {
+      display: block;    
+      position: relative;     
+      top: -100px;
+      visibility: hidden;
+  }
+  */
+
+  /*#pricing {
+    padding-top: 100px; 
+    margin-top: -100px;
+  }*/
+
+  #pricing h3 {
+    line-height: 1em;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  #pricing .columns {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  #pricing .flush {
+    margin: 0;
+    padding: 0;
+  }
+
+  #pricing .left-column,#pricing .center-column,#pricing .right-column {
+    width: 25% !important;
+    float: left;
+    font-size: 120%;
+    border: none;
+    margin-left: 7%;
+  }
+
+  #pricing .calculate .amount {
+    border-bottom: 2px dotted #F1601D;
+    margin-bottom: 6px;
+    font-style: italic;
+    color: #F1601D;
+  }
+
+
+  #pricing #quote.complete .setup-fee.quote-button .amount,
+  #pricing #quote.complete .annual-fee.quote-button .amount {
+    border-bottom: none;
+  }
+
+
+
+  #quote {
+    padding: 20px 62px 20px 14%;
+  }
+
+  .share .orange-font{
+    padding-top: 5px;
+  }
+
+  #about-subscription {
+    padding: 20px 18% 50px 8%;
+    /* min-height: 430px;
+    padding: 20px 20% 40px 5%; */
+    width: 58%;
+  }
+
+  #about-subscription ul.options,
+  #about-subscription ul.options strong {
+    font-size: 100%;
+  }
+
+  #about-subscription ul.options li {
+    margin-bottom: 10px;
+    list-style-image:url('../images/double-arrow.png');
+    list-style-position: outside;
+  }
+  /** FEATURE LIST **/
+
+  #feature-list .panel-default .panel-heading,
+  #feature-list .panel-default .panel-body {
+    background-color: gray;
+    color: #fff;
+    border: none;
+  }
+
+  #feature-list .panel-title {
+    font-size: 200%;
+    font-weight: normal;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  #feature-list .panel-title a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  /** PARTNERS **/
+  #partners .logos {
+    margin: 0 auto;
+  }
+
+  #partners .image {
+    display: inline;
+  }
+
+  #partners .image img {
+    width: 180px;
+    padding: 30px 0 50px 80px;
+  }
+
+
+  /** PRESS **/
+  #press h1 {
+    height: 100px;
+  }
+
+  #press ul li {
+    padding: 0 0 25px;
+  }
+
+  #press {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    color: #FFF;
+    height: 820px;
+  }
+
+
+  /** FOOTER **/
+
+  footer {
+    width: 100%;
+    position: relative;
+  }
+
+  #footer {
+    height: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    background: #666;
+    color: #FFF;
+    text-align: center;
+  }
+
+  #footer p {
+    font-size: 110%;
+    font-weight: 300;
+    color: #CCC;
+  }
+
+  #footer a {
+    color: #FFF;
+  }
+
+  /** MODALS **/
+
+  /** PRICing **/
+
+  .pricing-table {
+    text-align: left;
+    padding: 10px;
+    margin: 70px 0;
+    width: 100%;
+    position: relative;
+  }
+
+  .price-period sup {
+    font-size: 40%;
+    top: -1.4em;
+  }
+
+  .pricing-table p {
+    font-size: 100%;
+    font-weight: 700;
+  }
+
+  .pricing-table h2 {
+    font-size: 200%;
+    text-align: center;
+    margin: -10px 0 15px;
+  }
+
+  .price-details {
+    padding: 20px 40px;
+    margin-top: 90px;
+    clear: both;
+  }
+
+  .price-details p,.price-details li {
+    font-size: 110% !important;
+  }
+
+  .questions p:not(:first-child) {
+    font-size: 90% !important;
+  }
+
+  .price-details p:first-of-type {
+    padding-bottom: 20px;
+  }
+
+  .pricing-table td {
+    font-size: 100%;
+    text-align: left;
+    padding: 5px 10px 0;
+  }
+
+  .pricing-price td {
+    font-size: 150%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .pricing-table td i {
+    margin: 0 10px;
+  }
+
+  .pricing-price .menu-button {
+    font-size: 65%;
+    padding: 8px 20px 12px 10px;
+  }
+
+  .pricing-plan-intro {
+    float: left;
+    width: 200px;
+    text-align: center;
+    line-height: 130%;
+  }
+
+  .annual-subscription-calculator .info {
+    text-align: center;
+  }
+
+  .arrow-box {
+    width: 145px;
+    background-color: #e6e6e6;
+    border: none;
+    text-shadow: none;
+    font-size: 150%;
+    position: relative;
+    background:  #e6e6e6;
+    cursor: pointer;
+  }
+
+  .arrow-box:after, .arrow_box:before {
+    right: 50%;
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .arrow-box:after {
+    border-color:  transparent;
+    border-top-color: #e6e6e6;
+    border-width: 15px;
+    margin-right: -15px;
+  }
+
+  .population {
+    background-color: #f2f2f2;
+    padding: 0 15% 7px 20%;
+    margin-top: 30px;
+    position: relative;
+    
+  }
+
+  .total-price {
+    background-color: #e6e6e6;
+    padding: 0 15% 7px 20%;
+    position: relative;
+    
+  }
+
+  #prices {
+    display: none;
+    z-index: 9000;
+  }
+
+  #prices input {
+    border: 0;
+    width: 200px;
+    background-color: transparent;
+    display: block;
+    font-family: Lato;
+    font-size: 125%;
+  }
+
+  #prices .total-price input {
+    color: #f1601d;
+    font-weight: 125%;
+  }
+
+  #slider {
+    width: 761px;
+    background-color: #b3b3b3;
+    border-radius: 0;
+    border: none;
+    margin: 40px 5% 50px 5%;
+    z-index: 8000;
+  }
+  .slider-increments {
+    z-index: 9000;
+    width: 761px;
+    height: 25px;
+    margin: -75px 5% 0 5%;
+  }
+  .slider-increment {
+    width: 186.5px;
+    display: inline-block;
+  }
+
+  .slider-increment div {
+    font-size: 80%;
+    color: #000;
+    border-right: 1px solid #999;
+    margin-right: 100%;
+    padding-top: 20px;
+    height: 15px;
+    display: block;
+  }
+
+  .slider-increment span {
+    position: relative;
+    left: -28px;
+    top: -33px;
+    display: block;
+    width: 100px;
+  }
+
+  .ui-state-default, 
+  .ui-widget-content .ui-state-default, 
+  .ui-widget-header .ui-state-default {
+    background-color: #f1601d;
+    height: 28px;
+    width: 16px;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -0.65em;
+  }
+
+  .population .lbl,
+  .total-price .lbl {
+    display: block;
+    font-size: 0.65em;
+    position: absolute;
+    left: 45px;
+    top: 9px;
+  }
+
+
+  .per-capita .lbl,
+  .base-rate .lbl {
+    display: block;
+    font-size: 0.8em;
+  }
+
+  .per-capita,
+  .base-rate {
+    width: 35%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .plus-sign {
+    width: 20%;
+    display: inline-block;
+  }
+
+  .plus-sign span {
+    margin-top: -10px;
+  }
+
+  .categories {
+    height: auto;
+    margin-left: 5%;
+  }
+
+  .category {
+    float: left;
+    font-size: 100%;
+    margin-right: 0px;
+    width: 190px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-right: 1px #999999 solid;
+    min-height: 208px;
+  }
+  .category:last-child {
+    border-right: none;
+  }
+
+  .category.active {
+    background-color: #e6e6e6;
+  }
+
+  .category h4 {
+    line-height: 1em;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #4d4d4d;
+    text-align: center;
+    margin: 8px 0 16px;
+  }
+
+  .category.active h4 {
+    color: #f1601d;
+  }
+
+  .plan .options,
+  .category .options {
+    text-align: center;
+    
+  }
+  .plan .options li,
+  .category .options li{
+    margin: 7px 0;
+  }
+
+  #default .category .options li,
+  #default .category .options li strong {
+    font-size: 106%;
+  }
+
+  #partner-options li {
+    font-size: 120%;
+    line-height: inherit;
+    margin-left: 18px;
+  }
+
+  .modal {
+    z-index: 9000;
+    overflow-y: scroll;
+  }
+
+  .modal-title {
+    display: none; /* hidden but available for accessibility reasons */
+  }
+
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .modal-header .close  {
+
+  /*   float: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+    display: block;
+    padding: 0;
+    margin: 0;*/
+    
+  }
+
+  .modal-body {
+    top: -8px;
+  }
+
+  .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+    top: -10px;
+  }
+
+  .modal-footer {
+    border-top: none;
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px 20px 20px;
+  }
+
+  .modal-footer .menu-button {
+    font-size: 150%;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px 0;
+    font-family: Lato;
+  }
+
+  #quote-setup-fee .info {
+    font-size: 100%;
+  }
+
+  #plans .plan {
+    float: left;
+    font-size: 100%;
+    margin: 15px 10px;
+    width: 30%;
+    padding: 22px 20px;
+    background-color: #f2f2f2;
+    border-right: none;
+    min-height: 330px;
+  }
+
+  .plan .options {
+    margin-top: 10px;
+    display: block;
+  }
+  .plan .options li {
+    margin-bottom: 5px;
+    font-size: 90%;
+    text-align: left;
+  }
+
+
+  #quote-setup-fee .info {
+    text-align: center;
+    display: block;
+    margin: 0 10% 20px 10%;
+  }
+
+  #plans {
+    display: block;
+    margin: 0 10%;
+  }
+
+  #default  #plans p,
+  #default  #quote-setup-fee p {
+    font-size: 120%;
+  }
+  #default  #plans strong,
+  #default #quote-setup-fee strong {
+    font-size: 120%;
+  }
+
+  .plan label{
+    font-size: 150% !important;
+    color: #F1601D;
+    line-height: 1em;
+    margin-bottom: 20px;
+  }
+  .plan em {
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .plan label {
+    width: 80%;
+    display: inline-block;
+  }
+
+  .plan label span{  
+    text-align: right;
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  #plans .amount{
+    font-size: 200%;
+    color: #F1601D;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    position: absolute;
+    bottom: 35px;
+    margin-left: 5%;
+  }
+
+  #plans .amount span{
+    font-size: 75%;
+    color: #444;
+    text-align: center;
+    margin-left: 10px;
+    display: block;
+  }
+
+
+
+
+  /** About **/
+  #about {
+    height: 200px;
+    margin: 0 auto;
+    max-width: 1920px;
+  /*  padding: 20px 0; */
+    position: relative;
+    width: 100%;
+  /*  border: solid #999; */
+    border-width: 1px 0 0;
+    font-weight: 400;
+    font-size: 110%;
+  }
+
+  .brought-to-you {
+    line-height: 135%;
+    font-weight: 700;
+    color: #444;
+  }
+
+  #about a,#about li,#about li a {
+    font-weight: 400;
+    font-size: 110%;
+  }
+
+  #about strong,#about .offset2 {
+    font-size: 110%;
+  }
+
+  .page-top-offset,#about-page {
+    margin-top: 150px;
+  }
+
+  #about .columns {
+    padding: 30px 0;
+  }
+
+  #funders {
+    margin-top: 40px;
+  }
+
+  .social li {
+    list-style: none;
+  }
+
+  .bio .face {
+    border: 1px solid #DDD;
+    margin: 5px 20px 60px 0;
+    padding: 0;
+    text-align: center;
+    width: 175px;
+    float: left;
+  }
+
+  .bio h2 {
+    margin: 0 20px;
+  }
+
+  .bio .bio-text {
+    margin: 0;
+  }
+
+
+  /** DISORGANIZED **/
+  #knowledge-is-power {
+    height: 385px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    background: #FFF;
+  }
+
+  #cities-citizens {
+    height: 520px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    background: #00b9bd;
+  }
+
+  #get-blightstatus {
+    height: 360px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    background: #FFF;
+  }
+
+  #demo {
+    height: 390px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    background: url(/images/map-large.png) 0 0 no-repeat fixed;
+  }
+
+  #background-map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  #mission {
+    margin-top: 150px;
+  }
 }
