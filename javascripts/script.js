@@ -107,6 +107,7 @@ $(document).ready(function() {
 
   });
 
+
   // Resize subscription.
   if($(window).width() > 1000) {
     var subscriptionHeight = $('#pricing .flush').height();
