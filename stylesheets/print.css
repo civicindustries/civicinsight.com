@@ -1,15 +1,19 @@
 @media print {
   html body .content section {
-   display:none;
+   /*display: none;*/
   }
 
   body {
       color: #000;
       background: #fff;
-   }
+  }
+
+  header #nav {
+    display: none;
+  }
 
   #pricing {
-   display:block;
+   display: block;
   }
 
   footer div {
@@ -18,5 +22,28 @@
 
   footer .contact-us {
     display: block;
+  }
+  
+  #footer {
+    clear: both;
+    width: 100%;
+  }
+
+  #sign-up {
+    display: none;
+  }
+
+  .video-frame {
+    display: none;
+  }
+
+  #quote,
+  #about-subscription {
+    float: none;
+    display: block;
+  }
+
+  iframe {
+    display: none;
   }
 }
