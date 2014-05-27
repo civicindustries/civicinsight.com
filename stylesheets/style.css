@@ -1051,6 +1051,19 @@ footer {
   border-bottom: none;
 }
 
+.modal-header .close  {
+
+/*   float: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  
+  display: block;
+  padding: 0;
+  margin: 0;*/
+  
+}
+
 .modal-body {
   top: -8px;
 }

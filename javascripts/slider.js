@@ -273,7 +273,7 @@ App.Pricing = {
 
 
   calculateTotals: function () {
-    var setupFee = $('#setup-fee').attr('amount');
+    var setupFee = $('#setup-fee').attr('amount').replace('+','');
     var annualFee = $('#annual-fee').attr('amount');
     var firstYear = Number(setupFee.replace(",", "")) + Number(annualFee.replace(",", ""));
 
