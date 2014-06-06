@@ -82,6 +82,13 @@
 }
 
 @media (max-width: 480px) {
+  .hidden-sm,
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
 
 #about-subscription {
   width: 100%;
