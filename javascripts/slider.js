@@ -75,6 +75,12 @@ App.Pricing = {
 
 
   init: function(){
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      $('.hidden-sm').hide();
+      $('.hidden-xs').hide();
+    }
+
+
     // Set default range or get from URL params.
     var rangeDefault;
     var params = App.Pricing.getParams();
