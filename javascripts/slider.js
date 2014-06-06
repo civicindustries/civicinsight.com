@@ -98,6 +98,8 @@ App.Pricing = {
         }
       });
 
+    $('#slider').draggable();
+
 
     // Update default settings on page load.
     App.Pricing.updatePrice(rangeDefault);
