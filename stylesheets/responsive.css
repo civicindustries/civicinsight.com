@@ -12,6 +12,69 @@
 }
 
 
+@media (max-width: 991px) {
+  #slider {
+    width: 500px;
+  }
+
+ .slider-increments {
+    width: 125px;
+  }
+  
+  .slider-increment {
+    width: 100px;
+  }
+  
+  .slider-increment div {
+    border: none;
+    display: none;
+  }
+
+  .slider-increment span {
+    width: 125px;
+  }
+
+  .category {
+    float: none;
+    width: 500px;
+    margin-right: 20px;
+    display: none;
+  }
+  .category.active {
+    display: block;
+  }
+
+  #plans .plan {
+    float: none;
+    font-size: 100%;
+    margin: 15px 10px;
+    width: 100%;
+    padding: 22px 20px;
+    background-color: #f2f2f2;
+    border-right: none;
+    min-height: 100px;
+  }
+
+  #plans .amount {
+    font-size: 200%;
+    color: #F1601D;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    position: relative;
+    bottom: inherit;
+    margin-left: 5%;
+  }
+
+  .plan label {
+    margin-top: 10px;
+  }
+
+  .plan label span {
+    text-align: left;
+  }
+}
+
 @media (max-width: 480px) {
 
 #about-subscription {
@@ -21,5 +84,35 @@
 
 }
 
+  #slider {
+    width: 320px;
+  }
 
+
+ .slider-increments {
+    width: 320px;
+  }
+  
+  .slider-increment {
+    width: 70px;
+  }
+  
+  .slider-increment div {
+    border: none;
+    display: none;
+  }
+
+  .slider-increment span {
+    width: 80px;
+  }
+  
+  .category {
+    float: none;
+    width: 320px;
+    margin-right: 20px;
+    display: none;
+  }
+  .category.active {
+    display: block;
+  }
 }
