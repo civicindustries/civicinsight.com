@@ -35,32 +35,33 @@ We have launched in New Orleans and Palo Alto and are confirmed to launch in 11 
 
 ### Requirements:
 
-* Basic knowledge of Ruby on Rails, HTML/CSS, or Javascript
+  * Basic knowledge of Ruby on Rails, HTML/CSS, or Javascript
 
-* Must be able to commit to atleast 3 months
+  * Must be able to commit to atleast 3 months
 
-* Interest in 
-
-* Currently enrolled in a college or university
+  * Currently enrolled in a college or university
 
 ### Bonus points:
 
-* Experience working on civic technology
+  * Experience working on civic technology
 
-* Experience working with time-series data
+  * Experience working with time-series data
 
-* We value diversity and encourage people who are not usually presented in tech startups to apply
+  * We value diversity and encourage people who are not usually presented in tech startups to apply
 
 ### Compensation:
 
-* 
+  * Food & Travel stipend
+  
+  * If appliciable, 
 
 
 ### How We Work
 
-* We work remotely regularly, but it's important that all team members to be based in Bay Area
-* We are based in San Francisco (9th Street and Howard) and share an office space with Code for America
-* The team gathers at the office a couple times a week to discuss ideas and priorities
-
+  * We work remotely regularly, but it is important that all team members to be based in Bay Area
+  
+  * We are based in San Francisco (9th Street and Howard) and share an office space with Code for America
+  
+  * The team gathers at the office a couple times a week to discuss ideas and priorities
 
 #### [Apply for Position](https://docs.google.com/a/civicindustries.com/forms/d/1qvmci4D9JvRgFfzFwctw7BA0TL4v5r6ek38vPYMZJ3I/viewform?usp=send_form)
