@@ -3,16 +3,18 @@ layout: page
 ---
 
 
-### About Us
-
-  Civic Insight makes official data the management of buildings, permitting and construction available in an easy-to-use interface. We develop visualizations that show how areas change over time and allow you to drill down. We have seen how lack of access to this information can be costly to businesses, governments and communities and we intend to change that.
+### Sales and Business Development Lead
 
 
-### Traction
+At Civic Insight, we are helping to build a world where all members of society have access to the data necessary to make informed and inclusive decisions about the trajectory of their neighborhoods. Our online platform makes official data about the management of buildings, permitting and construction available to the public in a refreshingly simple yet powerful interface. We have seen how lack of access to this information can be costly to businesses, governments and communities, and we’re working to change that.
 
-  We have investments from the Knight Foundation, graduated from the Code for America Incubator and generating revenue. Our advisors include  Tim O'Reilly, Nigel Jacob and Ron Bouganim.
+We’ve graduated from Code for America’s Incubator, we have investments from the Knight Foundation, and we’re generating consistent revenue. Our platform has garnered praise from Time Magazine, The Wall Street Journal, and PBS News Hour. 
 
-  We have launched in New Orleans and Palo Alto and are confirmed to launch in 11 new cities by the end of the year. This is where you come in.
+We’re live in New Orleans and Palo Alto, and we’re confirmed to launch in 11 new cities by the end of the year. 
+
+This is where you come in.
+
+*Civic Insight is seeking a Sales and Business Development Lead* to grow sales and reach new customers, and ensure the success of our existing customers. We’re looking for a smart, driven person who’s ready to roll up their sleeves immediately alongside our core team.
 
 
 ### Responsibilities:
