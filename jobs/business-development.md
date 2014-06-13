@@ -15,7 +15,7 @@ This is where you come in.
 
 #### We are seeking
 
-We are seeking a Sales and Business Development Lead to grow sales and reach new customers, and ensure the success of our existing customers. We’re looking for a smart, driven person who’s ready to roll up their sleeves immediately alongside our core team.
+We are seeking a *Sales and Business Development Lead* to grow sales and reach new customers, and ensure the success of our existing customers. We’re looking for a smart, driven person who’s ready to roll up their sleeves immediately alongside our core team.
 
 
 ### You have:

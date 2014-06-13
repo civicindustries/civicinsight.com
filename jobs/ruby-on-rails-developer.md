@@ -15,7 +15,7 @@ This is where you come in.
 
 #### We are seeking
 
-We are seeking a talented Ruby on Rails Developer to help us onboard new customers as well as continue to streamline and improve the platform in response to user and customer needs. We’re looking for a team player who’s eager to get their hands dirty working on a multi-tenant Rails application with lots of GIS data that has the potential to change the way we relate to the built environment in our cities.
+We are seeking a talented *Ruby on Rails Developer* to help us onboard new customers as well as continue to streamline and improve the platform in response to user and customer needs. We’re looking for a team player who’s eager to get their hands dirty working on a multi-tenant Rails application with lots of GIS data that has the potential to change the way we relate to the built environment in our cities.
 
 #### Our current technology stack:
 
