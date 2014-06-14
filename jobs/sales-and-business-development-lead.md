@@ -19,18 +19,29 @@ We are seeking a *Sales and Business Development Lead* to grow sales and reach n
 
 
 ### You have:
+
   * 2-5 years’ experience in sales, business development, or partner or account management roles
+
   * Initiative and persistence (you can make a cold call, track down a decision maker and research a lead)
+
   * Strong organizational skills and attention to detail 
+
   * Excellent communication skills (writing and speaking)
+
   * Government or real estate experience a huge plus
 
 ### You’re excited to:
+
   * Own the sales process from lead to close to account management
+
   * Identify, evaluate, and reach out to possible customers and partners in the government, non-profit, and real estate industries
+
   * Evaluate our current sales process and look for opportunities to improve it
+
   * Work with our business partners and their sales teams to identify and close on joint opportunities
+
   * Work closely with the core team to evolve our product and offerings based on customer needs
+
   * Meet with civic leaders and represent Civic Insight at client meetings and industry events across the US
 
 
@@ -44,7 +55,9 @@ We value diversity and encourage candidates of any gender identity or expression
 
 
 ### Compensation
+
   * $40k-$60k base salary; 20%-40% commission; and 2%-4% equity, all commensurate with experience
+
   * ping-pong, sunshine, and all the snacks you can eat)
 
 Sounds like you?
