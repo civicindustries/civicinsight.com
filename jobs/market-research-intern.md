@@ -13,7 +13,3 @@ We’ve graduated from Code for America’s Incubator, we have investments from 
 We’re live in New Orleans and Palo Alto, and we’re confirmed to launch in 11 new cities by the end of the year. 
 
 This is where you come in.
-
-#### We are seeking
-
-We are seeking a talented 

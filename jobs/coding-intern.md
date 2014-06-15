@@ -47,10 +47,6 @@ We are seeking a talented
 
   * We value diversity and encourage people who are not usually presented in tech startups to apply
 
-### Compensation:
-
-  * Food & Travel stipend
-
 ### How we work
 We practice agile development and continuous deployment, and value getting from idea to production quickly. You’ll work with people who are passionate about code. 
 
