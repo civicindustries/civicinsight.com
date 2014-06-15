@@ -56,7 +56,7 @@ We value diversity and encourage candidates of any gender identity or expression
 
 ### Compensation
 
-  * $40k-$60k base salary; 20%-40% commission; and 2%-4% equity, all commensurate with experience
+  * $40k-$60k base salary; 20%-30% commission; and 2%-4% equity, all commensurate with experience
 
   * ping-pong, sunshine, and all the snacks you can eat)
 
