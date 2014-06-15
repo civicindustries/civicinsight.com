@@ -73,16 +73,26 @@
   .plan label span {
     text-align: left;
   }
+
+  #about-subscription {
+    width: 100%;
+    padding: 20px 5% 20px 5%;
+    min-height: auto;
+  }
 }
 
 @media (max-width: 480px) {
 
-#about-subscription {
-  width: 100%;
-  padding: 20px 5% 20px 5%;
-  min-height: auto;
+  #about-subscription {
+    width: 100%;
+    padding: 20px 5% 20px 5%;
+    min-height: auto;
 
-}
+  }
+
+  #notice {
+    height: 3em;
+  }
 
   #slider {
     width: 320px;
