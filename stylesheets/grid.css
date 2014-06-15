@@ -1,0 +1,153 @@
+
+/** Reusable **/
+.columns {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 1000px;
+}
+
+.columns .left-column {
+  float: left;
+  width: 49%;
+}
+
+.columns .right-column {
+  float: right;
+  width: 49%;
+}
+
+.columns .one-thirds-column {
+  float: right;
+  width: 23%;
+}
+
+.columns .two-thirds-column {
+  float: left;
+  width: 66%;
+}
+
+.columns .three-thirds-column {
+  float: left;
+  width: 99%;
+}
+
+.row-column-left {
+  padding: 10px 20px 0 15px;
+}
+
+.row-column-right {
+  padding: 10px 0 0 35px;
+}
+
+/*  SimpleFlex Grid  */
+/*.row:before,.row:after {
+  display: table;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}*/
+
+.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11 {
+  margin-right: 3.5%;
+  float: left;
+  min-height: 1px;
+}
+
+/*.row > [class*=span]:last-child {
+  margin-right: 0;
+}
+*/
+.span1 {
+  width: 5.125%;
+}
+
+.span2 {
+  width: 13.75%;
+}
+
+.span3 {
+  width: 22.375%;
+}
+
+.span4 {
+  width: 31%;
+}
+
+.span5 {
+  width: 39.625%;
+}
+
+.span6 {
+  width: 48.25%;
+}
+
+.span7 {
+  width: 56.75%;
+}
+
+.span8 {
+  width: 65.5%;
+}
+
+.span9 {
+  width: 74.125%;
+}
+
+.span10 {
+  width: 82.75%;
+}
+
+.span11 {
+  width: 91.375%;
+}
+
+.span12 {
+  width: 100%;
+  float: left;
+}
+
+.offset1 {
+  margin-left: 8.625%;
+}
+
+.offset2 {
+  margin-left: 17.25%;
+}
+
+.offset3 {
+  margin-left: 25.875%;
+}
+
+.offset4 {
+  margin-left: 34.5%;
+}
+
+.offset5 {
+  margin-left: 43.125%;
+}
+
+.offset6 {
+  margin-left: 51.75%;
+}
+
+.offset7 {
+  margin-left: 60.25%;
+}
+
+.offset8 {
+  margin-left: 69%;
+}
+
+.offset9 {
+  margin-left: 77.625%;
+}
+
+.offset10 {
+  margin-left: 86%;
+}
+
+.offset11 {
+  margin-left: 94.875%;
+}

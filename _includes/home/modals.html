@@ -1,0 +1,152 @@
+<div class="modal fade" id="quote-annual-fee" tabindex="-1" role="dialog" aria-labelledby="quote-annual-fee-title" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+        <h4 class="modal-title" id="quote-annual-fee-title">Calculate Annual Fee</h4>
+      </div>
+      <div class="modal-body">
+        <div class="annual-subscription-calculator row">
+          <div class="col-md-12 info">
+            <p>Your annual subscription fee is based on the size of your agency’s jurisdiction. <br />
+            <strong>Use the slider below to estimate your annual subscription fee.</strong></p>
+          </div>
+
+          <div class="clear"></div>
+
+          <div id="prices" class="arrow-box" >
+            <div class="population">
+              <label for="population"><span class="lbl">Population:</span></label>
+              <input type="text" id="population">
+            </div>
+            <div class="total-price">
+            <label for="total_price"><span class="lbl">Annual Fee:</span></label>
+            <input type="text" id="total_price">
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+          <div id="slider"></div>
+          <div class="slider-increments">
+            <div class="slider-increment invisible"><div><span></span></div></div>
+            <div class="slider-increment"><div><span>50k residents</span></div></div>
+            <div class="slider-increment"><div><span>200k residents</span></div></div>
+            <div class="slider-increment"><div><span>800k residents</span></div></div>
+            <div class="slider-increment invisible"><div><span></span></div></div>
+          </div>
+          <div class="categories">
+            <div class="category active small" range="small">
+              
+              <h4>Small City</h4>
+              <hr />
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$1k</span></div>
+              <div class="plus-sign"><span class="glyphicon glyphicon-plus modal-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.070</span></div>
+              <hr />
+              <ul class="options">
+                <li><strong>All Product Features</strong></li>
+                <li><strong>Stable Cloud Hosting</strong></li>
+                <li><strong>Support:</strong> 10 hours/year</li>
+              </ul>
+            </div>
+            <div class="category medium" range="medium">
+              
+              <h4>Mid-size City</h4>
+              <hr />
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$3k</span></div>
+              <div class="plus-sign"><span class="glyphicon glyphicon-plus modal-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.040</span></div>
+              <hr />
+              <ul class="options">
+                <li><strong>All Product Features</strong></li>
+                <li><strong>Stable Cloud Hosting</strong></li>
+                <li><strong>Support:</strong> 20 hours/year</li>
+              </ul>
+
+            </div>
+            <div class="category large" range="large">
+              
+              <h4>Large City</h4>
+              <hr />
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$6k</span></div>
+              <div class="plus-sign"><span class="glyphicon glyphicon-plus modal-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.025</span></div>
+              <hr />
+              <ul class="options">
+                <li><strong>All Product Features</strong></li>
+                <li><strong>Stable Cloud Hosting</strong></li>
+                <li><strong>Support:</strong> 40 hours/year</li>
+              </ul>
+
+            </div>
+            <div class="category metro" range="metro">
+              
+              <h4>Metropolis</h4>
+              <hr />
+              <div class="base-rate"><span class="lbl">Base Rate:</span><span class="amount">$10k</span></div>
+              <div class="plus-sign"><span class="glyphicon glyphicon-plus modal-plus"></span></div>
+              <div class="per-capita"><span class="lbl">Per Capita:</span><span class="amount">$0.020</span></div>
+              <hr />
+              <ul class="options">
+                <li><strong>All Product Features</strong></li>
+                <li><strong>Stable Cloud Hosting</strong></li>
+                <li><strong>Support:</strong> 80 hours/year</li>
+              </ul>
+            </div>
+          </div>
+
+       </div>
+    </div>
+    <div class="modal-footer">
+      <div type="button" class="btn btn-default menu-button pricing-done-button">Ok, that's looks right</div>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<div class="modal fade" id="quote-setup-fee" tabindex="-1" role="dialog" aria-labelledby="quote-setup-fee-title" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+        <h4 class="modal-title" id="quote-setup-fee-title">Calcuate Setup Fee</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12 col-md-10 col-offset-md-1 info">
+          <p>Your initial, one-time setup fee is based on the data sources Civic Insight will be pulling from.</p>
+          <p><strong>Select the option that sounds most like you to estimate your one-time setup fee.</strong></p>
+        </div>
+          <div id="plans" class="col-md-10 col-offset-md-1 radio-checkbox">
+            <div class="plan">
+              <input type="radio" name="data_plan" value="house_facts" amount="1,000" checked><label for="house_facts"><span>House Facts Integration</span></label><br />
+              <p><em>Select this option if:</em> your agency’s relevant datasets are compliant with the <a href="http://housefacts.me/">HouseFacts</a> data standard, and are available on a data portal or .csv file.</p>
+              <div class="amount">$1000</div>
+            </div>
+            <div class="plan">
+              <input type="radio" name="data_plan" value="partner" amount="5,000"><label for="partner"><span>Partner Integration</span></label><br />
+              <p><em>Select this option if:</em> your agency’s relevant datasets are available via one of the following partner systems: 
+              <ul class="options" id="partner-options">
+                <li>&raquo; <a href="http://www.accela.com/solutions/solutions-overview">Accela Automation</a></li>
+                <li>&raquo; <a href="http://www.davenportgroup.us/Products.aspx">Davenport LAMA</a></li>
+                <li>&raquo; <a href="http://www.socrata.com/products/open-data-portal/">Socrata Open Data</a></li>
+              </ul>
+            </p>
+            <div class="amount">$5000</div>
+            </div>
+            <div class="plan">
+              <input type="radio" name="data_plan" value="custom" amount="15,000"><label for="custom"><span>Custom Integration</span></label><br />
+              <p><em>Select this option if:</em> the other two options don’t apply to you! We’ll develop custom importrs to pull the relevant datasets from your existing systems.</p>
+              <div class="amount"><span>starting at</span>$15,000</div>
+            </div>     
+          </div>
+      </div>
+      <div class="modal-footer">
+        <div type="button" class="btn btn-default menu-button pricing-done-button">Ok, that's looks right</div>
+      </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
