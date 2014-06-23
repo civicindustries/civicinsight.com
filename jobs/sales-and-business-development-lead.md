@@ -7,13 +7,13 @@ layout: page
 
 At Civic Insight, we are helping to build a world where all members of society have access to the data necessary to make informed and inclusive decisions about the trajectory of their neighborhoods. Our online platform makes official data about the management of buildings, permitting and construction available to the public in a refreshingly simple yet powerful interface. We have seen how lack of access to this information can be costly to businesses, governments and communities, and we’re working to change that.
 
-We’ve graduated from Code for America’s Incubator, we have investments from the Knight Foundation, and we’re generating consistent revenue. Our platform has garnered praise from Time Magazine, The Wall Street Journal, and PBS News Hour. 
+We’ve graduated from [Code for America’s Incubator](http://codeforamerica.org/geeks/incubator-faq/), we have [investments from the Knight Foundation](http://www.knightfoundation.org/grants/20102537/), and we’re generating consistent revenue. Our platform has garnered praise from [PBS News Hour](http://www.pbs.org/newshour/rundown/a-high-tech-solution-for-a-neighborhood-problem/), [Time Magazine](http://content.time.com/time/magazine/article/0,9171,2140202,00.html), and [the Wall Street Journal](http://blogs.wsj.com/cio/2012/12/04/the-big-easy-hopes-technology-will-solve-hard-recovery-issues/).
 
-We’re live in New Orleans and Palo Alto, and we’re confirmed to launch in 11 new cities by the end of the year. 
+We’re live in [New Orleans](http://blightstatus.nola.gov) and [Palo Alto](http://paloalto.civicinsight.com), and we’re confirmed to launch in 11 new cities by the end of the year. 
 
 This is where you come in.
 
-#### We are seeking
+#### Seeking a Business Development Lead
 
 We are seeking a *Sales and Business Development Lead* to grow sales and reach new customers, and ensure the success of our existing customers. We’re looking for a smart, driven person who’s ready to roll up their sleeves immediately alongside our core team.
 
@@ -58,9 +58,11 @@ We value diversity and encourage candidates of any gender identity or expression
 
   * $40k-$60k base salary; 20%-30% commission; and 2%-4% equity, all commensurate with experience
 
-  * ping-pong, sunshine, and all the snacks you can eat
+  * Access to all the amenities of the beautiful [Storek Building](http://www.storekbuilding.com/#amenities) in SoMa, where we share office space with Code for America and a rotating cast of like-minded civic technologists. Think ping-pong, sunshine, and all the snacks you can eat!
 
-Sounds like you?
+
+
+Sound like a good fit?
 
 
 #### [Apply for Position](https://docs.google.com/a/civicindustries.com/forms/d/1qvmci4D9JvRgFfzFwctw7BA0TL4v5r6ek38vPYMZJ3I/viewform?usp=send_form)
