@@ -22,7 +22,7 @@ Here are the types of questions and topics you will be exploring:
 
   * Our dashboard generates reports and visualizations in real-time. What would you need to consider to ensure the user experience is responsive?
   
-  * Put yourself in this situation: The search interface is running errors. Is it the database? Is it Heroku? Did the API go down? Memcache? Rails? or is it a bug in Ruby? When a situation like this occurs, do you feel comfortable trying to figure out what went wrong?
+  * Put yourself in this situation: The search interface is throwing errors. Is it the database? Is it Heroku? Did the API go down? Memcache? Rails? or is it a bug in Ruby? When a situation like this occurs, do you feel comfortable trying to figure out what went wrong?
   
     
   
