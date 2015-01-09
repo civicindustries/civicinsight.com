@@ -361,6 +361,10 @@
 
 
   /** AUDIENCE **/
+  #who-benefits, .case-studies, #partners, #sign-up, .feature .row{  
+    
+    
+  }  
   #who-benefits h2 {
     margin-bottom: 40px;
   }
@@ -491,7 +495,7 @@
 
   #sign-up .menu-button {
     font-size: 200%;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     padding: 0 20px;
   }
 
@@ -559,6 +563,7 @@
 
   #sign-up {
     font-size: 100%;
+    
   }
 
   #sign-up .columns {
