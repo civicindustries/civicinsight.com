@@ -12,7 +12,7 @@ We are seeking a *Ruby on Rails Developer* to help streamline and improve our pl
 
 ### Your Challenges:
 
-If you're interested in this position, here are a series of questions that you should be ready to take on:
+Here are the types of questions and topics you will be exploring:
 
   * Our clients have millions of rows of data. Are you excited by the prospect of scaling from 10 cities to 100 cities?
   
