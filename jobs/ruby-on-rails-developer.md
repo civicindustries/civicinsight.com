@@ -10,7 +10,7 @@ We are seeking a *Ruby on Rails Developer* to help streamline and improve our pl
 
 
 
-### Your Challenges:
+### Your Challenges
 
 Here are the types of questions and topics you will be exploring:
 
