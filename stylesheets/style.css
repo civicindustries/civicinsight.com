@@ -701,17 +701,22 @@
     color: #fff;
   }
   /** PARTNERS **/
-  #partners .logos {
+  #partners .logos, #customers .logos {
     margin: 0 auto;
   }
 
-  #partners .image {
+  #partners .image, #customers .image {
     display: inline;
   }
 
-  #partners .image img {
+  #partners .image img{
     width: 180px;
     padding: 30px 0 50px 80px;
+  }
+  
+  #customers .image img {
+    width: 120px;
+    padding: 20px 0 50px 20px;
   }
 
 
@@ -1197,7 +1202,7 @@
   /*  border: solid #999; */
     border-width: 1px 0 0;
     font-weight: 400;
-    font-size: 110%;
+/*    font-size: 110%;*/
   }
 
   .brought-to-you {
