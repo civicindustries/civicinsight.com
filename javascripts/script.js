@@ -9,6 +9,14 @@
 
 $(document).ready(function() {
 
+  $('#demo-video').on('show.bs.modal', function () { 
+    $('#youtube-player-demo').attr('src','https://www.youtube.com/embed/1aGrKLXGaeU');  
+  });
+  $('#demo-video').on('hide.bs.modal', function () {
+    $('#youtube-player-demo').attr('src','');
+  });
+  
+  
 	// Cache the Window object
 	$window = $(window);
   $(window).on('hashchange', function(e) {
