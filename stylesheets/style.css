@@ -26,13 +26,13 @@
   }
 
   ul#nav {
-    padding: 18px;
+    padding: 20px;
   }
 
   ul#nav li {
     display: inline;
     padding: 15px 10px 10px;
-    font-size: 20px;
+    font-size: 15px;
     list-style: none;
   }
 
@@ -497,6 +497,10 @@
     font-size: 200%;
 /*    text-transform: uppercase;*/
     padding: 0 20px;
+  }
+  
+  .menu-button:hover{
+    text-decoration: none;
   }
 
 
