@@ -1304,4 +1304,29 @@
   #mission {
     margin-top: 150px;
   }
+  
+  table{
+    font-size: 125%;
+  }
+
+  table th,   table td{
+    text-align: left !important;
+    padding-right:30px !important;
+    padding: 2px 0 2px 0;
+  }
+
+  
+  table tr{
+    border-width: 0 0 1px 0;
+    border-color: #ccc;
+    border-style: solid;
+  }
+
+  tr:nth-child(even) {background: #EEE}{
+    border-width: 0 0 1px 0;
+  }
+  
+  tr:nth-child(odd) {background: #FFF}
+
+
 }

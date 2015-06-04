@@ -94,7 +94,7 @@
   #narrow p,
   #narrow li {
     font-size: 100%;
-    padding: 4px 0;
+/*    padding: 4px 0;*/
   }
 
   #narrow ul {
@@ -112,10 +112,14 @@
     margin: 50px auto;
     margin-bottom: 100px;
   }
-
+  
+  pre{
+    padding: 10px;
+    margin: 15px 0;    
+  }
   #page p,
   #narrow li {
-    font-size: 125%;
+/*    font-size: 125%;*/
     padding: 4px 0;
     line-height: 150%;
   }
