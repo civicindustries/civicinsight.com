@@ -32,7 +32,7 @@ HouseFacts Lite is a data format that describes the required and recommended fie
 | case_type |  string | Required | Type of case (ie: Violation, Building Permit) |
 | description |  string | Optional | ie: Repair roof |
 | case_contact |  string ­ pipe delimited (name\|phone\|email) | Optional | contact information for property (owner, permit applicant, or ...) |
-| case_manager |  string ­ pipe delimited (name\|phone\|email) | Optional | contact information for the city staff actioning event (ie: “Jane Cityworker|222­333­4444|jcityworker@ examplecity.gov”) |
+| case_manager |  string ­ pipe delimited (name\|phone\|email) | Optional | contact information for the city staff actioning event (ie: “Jane Cityworker|222\-­333\-­4444|jcityworker@ examplecity.gov”) |
 | date_updated |  string | Required | Most recent date this record was updated in this cases.csv file YYYY­-MM-­DD format |
 
 
@@ -48,6 +48,6 @@ HouseFacts Lite is a data format that describes the required and recommended fie
 | status_date |  string | Required | Date of the event in YYYY-­MM-­DD format |
 | status |  string | Required | (ie: Complete, Not Approved, Approved, Guilty, Scheduled, Pending) |
 | notes |  string | Optional | additional notes or comments related to the event |
-| contact |  string, pipe delimited (name\|phone\|email) | Optional | contact information for the city staff actioning event (ie: “Jane Cityworker\|222­-333-­4444\|jcityworker@city.com”) |
+| contact |  string, pipe delimited (name\|phone\|email) | Optional | contact information for the city staff actioning event (ie: “Jane Cityworker\|222­\-333\-­4444\|jcityworker@city.com”) |
 | date_updated |  string | Required | Most recent date this record was updated in this events.csv file YYYY­-MM-­DD format |
 
