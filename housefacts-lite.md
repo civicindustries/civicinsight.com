@@ -20,7 +20,7 @@ HouseFacts Lite is a data format that describes the required and recommended fie
 | Name   |      Type      |  Requirement |  Description |
 |----------|:-------------:|------:|
 | case_id |  string | Required | Unique ID for case; format provided by municipality |
-| street_name |  string | Required | 155 |
+| house_number |  string | Required | 155 |
 | street_name |  string | Required | N 9th St |
 | city |  string | Required | San Francisco |
 | state |  string | Required | CA |
