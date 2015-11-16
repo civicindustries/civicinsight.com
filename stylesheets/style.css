@@ -1228,6 +1228,9 @@
     margin-top: 150px;
   }
 
+  #page{
+    font-size: 125%;
+  }
   #about .columns {
     padding: 30px 0;
   }
