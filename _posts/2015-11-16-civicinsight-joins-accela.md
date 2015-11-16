@@ -7,7 +7,7 @@ title: Civic Insight team joins Accela!
 ##Civic Insight team joins Accela!
 <time datetime="November 16, 2015">November 16, 2015</time>
 
-Today we are excited to announce that the Civic Insight team will be joining Accela! For more information, check out this post to [about the future of Civic Insight](http://www.accela.com/company/blog/entry/what-is-happening-in-my-community-creating-an-amazon-experience-for-government).
+Today we are excited to announce that the Civic Insight team will be joining Accela! For more information, check out this post [about the future of Civic Insight](http://www.accela.com/company/blog/entry/what-is-happening-in-my-community-creating-an-amazon-experience-for-government).
 
 <br>
 #####How we got here
