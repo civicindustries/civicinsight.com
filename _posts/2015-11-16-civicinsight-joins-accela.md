@@ -22,7 +22,7 @@ As part of Accela, we will continue our focus of making place-based information 
 
 <br>
 #####We didn’t get here alone
-We couldn’t have made it this far without the guidance, wisdom and assistance of many. Jen Pahlka and Bob Softman at Code for America encouraged us to work on the issues we cared most about, even when all we had were post-it notes and a hunch. One of our co-founders, Alex Pandel, was essential to BlightStatus and getting Civic Insight off the ground. Our advisors Tim O’Reilly, Ron Bouganim and Nigel Jacob are a wealth of knowledge and expertise, and we’ve benefitted greatly. Finally, our investors, John Bracken and Ben Wirz at the Knight Foundation,  whose encouragement and financial support allowed us to build our company into what it is today.
+We couldn’t have made it this far without the guidance, wisdom and assistance of many. Jen Pahlka and Bob Sofman at Code for America encouraged us to work on the issues we cared most about, even when all we had were post-it notes and a hunch. One of our co-founders, Alex Pandel, was essential to BlightStatus and getting Civic Insight off the ground. Our advisors Tim O’Reilly, Ron Bouganim and Nigel Jacob are a wealth of knowledge and expertise, and we’ve benefitted greatly. Finally, our investors, John Bracken and Ben Wirz at the Knight Foundation,  whose encouragement and financial support allowed us to build our company into what it is today.
 
 
 --- Eddie A Tejeda and Amir Reavis-Bey, co-founders, Civic Insight
