@@ -1,2 +1,2 @@
-blightstatus.com
+civicinsight.com
 ================
