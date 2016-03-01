@@ -1,3 +1,16 @@
+---
+layout: page
+---
+<style>
+#page li {
+    list-style: none;
+    margin-left: auto;
+    line-height: 25px;
+}
+#page {
+    width: 65%;
+}
+</style>
 #### <b> February 26, 2016 - v2.3.0 </b>
 * <span class="label label-primary">New Feature</span> Users with Accela Citizen Access accounts will be able to automatically login into Civic Insight
 * <span class="label label-primary">New Feature</span> Allow logged in users to save their search results
@@ -415,3 +428,4 @@
 * <span class="label label-danger">Bug</span>Fix issue with watchlist buttons not clicking
 * <span class="label label-danger">Bug</span> Fix minor style issues in IE9
 * <span class="label label-danger">Bug</span>Fix dates for MM/DD/YYYY formats in CSV importer
+<hr/>
