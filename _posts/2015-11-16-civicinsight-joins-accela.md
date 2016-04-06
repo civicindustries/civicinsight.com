@@ -3,12 +3,12 @@ layout: page
 title: Civic Insight team joins Accela!
 ---
 
-###Civic Insight team joins Accela!
+<h3>Civic Insight team joins Accela!</h3>
 
 <time datetime="November 16, 2015">November 16, 2015</time>
 <br/>
 <p>Today we are excited to announce that the Civic Insight team will be joining Accela!</p>
-
+<br/>
 
 <b>How we got here</b>
 <p>Our story began three years ago when the Civic Insight team formed as a part of the 2012 Code for America fellowship. We worked with the City of New Orleans, having conversations with City staff, civic leaders, residents and the business community to understand their most pressing needs. Through those conversations it became clear that the lack of public-facing, neighborhood-level data had a direct and adverse impact on residents’ quality of life and the City’s recovery. </p>
