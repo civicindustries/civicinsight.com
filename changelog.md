@@ -11,6 +11,27 @@ layout: page
     width: 65%;
 }
 </style>
+
+#### <b> April 3, 2016 - v2.4.0 </b>
+* <span class="label label-success">Enhancement</span> Add funtionality to add link to raw data source for record
+* <span class="label label-success">Enhancement</span> Allow embeding in Citzen Access iframes
+* <span class="label label-success">Enhancement</span> Optimize background workers
+* <span class="label label-success">Enhancement</span> Switch to higher performance database
+* <span class="label label-success">Enhancement</span> Update system and application libraries
+* <span class="label label-success">Enhancement</span> Switch from MailChimp to SparkPost for email notifications
+* <span class="label label-success">Enhancement</span> Configure a series of new agencies
+* <span class="label label-success">Enhancement</span> Update caching functionality
+
+#### <b> March 5, 2016 - v2.3.2 </b>
+* <span class="label label-success">Enhancement</span> Improve performance of search 
+* <span class="label label-warning">Minor</span> Remove unneeded margins in property page
+* <span class="label label-warning">Minor</span> Change login header to my profile
+* <span class="label label-warning">Minor</span> Adjustment to matching accounts not logging in from ACA
+* <span class="label label-danger">Bug</span> Fix bug that prevented watchlist from loading
+
+#### <b> March 3, 2016  - v2.3.1 </b>
+* <span class="label label-success">Enhancement</span> Improve performance of staff dashboard by pre-calculating the numbers in background job
+
 #### <b> February 26, 2016 - v2.3.0 </b>
 * <span class="label label-primary">New Feature</span> Users with Accela Citizen Access accounts will be able to automatically login into Civic Insight
 * <span class="label label-primary">New Feature</span> Allow logged in users to save their search results
@@ -46,7 +67,6 @@ layout: page
 * <span class="label label-warning">Minor</span> Add support for new demo-mode for new agencies in the Civic Platform
 
 <hr/>
-
 ####  <b> January 27, 2016 - v2.1.1</b>
 * <span class="label label-danger">Bug</span> Fix issue in staff dashboard that prevented calendar to flip to new year
 * <span class="label label-warning">Minor</span> Adjustment to search button in watchlist
@@ -428,4 +448,3 @@ layout: page
 * <span class="label label-danger">Bug</span>Fix issue with watchlist buttons not clicking
 * <span class="label label-danger">Bug</span> Fix minor style issues in IE9
 * <span class="label label-danger">Bug</span>Fix dates for MM/DD/YYYY formats in CSV importer
-<hr/>

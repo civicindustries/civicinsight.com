@@ -3,7 +3,6 @@ layout: page
 title: Civic Insight team joins Accela!
 ---
 
-
 ##Civic Insight team joins Accela!
 <time datetime="November 16, 2015">November 16, 2015</time>
 
