@@ -3,14 +3,15 @@ layout: page
 title: Civic Insight team joins Accela!
 ---
 
-##Civic Insight team joins Accela!
+###Civic Insight team joins Accela!
+
 <time datetime="November 16, 2015">November 16, 2015</time>
+<br/>
+<p>Today we are excited to announce that the Civic Insight team will be joining Accela!</p>
 
-Today we are excited to announce that the Civic Insight team will be joining Accela! 
 
-<br>
-#####How we got here
-Our story began three years ago when the Civic Insight team formed as a part of the 2012 Code for America fellowship. We worked with the City of New Orleans, having conversations with City staff, civic leaders, residents and the business community to understand their most pressing needs. Through those conversations it became clear that the lack of public-facing, neighborhood-level data had a direct and adverse impact on residents’ quality of life and the City’s recovery. 
+<b>How we got here</b>
+<p>Our story began three years ago when the Civic Insight team formed as a part of the 2012 Code for America fellowship. We worked with the City of New Orleans, having conversations with City staff, civic leaders, residents and the business community to understand their most pressing needs. Through those conversations it became clear that the lack of public-facing, neighborhood-level data had a direct and adverse impact on residents’ quality of life and the City’s recovery. </p>
 
 In response, we created BlightStatus, a website that makes data about vacant and abandoned homes available to everyone with a simple and beautiful interface. Soon after launching in New Orleans, other local governments from around the country reached out to us asking if they could have a similar product for their cities. From that point forward, we made it our mission to build technology that allowed anyone-- whether mayor, city council member or resident-- to understand what was happening in their city. 
 
@@ -20,8 +21,8 @@ As part of Accela, we will continue our focus of making place-based information 
 
 
 <br>
-#####We didn’t get here alone
-We couldn’t have made it this far without the guidance, wisdom and assistance of many. Jen Pahlka and Bob Sofman at Code for America encouraged us to work on the issues we cared most about, even when all we had were post-it notes and a hunch. One of our co-founders, Alex Pandel, was essential to BlightStatus and getting Civic Insight off the ground. Our advisors Tim O’Reilly, Ron Bouganim and Nigel Jacob are a wealth of knowledge and expertise, and we’ve benefitted greatly. Finally, our investors, John Bracken and Ben Wirz at the Knight Foundation,  whose encouragement and financial support allowed us to build our company into what it is today.
+<b>We didn’t get here alone</b>
+<p>We couldn’t have made it this far without the guidance, wisdom and assistance of many. Jen Pahlka and Bob Sofman at Code for America encouraged us to work on the issues we cared most about, even when all we had were post-it notes and a hunch. One of our co-founders, Alex Pandel, was essential to BlightStatus and getting Civic Insight off the ground. Our advisors Tim O’Reilly, Ron Bouganim and Nigel Jacob are a wealth of knowledge and expertise, and we’ve benefitted greatly. Finally, our investors, John Bracken and Ben Wirz at the Knight Foundation,  whose encouragement and financial support allowed us to build our company into what it is today.</p>
 
 
 --- Eddie A Tejeda and Amir Reavis-Bey, co-founders, Civic Insight
