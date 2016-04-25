@@ -13,7 +13,7 @@ layout: page
 </style>
 
 #### <b> April 24, 2016 - v2.5.0 </b>
-* <span class="label label-primary">New Feature</span> Go live with agency using our first planning data
+* <span class="label label-primary">New Feature</span> First go-live with agency using Planning records
 * <span class="label label-success">Enhancement</span> Update to the latest version of Postgres
 * <span class="label label-success">Enhancement</span> Update mailer digetst to send mails for active workflows and not only default workflow
 * <span class="label label-success">Enhancement</span> Import records, addresses, owners and contacts in one call using v4 Accela API call
