@@ -12,16 +12,31 @@ layout: page
 }
 </style>
 
+#### <b> May 09, 2016 - v2.6.0 </b>
+* <span class="label label-success">Enhancement</span> Parallelize building of dashboard data
+* <span class="label label-success">Enhancement</span> Simplify the way we store information about agency steps
+* <span class="label label-success">Enhancement</span> Increase the number of records we update at a time
+* <span class="label label-warning">Minor</span> Reset cache for dashboards over the on weekends
+* <span class="label label-warning">Minor</span> Better handling of data updates to automatically update only agencies that are live
+* <span class="label label-warning">Minor</span> Minor database schema changes
+* <span class="label label-warning">Minor</span> Update accela inspection comments only when comments have been changed
+* <span class="label label-danger">Bug</span> Fix bug that prevented the importing of inspections for certain clients
+
+
 #### <b> April 24, 2016 - v2.5.0 </b>
-* <span class="label label-primary">New Feature</span> First go-live with agency using Planning records
+* <span class="label label-primary">New Feature</span> Go live with agency using our first planning data
 * <span class="label label-success">Enhancement</span> Update to the latest version of Postgres
 * <span class="label label-success">Enhancement</span> Update mailer digetst to send mails for active workflows and not only default workflow
 * <span class="label label-success">Enhancement</span> Import records, addresses, owners and contacts in one call using v4 Accela API call
 * <span class="label label-success">Enhancement</span> Add different priorities for email notifications. Priotizing things like "Forgot Password"
 * <span class="label label-danger">Bug</span> Fix bug that causes characters in Accela API results to block import
+* <span class="label label-success">Enhancement</span> Import of Accela records data broken down into small jobs in varoius queues
+* <span class="label label-success">Enhancement</span> All mails now sent on same "mailers" queue
+* <span class="label label-success">Enhancement</span> Account mails sent with highest priority in queue
+* <span class="label label-success">Enhancement</span> Email digest are user centric and can more accurately track if mail is successfuly sent and whether a subscription is truly notified
 
 
-#### <b> April 3, 2016 - v2.4.0 </b>
+#### <b> April 03, 2016 - v2.4.0 </b>
 * <span class="label label-success">Enhancement</span> Add funtionality to add link to raw data source for record
 * <span class="label label-success">Enhancement</span> Allow embeding in Citzen Access iframes
 * <span class="label label-success">Enhancement</span> Optimize background workers
@@ -31,14 +46,14 @@ layout: page
 * <span class="label label-success">Enhancement</span> Configure a series of new agencies
 * <span class="label label-success">Enhancement</span> Update caching functionality
 
-#### <b> March 5, 2016 - v2.3.2 </b>
+#### <b> March 05, 2016 - v2.3.2 </b>
 * <span class="label label-success">Enhancement</span> Improve performance of search 
 * <span class="label label-warning">Minor</span> Remove unneeded margins in property page
 * <span class="label label-warning">Minor</span> Change login header to my profile
 * <span class="label label-warning">Minor</span> Adjustment to matching accounts not logging in from ACA
 * <span class="label label-danger">Bug</span> Fix bug that prevented watchlist from loading
 
-#### <b> March 3, 2016  - v2.3.1 </b>
+#### <b> March 03, 2016  - v2.3.1 </b>
 * <span class="label label-success">Enhancement</span> Improve performance of staff dashboard by pre-calculating the numbers in background job
 
 #### <b> February 26, 2016 - v2.3.0 </b>
@@ -70,7 +85,7 @@ layout: page
 
 
 <hr/>
-#### <b> February 5, 2016 - v2.2.0</b>
+#### <b> February 05, 2016 - v2.2.0</b>
 * <span class="label label-warning">Minor</span> Optimize queries in generic csv uploader
 * <span class="label label-warning">Minor</span> Add functionality to create agencies with fake data for demos
 * <span class="label label-warning">Minor</span> Add support for new demo-mode for new agencies in the Civic Platform
@@ -99,7 +114,7 @@ layout: page
 * <span class="label label-danger">Bug</span> Fix issue where events with similar dates would show wrong 'approved/pending' icon.
 
 <hr/>
-####  <b> December 1, 2015 - v2.0.2</b>
+####  <b> December 01, 2015 - v2.0.2</b>
 * <span class="label label-danger">Bug</span> Fix issue in searching for case numbers
 
 <hr/>
@@ -125,7 +140,7 @@ layout: page
 
 
 <hr/>
-####  <b> November 1, 2015 -  v1.20.14</b>
+####  <b> November 01, 2015 -  v1.20.14</b>
 * <span class="label label-success">Enhancement</span> Add additional database indexes for performance improvements
 
 <hr/>
@@ -148,7 +163,7 @@ layout: page
 * <span class="label label-success">Enhancement</span> Improve geocoding for clients
 
 <hr/>
-####  <b> September 7, 2015 -  v1.20.9</b>
+####  <b> September 07, 2015 -  v1.20.9</b>
 * <span class="label label-success">Enhancement</span> Add support for historical data when available
 
 <hr/>
