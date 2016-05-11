@@ -23,6 +23,7 @@ layout: page
 * <span class="label label-danger">Bug</span> Fix bug that prevented the importing of inspections for certain clients
 
 
+<hr/>
 #### <b> April 24, 2016 - v2.5.0 </b>
 * <span class="label label-primary">New Feature</span> Go live with agency using our first planning data
 * <span class="label label-success">Enhancement</span> Update to the latest version of Postgres
@@ -36,6 +37,7 @@ layout: page
 * <span class="label label-success">Enhancement</span> Email digest are user centric and can more accurately track if mail is successfuly sent and whether a subscription is truly notified
 
 
+<hr/>
 #### <b> April 03, 2016 - v2.4.0 </b>
 * <span class="label label-success">Enhancement</span> Add funtionality to add link to raw data source for record
 * <span class="label label-success">Enhancement</span> Allow embeding in Citzen Access iframes
@@ -46,6 +48,7 @@ layout: page
 * <span class="label label-success">Enhancement</span> Configure a series of new agencies
 * <span class="label label-success">Enhancement</span> Update caching functionality
 
+<hr/>
 #### <b> March 05, 2016 - v2.3.2 </b>
 * <span class="label label-success">Enhancement</span> Improve performance of search 
 * <span class="label label-warning">Minor</span> Remove unneeded margins in property page
@@ -53,9 +56,11 @@ layout: page
 * <span class="label label-warning">Minor</span> Adjustment to matching accounts not logging in from ACA
 * <span class="label label-danger">Bug</span> Fix bug that prevented watchlist from loading
 
+<hr/>
 #### <b> March 03, 2016  - v2.3.1 </b>
 * <span class="label label-success">Enhancement</span> Improve performance of staff dashboard by pre-calculating the numbers in background job
 
+<hr/>
 #### <b> February 26, 2016 - v2.3.0 </b>
 * <span class="label label-primary">New Feature</span> Users with Accela Citizen Access accounts will be able to automatically login into Civic Insight
 * <span class="label label-primary">New Feature</span> Allow logged in users to save their search results
