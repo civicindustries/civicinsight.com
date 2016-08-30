@@ -12,32 +12,79 @@ layout: page
 }
 </style>
 
-#### <b> May 09, 2016 - v2.6.0 </b>
+#### <b> August 21, 2016 - v2.7.2 </b>
+* <span class="label label-success">Enhancement</span> Residential vs Commercial calculation dynamically calculated via API
+* <span class="label label-success">Enhancement</span> ACA link integration
+* <span class="label label-warning">Minor</span> demo agencies to set datetype bases on alias
+* <span class="label label-danger">Bug</span> Use updatd accela gem to capture Closed events for updated events in custom query
+
+#### <b> August 7, 2016 - v2.7.1 </b>
+* <span class="label label-success">Enhancement</span> update accela case (all) attributes when updated
+* <span class="label label-success">Enhancement</span> filter out cases by workflow config
+* <span class="label label-success">Enhancement</span> Better support for mobile screen sizes
+* <span class="label label-success">Enhancement</span> accela custom queries via open_data_query
+* <span class="label label-success">Enhancement</span> Allow for searching multiple workflows
+* <span class="label label-success">Enhancement</span> reload accela case via url on-the-fly
+* <span class="label label-warning">Minor</span> cleanup anonymous accela agency configs
+* <span class="label label-warning">Minor</span> setup and configurations for Oakland
+* <span class="label label-warning">Minor</span> configurable setup for accela citizen access integration
+* <span class="label label-warning">Minor</span> nola to store and dispaly case status
+* <span class="label label-warning">Minor</span> soft-delete aborted/deleted austin cases during update_data
+
+
+
+#### <b> July 13, 2016 - v2.7.0 </b>
+* <span class="label label-success">Enhancement</span> Ensure workflows are updated using Accela Contruct v4
+* <span class="label label-success">Enhancement</span> Improve performance for new imports
+* <span class="label label-success">Enhancement</span> Better support for mobile screen sizes
+* <span class="label label-success">Enhancement</span> Add better support for geocoding when importing new data
+* <span class="label label-success">Enhancement</span> Allow for searching multiple workflows
+* <span class="label label-warning">Minor</span> Improve imports across agencies
+* <span class="label label-warning">Minor</span> Ensure demo sites handle missing data
+* <span class="label label-warning">Minor</span> Minor formatting adjustments to tooltip in search results 
+* <span class="label label-warning">Minor</span>add case_source_updated_at
+* <span class="label label-warning">Minor</span> Minor adjustments result counts. Make sure we communicate result count is an estimate.
+* <span class="label label-warning">Minor</span>change default time frames for dashboard
+* <span class="label label-danger">Bug</span> Fix errors with certain accounts not being able to login
+* <span class="label label-danger">Bug</span> Fix issues with caching when importing data
+* <span class="label label-danger">Bug</span> Fix bug when importing inspections without status    
+    
+#### <b> June 01, 2016 - v2.6.0 </b>
+* <span class="label label-success">Enhancement</span> Ability create agencies only requiring config.rb
+* <span class="label label-success">Enhancement</span> Ability to display record's details attributes on the property page in the description box
+* <span class="label label-success">Enhancement</span> Import Accela Inspections using inspection_by_id from standard API when received in the custom query api result set
+* <span class="label label-warning">Minor</span> Update action_by names for Monterey events
+* <span class="label label-warning">Minor</span> Ability to poll all records and inspection scopsed requests
+* <span class="label label-warning">Minor</span> Add Accela record-type and inspection-type to cases and events
+* <span class="label label-warning">Minor</span> Remove cases.last unused column fromt he database
+* <span class="label label-warning">Minor</span> Update agency settings from serialized text to jsonb
+
+
+
+#### <b> May 09, 2016 - v2.5.1 </b>
 * <span class="label label-success">Enhancement</span> Parallelize building of dashboard data
 * <span class="label label-success">Enhancement</span> Simplify the way we store information about agency steps
 * <span class="label label-success">Enhancement</span> Increase the number of records we update at a time
-* <span class="label label-warning">Minor</span> Reset cache for dashboards over the on weekends
-* <span class="label label-warning">Minor</span> Better handling of data updates to automatically update only agencies that are live
+* <span class="label label-warning">Minor</span> Reset cache for dashboards on the weekends
+* <span class="label label-warning">Minor</span> Better handling of data updates to automatically update only agencies once they are live
 * <span class="label label-warning">Minor</span> Minor database schema changes
-* <span class="label label-warning">Minor</span> Update accela inspection comments only when comments have been changed
-* <span class="label label-danger">Bug</span> Fix bug that prevented the importing of inspections for certain clients
+* <span class="label label-warning">Minor</span> Update Accela inspection comments only when comments have been changed
+* <span class="label label-danger">Bug</span> Fix bug that prevented the importing of inspections for certain clients under very specific conditions
 
 
-<hr/>
 #### <b> April 24, 2016 - v2.5.0 </b>
-* <span class="label label-primary">New Feature</span> Go live with agency using our first planning data
+* <span class="label label-primary">New Feature</span> Launch our first agency with planning data
 * <span class="label label-success">Enhancement</span> Update to the latest version of Postgres
 * <span class="label label-success">Enhancement</span> Update mailer digetst to send mails for active workflows and not only default workflow
 * <span class="label label-success">Enhancement</span> Import records, addresses, owners and contacts in one call using v4 Accela API call
 * <span class="label label-success">Enhancement</span> Add different priorities for email notifications. Priotizing things like "Forgot Password"
-* <span class="label label-danger">Bug</span> Fix bug that causes characters in Accela API results to block import
 * <span class="label label-success">Enhancement</span> Import of Accela records data broken down into small jobs in varoius queues
 * <span class="label label-success">Enhancement</span> All mails now sent on same "mailers" queue
 * <span class="label label-success">Enhancement</span> Account mails sent with highest priority in queue
 * <span class="label label-success">Enhancement</span> Email digest are user centric and can more accurately track if mail is successfuly sent and whether a subscription is truly notified
+* <span class="label label-danger">Bug</span> Fix bug that causes characters in Accela API results to block import
 
 
-<hr/>
 #### <b> April 03, 2016 - v2.4.0 </b>
 * <span class="label label-success">Enhancement</span> Add funtionality to add link to raw data source for record
 * <span class="label label-success">Enhancement</span> Allow embeding in Citzen Access iframes
@@ -48,7 +95,6 @@ layout: page
 * <span class="label label-success">Enhancement</span> Configure a series of new agencies
 * <span class="label label-success">Enhancement</span> Update caching functionality
 
-<hr/>
 #### <b> March 05, 2016 - v2.3.2 </b>
 * <span class="label label-success">Enhancement</span> Improve performance of search 
 * <span class="label label-warning">Minor</span> Remove unneeded margins in property page
@@ -56,11 +102,9 @@ layout: page
 * <span class="label label-warning">Minor</span> Adjustment to matching accounts not logging in from ACA
 * <span class="label label-danger">Bug</span> Fix bug that prevented watchlist from loading
 
-<hr/>
 #### <b> March 03, 2016  - v2.3.1 </b>
 * <span class="label label-success">Enhancement</span> Improve performance of staff dashboard by pre-calculating the numbers in background job
 
-<hr/>
 #### <b> February 26, 2016 - v2.3.0 </b>
 * <span class="label label-primary">New Feature</span> Users with Accela Citizen Access accounts will be able to automatically login into Civic Insight
 * <span class="label label-primary">New Feature</span> Allow logged in users to save their search results
