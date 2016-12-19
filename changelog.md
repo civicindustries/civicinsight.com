@@ -12,13 +12,75 @@ layout: page
 }
 </style>
 
+#### <b>Dec 16, 2016 - v3.1.1 </b>
+* <span class="label label-primary">Enhancement</span> Check for updated documents when fnding updated records
+* <span class="label label-primary">Enhancement</span> Configurable defaults for statuses and activity in search interface
+
+#### <b>Dec 10, 2016 - v3.1.0 </b>
+* <span class="label label-primary">New Feature</span> Activity dropbox list options are configurable
+* <span class="label label-success">Enhancement</span> Display Accela documents based on document permissions
+* <span class="label label-success">Enhancement</span> Accela documents display filename instead of file category
+* <span class="label label-danger">Bug</span> Fix discolor of case_overviews for non-permit records
+
+#### <b> Dec 1, 2016 - v3.0.2 </b>
+* <span class="label label-primary">New Feature</span> Timeframe select box can be disabled from workflows in the searchbox
+* <span class="label label-success">Enhancement</span> Update Mapbox/Esri libraries (newer, cleaner maps)
+* <span class="label label-success">Enhancement</span> Add support for multipolygons shapes in boundaries
+* <span class="label label-success">Enhancement</span> Searching for boundary name works without requiring to select from dropdown
+* <span class="label label-warning">Minor</span> Add automated front-end testing
+* <span class="label label-warning">Minor</span> Update backend libraries, update testing frameworks, update testing infrastructure
+* <span class="label label-warning">Minor</span> Remove deprecated code
+
+
+#### <b> Nov 17, 2016 - v3.0.1 </b>
+* <span class="label label-success">Enhancement</span> Update SSL certificate
+* <span class="label label-success">Enhancement</span> Add support for dynamically loading agency boundary limits
+* <span class="label label-warning">Minor</span> Re-enable datepicker in dashboard
+* <span class="label label-danger">Bug</span> Fix bug in IE that prevented select boxes from loading properly in search interface
+
+
+#### <b> Nov 11, 2016 - v3.0.0 </b>
+* <span class="label label-primary">New Feature</span> Allow more granular search in search filter
+* <span class="label label-primary">New Feature</span> Add support for searching by case status
+* <span class="label label-primary">New Feature</span> Launch new 'Performance' Dashboard (30+ charts)
+* <span class="label label-primary">New Feature</span> Build new analytics engine analyzing workflow data
+* <span class="label label-primary">New Feature</span> Simplify the deployment process for new agencies
+* <span class="label label-primary">New Feature</span> Add support for multiple domain names
+* <span class="label label-primary">New Feature</span> Add support ASI fields (metadata) in Accela
+* <span class="label label-primary">New Feature</span> Add support for searching by Parcel ID (APN)
+* <span class="label label-primary">New Feature</span> Add support for file attachments for records
+* <span class="label label-success">Enhancement</span> Improve loads times of dashboard by switching caching engine
+* <span class="label label-success">Enhancement</span> Add support for agency hosted databases (MSSQL/Oracle)
+* <span class="label label-success">Enhancement</span> Add better support for multiple workflows in address view
+* <span class="label label-success">Enhancement</span> Switch search engine from Sphinx to <b>ElasticSearch</b>
+* <span class="label label-success">Enhancement</span> Add better detection and handling of errors
+* <span class="label label-success">Enhancement</span> Better handling and versioning of assets
+* <span class="label label-success">Enhancement</span> Major refactoring and simplification of source code
+* <span class="label label-warning">Minor</span> Standardize date picker across UI elements
+* <span class="label label-warning">Minor</span> Refine the default settings for new agencies
+* <span class="label label-warning">Minor</span> Allow for individual records to be updated with case number
+* <span class="label label-warning">Minor</span> Clean up output to logs to detect errors more easily
+
+
+<hr/>
+
+#### <b> September 04, 2016 - v2.7.3 </b>
+* <span class="label label-success">Enhancement</span> Ability to chart total # of cases filed by record type
+* <span class="label label-warning">Minor</span> Change future workflow tasks from Required to Targeted
+* <span class="label label-warning">Minor</span> Dashboard default date range to 12 months instead of 13
+* <span class="label label-danger">Bug</span> Dashboard to included events dated up to the end of the end month
+* <span class="label label-danger">Bug</span> Dashboard charts to default interval stats to 0
+* <span class="label label-danger">Bug</span> Dashboard generalize chart labels to work for both permits and enforcement
+
+<hr/>
+
 #### <b> August 21, 2016 - v2.7.2 </b>
 * <span class="label label-success">Enhancement</span> Residential vs Commercial calculation dynamically calculated via API
 * <span class="label label-success">Enhancement</span> ACA link integration
-* <span class="label label-warning">Minor</span> demo agencies to set datetype bases on alias
-* <span class="label label-danger">Bug</span> Use updatd accela gem to capture Closed events for updated events in custom query
+* <span class="label label-warning">Minor</span> demo agencies to set date type bases on alias
+* <span class="label label-danger">Bug</span> Use updated accela gem to capture Closed events for updated events in custom query
 
-#### <b> August 7, 2016 - v2.7.1 </b>
+#### <b> August 07, 2016 - v2.7.1 </b>
 * <span class="label label-success">Enhancement</span> update accela case (all) attributes when updated
 * <span class="label label-success">Enhancement</span> filter out cases by workflow config
 * <span class="label label-success">Enhancement</span> Better support for mobile screen sizes
@@ -28,27 +90,27 @@ layout: page
 * <span class="label label-warning">Minor</span> cleanup anonymous accela agency configs
 * <span class="label label-warning">Minor</span> setup and configurations for Oakland
 * <span class="label label-warning">Minor</span> configurable setup for accela citizen access integration
-* <span class="label label-warning">Minor</span> nola to store and dispaly case status
 * <span class="label label-warning">Minor</span> soft-delete aborted/deleted austin cases during update_data
 
 
-
+<hr/>
 #### <b> July 13, 2016 - v2.7.0 </b>
-* <span class="label label-success">Enhancement</span> Ensure workflows are updated using Accela Contruct v4
+* <span class="label label-success">Enhancement</span> Ensure workflows are updated using Accela Construct v4
 * <span class="label label-success">Enhancement</span> Improve performance for new imports
 * <span class="label label-success">Enhancement</span> Better support for mobile screen sizes
 * <span class="label label-success">Enhancement</span> Add better support for geocoding when importing new data
 * <span class="label label-success">Enhancement</span> Allow for searching multiple workflows
 * <span class="label label-warning">Minor</span> Improve imports across agencies
 * <span class="label label-warning">Minor</span> Ensure demo sites handle missing data
-* <span class="label label-warning">Minor</span> Minor formatting adjustments to tooltip in search results 
+* <span class="label label-warning">Minor</span> Minor formatting adjustments to tooltip in search results
 * <span class="label label-warning">Minor</span>add case_source_updated_at
 * <span class="label label-warning">Minor</span> Minor adjustments result counts. Make sure we communicate result count is an estimate.
 * <span class="label label-warning">Minor</span>change default time frames for dashboard
 * <span class="label label-danger">Bug</span> Fix errors with certain accounts not being able to login
 * <span class="label label-danger">Bug</span> Fix issues with caching when importing data
-* <span class="label label-danger">Bug</span> Fix bug when importing inspections without status    
-    
+* <span class="label label-danger">Bug</span> Fix bug when importing inspections without status
+
+<hr/>
 #### <b> June 01, 2016 - v2.6.0 </b>
 * <span class="label label-success">Enhancement</span> Ability create agencies only requiring config.rb
 * <span class="label label-success">Enhancement</span> Ability to display record's details attributes on the property page in the description box
@@ -59,7 +121,7 @@ layout: page
 * <span class="label label-warning">Minor</span> Remove cases.last unused column fromt he database
 * <span class="label label-warning">Minor</span> Update agency settings from serialized text to jsonb
 
-
+<hr/>
 
 #### <b> May 09, 2016 - v2.5.1 </b>
 * <span class="label label-success">Enhancement</span> Parallelize building of dashboard data
@@ -72,22 +134,24 @@ layout: page
 * <span class="label label-danger">Bug</span> Fix bug that prevented the importing of inspections for certain clients under very specific conditions
 
 
+<hr/>
 #### <b> April 24, 2016 - v2.5.0 </b>
 * <span class="label label-primary">New Feature</span> Launch our first agency with planning data
 * <span class="label label-success">Enhancement</span> Update to the latest version of Postgres
-* <span class="label label-success">Enhancement</span> Update mailer digetst to send mails for active workflows and not only default workflow
+* <span class="label label-success">Enhancement</span> Update mailer digest to send mails for active workflows and not only default workflow
 * <span class="label label-success">Enhancement</span> Import records, addresses, owners and contacts in one call using v4 Accela API call
-* <span class="label label-success">Enhancement</span> Add different priorities for email notifications. Priotizing things like "Forgot Password"
-* <span class="label label-success">Enhancement</span> Import of Accela records data broken down into small jobs in varoius queues
+* <span class="label label-success">Enhancement</span> Add different priorities for email notifications. Prioritizing things like "Forgot Password"
+* <span class="label label-success">Enhancement</span> Import of Accela records data broken down into small jobs in various queues
 * <span class="label label-success">Enhancement</span> All mails now sent on same "mailers" queue
 * <span class="label label-success">Enhancement</span> Account mails sent with highest priority in queue
 * <span class="label label-success">Enhancement</span> Email digest are user centric and can more accurately track if mail is successfuly sent and whether a subscription is truly notified
 * <span class="label label-danger">Bug</span> Fix bug that causes characters in Accela API results to block import
 
 
+<hr/>
 #### <b> April 03, 2016 - v2.4.0 </b>
-* <span class="label label-success">Enhancement</span> Add funtionality to add link to raw data source for record
-* <span class="label label-success">Enhancement</span> Allow embeding in Citzen Access iframes
+* <span class="label label-success">Enhancement</span> Add functionality to add link to raw data source for record
+* <span class="label label-success">Enhancement</span> Allow embedding in Citizen Access iframes
 * <span class="label label-success">Enhancement</span> Optimize background workers
 * <span class="label label-success">Enhancement</span> Switch to higher performance database
 * <span class="label label-success">Enhancement</span> Update system and application libraries
@@ -95,16 +159,19 @@ layout: page
 * <span class="label label-success">Enhancement</span> Configure a series of new agencies
 * <span class="label label-success">Enhancement</span> Update caching functionality
 
+<hr/>
 #### <b> March 05, 2016 - v2.3.2 </b>
-* <span class="label label-success">Enhancement</span> Improve performance of search 
+* <span class="label label-success">Enhancement</span> Improve performance of search
 * <span class="label label-warning">Minor</span> Remove unneeded margins in property page
 * <span class="label label-warning">Minor</span> Change login header to my profile
 * <span class="label label-warning">Minor</span> Adjustment to matching accounts not logging in from ACA
 * <span class="label label-danger">Bug</span> Fix bug that prevented watchlist from loading
 
+<hr/>
 #### <b> March 03, 2016  - v2.3.1 </b>
 * <span class="label label-success">Enhancement</span> Improve performance of staff dashboard by pre-calculating the numbers in background job
 
+<hr/>
 #### <b> February 26, 2016 - v2.3.0 </b>
 * <span class="label label-primary">New Feature</span> Users with Accela Citizen Access accounts will be able to automatically login into Civic Insight
 * <span class="label label-primary">New Feature</span> Allow logged in users to save their search results
@@ -176,7 +243,7 @@ layout: page
 * <span class="label label-primary">New Feature</span> New admin interface
 * <span class="label label-primary">New Feature</span> Email Notifications now include descriptions
 * <span class="label label-primary">New Feature</span> Now require SSL connection for sites civicinsight.com domain
-* <span class="label label-success">Enhancement</span> Improve performance to search 
+* <span class="label label-success">Enhancement</span> Improve performance to search
 * <span class="label label-success">Enhancement</span> Increase test converage
 * <span class="label label-success">Enhancement</span> Simplify API endpoints
 * <span class="label label-success">Enhancement</span> Major performance improvements and simplification of API payloads
@@ -198,7 +265,7 @@ layout: page
 
 <hr/>
 ####  <b> October 29, 2015 -  v1.20.12</b>
-* <span class="label label-danger">Bug</span> Fix issue where the cache of case events was not automatically cleared on under certain circumstances 
+* <span class="label label-danger">Bug</span> Fix issue where the cache of case events was not automatically cleared on under certain circumstances
 
 <hr/>
 ####  <b> October 12, 2015 -  v1.20.11</b>
@@ -437,7 +504,7 @@ layout: page
 * <span class="label label-primary">New Feature</span>  Add support for pagination of search results
 * <span class="label label-danger">Bug</span> Fix issues with autocomplete performance
 * <span class="label label-warning">Minor</span>  Upgrade Mapbox library for mapping
-  
+
 <hr/>
 ####  <b> April 03, 2015 -  v1.17.12</b>
 * <span class="label label-danger">Bug</span>Fix issues with pagination and grouping
@@ -448,7 +515,7 @@ layout: page
 
 <hr/>
 ####  <b> April 03, 2015 -  v1.17.10</b>
-* <span class="label label-primary">New Feature</span>  Use additional constraints on geospatial and boundary searches 
+* <span class="label label-primary">New Feature</span>  Use additional constraints on geospatial and boundary searches
 
 <hr/>
 ####  <b> April 02, 2015 -  v1.17.9</b>
@@ -465,10 +532,10 @@ layout: page
 <hr/>
 ####  <b> March 27, 2015 -  v1.17.7</b>
 * <span class="label label-success">Enhancement</span> Improve styling of date picker
-* <span class="label label-danger">Bug</span> Fix issues with accuracy in search 
+* <span class="label label-danger">Bug</span> Fix issues with accuracy in search
 * <span class="label label-success">Enhancement</span> Improve Improve autocomplete performance
 * <span class="label label-warning">Minor</span> Change search box to say "search" instead of "go"
- 
+
 <hr/>
 ####  <b> March 22, 2015 -  v1.17.6</b>
 * <span class="label label-warning">Minor</span> Change limit results to 150 for now
@@ -500,7 +567,7 @@ layout: page
 
 <hr/>
 ####  <b> March 4, 2015 -  v1.17.2</b>
-* <span class="label label-primary">New Feature</span>  Add initial support for BuildFax inspections 
+* <span class="label label-primary">New Feature</span>  Add initial support for BuildFax inspections
 * <span class="label label-primary">New Feature</span>  Add support for a variety of plan checks supported in Accela
 
 <hr/>
