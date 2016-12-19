@@ -90,6 +90,7 @@ layout: page
 * <span class="label label-warning">Minor</span> demo agencies to set date type bases on alias
 * <span class="label label-danger">Bug</span> Use updated accela gem to capture Closed events for updated events in custom query
 
+<hr/>
 #### <b> August 07, 2016 - v2.7.1 </b>
 * <span class="label label-success">Enhancement</span> update accela case (all) attributes when updated
 * <span class="label label-success">Enhancement</span> filter out cases by workflow config
