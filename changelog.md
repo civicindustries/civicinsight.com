@@ -16,11 +16,17 @@ layout: page
 * <span class="label label-primary">Enhancement</span> Check for updated documents when fnding updated records
 * <span class="label label-primary">Enhancement</span> Configurable defaults for statuses and activity in search interface
 
+
+<hr/>
+
 #### <b>Dec 10, 2016 - v3.1.0 </b>
 * <span class="label label-primary">New Feature</span> Activity dropbox list options are configurable
 * <span class="label label-success">Enhancement</span> Display Accela documents based on document permissions
 * <span class="label label-success">Enhancement</span> Accela documents display filename instead of file category
 * <span class="label label-danger">Bug</span> Fix discolor of case_overviews for non-permit records
+
+
+<hr/>
 
 #### <b> Dec 1, 2016 - v3.0.2 </b>
 * <span class="label label-primary">New Feature</span> Timeframe select box can be disabled from workflows in the searchbox
@@ -32,12 +38,16 @@ layout: page
 * <span class="label label-warning">Minor</span> Remove deprecated code
 
 
+<hr/>
+
 #### <b> Nov 17, 2016 - v3.0.1 </b>
 * <span class="label label-success">Enhancement</span> Update SSL certificate
 * <span class="label label-success">Enhancement</span> Add support for dynamically loading agency boundary limits
 * <span class="label label-warning">Minor</span> Re-enable datepicker in dashboard
 * <span class="label label-danger">Bug</span> Fix bug in IE that prevented select boxes from loading properly in search interface
 
+
+<hr/>
 
 #### <b> Nov 11, 2016 - v3.0.0 </b>
 * <span class="label label-primary">New Feature</span> Allow more granular search in search filter
