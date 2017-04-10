@@ -12,9 +12,57 @@ layout: page
 }
 </style>
 
+#### <b>April 7, 2017 - v3.4.0 </b>
+* <span class="label label-success">Enhancement</span> Improve performance of background jobs by switching workers to redis
+* <span class="label label-success">Enhancement</span> Build framework for testing data quality
+* <span class="label label-success">Enhancement</span> Automatically detect file types for attachments
+* <span class="label label-danger">Bug</span> Fix issue with logging in with Facebook
+* <span class="label label-danger">Bug</span> Fix issue in addresses that displayed the wrong boundary
+
+<hr/>
+
+#### <b>March 22, 2017 - v3.3.0 </b>
+* <span class="label label-primary">New Feature</span> Allow for multiple facted search options
+* <span class="label label-primary">New Feature</span> Various enhancements to  "Performance Dashboard" visualizations 
+* <span class="label label-primary">New Feature</span> Incorporate financial information in "Performance Dashboard"
+* <span class="label label-primary">New Feature</span> Display scheduled Inspection dates in email notifications
+* <span class="label label-success">Enhancement</span> Move contact information and attachements outside of expand in "Project Description"
+* <span class="label label-success">Enhancement</span> Improve performance of "Staff Dashboard" by adding additional caching
+* <span class="label label-danger">Bug</span> Fix bug that prevented flagging of errors in address page
+* <span class="label label-danger">Bug</span> Fix issues with datepickers in dashboard that prevented from changing dates
+* <span class="label label-danger">Bug</span> Fix order of chevron in dropdowns in address page
+* <span class="label label-danger">Bug</span> Update various libraries and security updates
+
+<hr/>
+
+#### <b>Feb 11, 2017 - v3.2.1 </b>
+* <span class="label label-success">Enhancement</span> import addresses with directional suffix
+* <span class="label label-success">Enhancement</span> import status history for newly imported AA cases
+* <span class="label label-danger">Bug</span> show latest activity on address tooltip when no workflow is selected
+* <span class="label label-danger">Bug</span> show the most recent case and case status on tooltip
+
+<hr/>
+
+#### <b>Jan 24, 2017 - v3.2.0 </b>
+* <span class="label label-success">Enhancement</span> Add configurable defaults for statuses and activity in search interface
+* <span class="label label-success">Enhancement</span> On Site Analytics, display total logged in users instead of percentage
+* <span class="label label-success">Enhancement</span> Add better descriptions of options in user profile
+* <span class="label label-success">Enhancement</span> Add better support for handling "cycles" for permit applications
+* <span class="label label-success">Enhancement</span> Add support for 'back to search' from address page after performing search
+* <span class="label label-danger">Bug</span> Fix DatabPortal Job Workflow Helprs to WorkflowSupport
+* <span class="label label-danger">Bug</span> Fix bug with autocomplete caused by the introduction of sorting results
+* <span class="label label-danger">Bug</span> Fix bug that displayed menu options that were not configured
+* <span class="label label-danger">Bug</span> Fix bug in performance menu that prevented some date ranges to not load
+* <span class="label label-danger">Bug</span> Fix issue in mapbox caused by not providing api key
+* <span class="label label-danger">Bug</span> Fix display issues in email notifications
+* <span class="label label-danger">Bug</span> Fix bug that disabled clustering of results for certain zoom ranges
+* <span class="label label-danger">Bug</span> Fix bug caused by linking to search results without a specified date range
+
+<hr/>
+
 #### <b>Dec 16, 2016 - v3.1.1 </b>
-* <span class="label label-primary">Enhancement</span> Check for updated documents when fnding updated records
-* <span class="label label-primary">Enhancement</span> Configurable defaults for statuses and activity in search interface
+* <span class="label label-success">Enhancement</span> Check for updated documents when fnding updated records
+* <span class="label label-success">Enhancement</span> Configurable defaults for statuses and activity in search interface
 
 
 <hr/>
